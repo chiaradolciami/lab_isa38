@@ -1,0 +1,9 @@
+set PrefMain(cmdHistory) scriptModelsim
+set PrefMain(saveFile) transcriptModelsim
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /iir/iir=../netlist/iir.sdf work.testIIR
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb_iir/iir=../netlist/iir.sdf work.iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /iir/iir=../netlist/iir.sdf work.iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testIIR/UUT=../netlist/iir.sdf work.iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testiir/UUT=../netlist/iir.sdf work.iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /IIR/UUT=../netlist/iir.sdf work.iir
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /iir/iir=../netlist/iir.sdf work.iir

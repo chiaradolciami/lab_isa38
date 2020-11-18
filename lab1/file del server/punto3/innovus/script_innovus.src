@@ -1,0 +1,13 @@
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/data_maker_look_ahead.vhd
+vcom -93 -work ./work ../tb/data_sink_look_ahead_pipe.vhd
+
+vlog -work ./work ../tb/tb_iir_look_ahead.v
+vlog -work ./work ../innovus/IIRlookahead.v
+
+vsim -L /software/dk/nangate45/verilog/msim6.2g work.testIIR_look_ahead_pipe
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testIIR_look_ahead_pipe/UUT=../innovus/IIRlookahead.sdf work.testIIR_look_ahead_pipe
+
+vcd file ../vcd/myiirlook_syn.vcd
+vcd add /testIIR_look_ahead_pipe/UUT/*
+

@@ -1,0 +1,160 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+source "script_innovus.src"
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker_look_ahead
+# -- Compiling architecture behaviour of data_maker_look_ahead
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture beh of data_sink
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module testIIR_look_ahead_pipe
+# 
+# Top level modules:
+# 	testIIR_look_ahead_pipe
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module IIRlookahead
+# 
+# Top level modules:
+# 	IIRlookahead
+# vsim -L /software/dk/nangate45/verilog/msim6.2g work.testIIR_look_ahead_pipe 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testIIR_look_ahead_pipe(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X2(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.MUX2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR4_X1(fast)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(beh)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker_look_ahead(behaviour)
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1378): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_228_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1402): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_229_U1_5
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1418): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v1_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1422): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v2_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1426): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v3_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(2443): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_233_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(2483): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_232_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(3996): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_226_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(5216): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_231_U1_7
+# Loading work.data_sink(beh)
+# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testIIR_look_ahead_pipe/UUT=../innovus/IIRlookahead.sdf work.testIIR_look_ahead_pipe 
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.testIIR_look_ahead_pipe(fast)
+# Loading work.IIRlookahead(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X2(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OR3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND3_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.MUX2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR4_X1(fast)
+# Loading instances from ../innovus/IIRlookahead.sdf
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(beh)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker_look_ahead(behaviour)
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1378): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_228_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1402): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_229_U1_5
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1418): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v1_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1422): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v2_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(1426): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/reg_v3_output_reg
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(2443): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_233_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(2483): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_232_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(3996): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_226_U1_7
+# ** Warning: (vsim-3017) ../innovus/IIRlookahead.v(5216): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR_look_ahead_pipe/UUT/add_231_U1_7
+# Loading work.data_sink(beh)
+# Loading timing data from ../innovus/IIRlookahead.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Region: /testIIR_look_ahead_pipe  File: ../tb/tb_iir_look_ahead.v
+run 4 us

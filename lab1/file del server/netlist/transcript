@@ -1,0 +1,274 @@
+# //  ModelSim SE 6.2g Feb 21 2007 Linux 3.10.0-957.5.1.el7.x86_64
+# //
+# //  Copyright 1991-2007 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+do script_mod.src
+# ** Error: invalid command name "//per"
+# Error in macro ./script_mod.src line 1
+# invalid command name "//per"
+#     while executing
+# "//per runnarlo: do script_mod.src"
+do script_mod.src
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity clk_gen
+# -- Compiling architecture beh of clk_gen
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_maker
+# -- Compiling architecture behaviour of data_maker
+# Model Technology ModelSim SE vcom 6.2g Compiler 2007.02 Feb 21 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package textio
+# -- Loading package std_logic_textio
+# -- Compiling entity data_sink
+# -- Compiling architecture beh of data_sink
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module IIR
+# 
+# Top level modules:
+# 	IIR
+# Model Technology ModelSim SE vlog 6.2g Compiler 2007.02 Feb 21 2007
+# -- Compiling module testIIR
+# 
+# Top level modules:
+# 	testIIR
+# No design specified
+# vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /testIIR/UUT=../netlist/iir.sdf work.testIIR 
+# Loading work.testIIR(fast)
+# Loading work.IIR(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.DFFR_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.FA_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.INV_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NAND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI22_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.BUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI21_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.CLKBUF_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AND2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.NOR4_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.AOI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.OAI222_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.XNOR2_X1(fast)
+# Loading /software/dk/nangate45/verilog/msim6.2g.HA_X1(fast)
+# Loading instances from ../netlist/iir.sdf
+# Loading /software/mentor/modelsim_6.2g/linux/../std.standard
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_1164(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_arith(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_unsigned(body)
+# Loading work.clk_gen(beh)
+# Loading /software/mentor/modelsim_6.2g/linux/../std.textio(body)
+# Loading /software/mentor/modelsim_6.2g/linux/../ieee.std_logic_textio(body)
+# Loading work.data_maker(behaviour)
+# ** Warning: (vsim-3017) ../netlist/iir.v(158): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/vout1_reg
+# ** Warning: (vsim-3017) ../netlist/iir.v(159): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/VOUT_reg
+# ** Warning: (vsim-3017) ../netlist/iir.v(169): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_6_
+# ** Warning: (vsim-3017) ../netlist/iir.v(170): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_5_
+# ** Warning: (vsim-3017) ../netlist/iir.v(171): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_4_
+# ** Warning: (vsim-3017) ../netlist/iir.v(172): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_3_
+# ** Warning: (vsim-3017) ../netlist/iir.v(173): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_2_
+# ** Warning: (vsim-3017) ../netlist/iir.v(174): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_1_
+# ** Warning: (vsim-3017) ../netlist/iir.v(175): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/a1_s_reg_0_
+# ** Warning: (vsim-3017) ../netlist/iir.v(176): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_6_
+# ** Warning: (vsim-3017) ../netlist/iir.v(177): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_5_
+# ** Warning: (vsim-3017) ../netlist/iir.v(178): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_4_
+# ** Warning: (vsim-3017) ../netlist/iir.v(179): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_3_
+# ** Warning: (vsim-3017) ../netlist/iir.v(180): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_2_
+# ** Warning: (vsim-3017) ../netlist/iir.v(181): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_1_
+# ** Warning: (vsim-3017) ../netlist/iir.v(182): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b1_s_reg_0_
+# ** Warning: (vsim-3017) ../netlist/iir.v(183): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_6_
+# ** Warning: (vsim-3017) ../netlist/iir.v(184): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_5_
+# ** Warning: (vsim-3017) ../netlist/iir.v(185): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_4_
+# ** Warning: (vsim-3017) ../netlist/iir.v(186): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_3_
+# ** Warning: (vsim-3017) ../netlist/iir.v(187): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_2_
+# ** Warning: (vsim-3017) ../netlist/iir.v(188): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_1_
+# ** Warning: (vsim-3017) ../netlist/iir.v(189): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/b0_s_reg_0_
+# ** Warning: (vsim-3017) ../netlist/iir.v(190): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_7_
+# ** Warning: (vsim-3017) ../netlist/iir.v(191): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_6_
+# ** Warning: (vsim-3017) ../netlist/iir.v(192): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_5_
+# ** Warning: (vsim-3017) ../netlist/iir.v(193): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_4_
+# ** Warning: (vsim-3017) ../netlist/iir.v(194): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_3_
+# ** Warning: (vsim-3017) ../netlist/iir.v(195): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_2_
+# ** Warning: (vsim-3017) ../netlist/iir.v(196): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_1_
+# ** Warning: (vsim-3017) ../netlist/iir.v(197): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/DOUT_reg_0_
+# ** Warning: (vsim-3017) ../netlist/iir.v(198): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_8_
+# ** Warning: (vsim-3017) ../netlist/iir.v(199): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_7_
+# ** Warning: (vsim-3017) ../netlist/iir.v(200): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_6_
+# ** Warning: (vsim-3017) ../netlist/iir.v(201): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_5_
+# ** Warning: (vsim-3017) ../netlist/iir.v(202): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_4_
+# ** Warning: (vsim-3017) ../netlist/iir.v(203): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_3_
+# ** Warning: (vsim-3017) ../netlist/iir.v(204): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_2_
+# ** Warning: (vsim-3017) ../netlist/iir.v(205): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_1_
+# ** Warning: (vsim-3017) ../netlist/iir.v(206): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/sw_reg_0_
+# ** Warning: (vsim-3017) ../netlist/iir.v(221): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/add_163_U1_8
+# ** Warning: (vsim-3017) ../netlist/iir.v(784): [TFMPC] - Too few port connections. Expected 5, found 4.
+#         Region: /testIIR/UUT/add_170_U1_7
+# Loading work.data_sink(beh)
+# Loading timing data from ../netlist/iir.sdf
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/sw_reg_8_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/DOUT_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b0_s_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/b1_s_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/a1_s_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_0_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_1_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_2_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_3_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_4_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_5_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_6_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_7_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/x_reg_8_
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/VOUT_reg
+# ** Warning: (vsim-3448) nofile(1758): Setting negative specify check constraint (0 ns) to zero.
+#    Time: 0 ns  Iteration: 0  Instance: /testIIR/UUT/vout1_reg
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ns  Iteration: 0  Region: /testIIR  File: ../netlist/tb/tb_iir.v
+run 3 us
+vcd2saif -input ../vcd/myiir_syn.vcd -output ../saif/myiir_syn.saif
+# invalid command name "vcd2saif"
+quit -sim
+vcd2saif -input ../vcd/myiir_syn.vcd -output ../saif/myiir_syn.saif
+# invalid command name "vcd2saif"

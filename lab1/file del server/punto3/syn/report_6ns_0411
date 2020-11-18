@@ -1,0 +1,89 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIRlookahead
+Version: O-2018.06-SP4
+Date   : Wed Nov  4 22:15:28 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: regR2/output_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: reg1_PIPEstage2/output_reg[5]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIRlookahead       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regR2/output_reg[1]/CK (DFFR_X1)                        0.00       0.00 r
+  regR2/output_reg[1]/Q (DFFR_X1)                         0.19       0.19 r
+  regR2/output[1] (REG_n_n8_6)                            0.00       0.19 r
+  mult_209/a[1] (IIRlookahead_DW_mult_tc_2)               0.00       0.19 r
+  mult_209/U294/Z (XOR2_X1)                               0.11       0.30 r
+  mult_209/U178/ZN (INV_X1)                               0.06       0.36 f
+  mult_209/U292/ZN (NAND2_X1)                             0.09       0.45 r
+  mult_209/U282/ZN (OAI22_X1)                             0.05       0.50 f
+  mult_209/U41/S (HA_X1)                                  0.08       0.58 f
+  mult_209/U253/ZN (AOI222_X1)                            0.11       0.69 r
+  mult_209/U181/ZN (INV_X1)                               0.03       0.72 f
+  mult_209/U252/ZN (AOI222_X1)                            0.09       0.81 r
+  mult_209/U180/ZN (INV_X1)                               0.03       0.84 f
+  mult_209/U251/ZN (AOI222_X1)                            0.09       0.93 r
+  mult_209/U170/ZN (INV_X1)                               0.03       0.96 f
+  mult_209/U250/ZN (AOI222_X1)                            0.09       1.05 r
+  mult_209/U169/ZN (INV_X1)                               0.03       1.08 f
+  mult_209/U249/ZN (AOI222_X1)                            0.09       1.17 r
+  mult_209/U172/ZN (INV_X1)                               0.03       1.20 f
+  mult_209/U248/ZN (AOI222_X1)                            0.09       1.29 r
+  mult_209/U171/ZN (INV_X1)                               0.03       1.32 f
+  mult_209/U247/ZN (AOI222_X1)                            0.09       1.41 r
+  mult_209/U168/ZN (INV_X1)                               0.03       1.44 f
+  mult_209/U246/ZN (AOI222_X1)                            0.09       1.53 r
+  mult_209/U167/ZN (INV_X1)                               0.03       1.56 f
+  mult_209/U245/ZN (AOI222_X1)                            0.09       1.66 r
+  mult_209/U174/ZN (INV_X1)                               0.03       1.68 f
+  mult_209/U244/ZN (AOI222_X1)                            0.09       1.78 r
+  mult_209/U173/ZN (INV_X1)                               0.03       1.80 f
+  mult_209/U243/ZN (AOI222_X1)                            0.09       1.90 r
+  mult_209/U176/ZN (INV_X1)                               0.03       1.92 f
+  mult_209/U3/CO (FA_X1)                                  0.09       2.01 f
+  mult_209/U2/S (FA_X1)                                   0.11       2.12 f
+  mult_209/product[15] (IIRlookahead_DW_mult_tc_2)        0.00       2.12 f
+  add_229/U1_1/CO (FA_X1)                                 0.10       2.23 f
+  add_229/U1_2/CO (FA_X1)                                 0.09       2.32 f
+  add_229/U1_3/CO (FA_X1)                                 0.09       2.41 f
+  add_229/U1_4/CO (FA_X1)                                 0.09       2.50 f
+  add_229/U1_5/S (FA_X1)                                  0.13       2.63 r
+  reg1_PIPEstage2/input[5] (REG_n_n6)                     0.00       2.63 r
+  reg1_PIPEstage2/U3/ZN (NAND2_X1)                        0.03       2.66 f
+  reg1_PIPEstage2/U2/ZN (OAI21_X1)                        0.03       2.69 r
+  reg1_PIPEstage2/output_reg[5]/D (DFFR_X1)               0.01       2.70 r
+  data arrival time                                                  2.70
+
+  clock MY_CLK (rise edge)                                6.00       6.00
+  clock network delay (ideal)                             0.00       6.00
+  clock uncertainty                                      -0.07       5.93
+  reg1_PIPEstage2/output_reg[5]/CK (DFFR_X1)              0.00       5.93 r
+  library setup time                                     -0.03       5.90
+  data required time                                                 5.90
+  --------------------------------------------------------------------------
+  data required time                                                 5.90
+  data arrival time                                                 -2.70
+  --------------------------------------------------------------------------
+  slack (MET)                                                        3.20
+
+
+1

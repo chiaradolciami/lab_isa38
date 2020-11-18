@@ -1,0 +1,82 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIRlookahead
+Version: O-2018.06-SP4
+Date   : Fri Oct 30 23:52:27 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: regR0/output_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: reg1_PIPEstage1/output_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIRlookahead       5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  regR0/output_reg[2]/CK (DFFR_X1)                        0.00       0.00 r
+  regR0/output_reg[2]/QN (DFFR_X1)                        0.07       0.07 r
+  regR0/U6/ZN (INV_X2)                                    0.04       0.11 f
+  regR0/output[2] (REG_n_n8_8)                            0.00       0.11 f
+  mult_203/b[2] (IIRlookahead_DW_mult_tc_6)               0.00       0.11 f
+  mult_203/U226/ZN (AND2_X1)                              0.05       0.15 f
+  mult_203/U51/CO (HA_X1)                                 0.05       0.20 f
+  mult_203/U49/CO (FA_X1)                                 0.09       0.29 f
+  mult_203/U46/S (FA_X1)                                  0.15       0.44 r
+  mult_203/U196/ZN (INV_X1)                               0.02       0.46 f
+  mult_203/U208/ZN (OAI222_X1)                            0.07       0.54 r
+  mult_203/U193/ZN (NAND2_X1)                             0.04       0.58 f
+  mult_203/U168/ZN (AND3_X2)                              0.05       0.63 f
+  mult_203/U177/ZN (OAI222_X1)                            0.06       0.69 r
+  mult_203/U149/ZN (XNOR2_X1)                             0.04       0.73 f
+  mult_203/product[7] (IIRlookahead_DW_mult_tc_6)         0.00       0.73 f
+  add_226/B[0] (IIRlookahead_DW01_add_5)                  0.00       0.73 f
+  add_226/U19/ZN (NAND2_X1)                               0.05       0.78 r
+  add_226/U1/ZN (NAND3_X1)                                0.04       0.82 f
+  add_226/U40/ZN (NAND2_X1)                               0.04       0.85 r
+  add_226/U42/ZN (NAND3_X1)                               0.04       0.90 f
+  add_226/U47/ZN (NAND2_X1)                               0.04       0.94 r
+  add_226/U21/ZN (NAND3_X1)                               0.04       0.98 f
+  add_226/U25/ZN (NAND2_X1)                               0.03       1.01 r
+  add_226/U10/ZN (NAND3_X1)                               0.04       1.05 f
+  add_226/U13/ZN (NAND2_X1)                               0.04       1.09 r
+  add_226/U9/ZN (NAND3_X1)                                0.04       1.12 f
+  add_226/U32/ZN (NAND2_X1)                               0.03       1.15 r
+  add_226/U35/ZN (NAND3_X1)                               0.03       1.19 f
+  add_226/U1_6/CO (FA_X1)                                 0.09       1.27 f
+  add_226/U49/ZN (XNOR2_X1)                               0.06       1.33 f
+  add_226/SUM[7] (IIRlookahead_DW01_add_5)                0.00       1.33 f
+  reg1_PIPEstage1/input[7] (REG_n_n8_5)                   0.00       1.33 f
+  reg1_PIPEstage1/U18/ZN (NAND2_X1)                       0.03       1.36 r
+  reg1_PIPEstage1/U17/ZN (NAND2_X1)                       0.02       1.38 f
+  reg1_PIPEstage1/output_reg[7]/D (DFFR_X1)               0.01       1.39 f
+  data arrival time                                                  1.39
+
+  clock MY_CLK (rise edge)                                1.50       1.50
+  clock network delay (ideal)                             0.00       1.50
+  clock uncertainty                                      -0.07       1.43
+  reg1_PIPEstage1/output_reg[7]/CK (DFFR_X1)              0.00       1.43 r
+  library setup time                                     -0.04       1.39
+  data required time                                                 1.39
+  --------------------------------------------------------------------------
+  data required time                                                 1.39
+  data arrival time                                                 -1.39
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

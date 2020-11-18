@@ -1,0 +1,10 @@
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/data_maker_look_ahead.vhd
+vcom -93 -work ./work ../tb/data_sink_look_ahead_pipe.vhd
+vcom -93 -work ./work ../src/reg_v.vhd
+vcom -93 -work ./work ../src/register.vhd
+vcom -93 -work ./work ../src/IIRlookahead.vhd
+
+vlog -work ./work ../tb/tb_iir_look_ahead.v
+
+vsim work.estIIR_look_ahead_pipe

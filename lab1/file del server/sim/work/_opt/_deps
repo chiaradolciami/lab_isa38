@@ -1,0 +1,7 @@
+H 2141964 11 4 0 1 1 0 0 0 0
+L 39 /software/dk/nangate45/verilog/msim6.2g 39 /software/dk/nangate45/verilog/msim6.2g
+L 4 ieee 19 $MODEL_TECH/../ieee
+L 3 std 18 $MODEL_TECH/../std
+L 4 work 6 ./work
+D 16 ./work.iir(arch) 8FK1@iHm5hQoCPYieigKD3 0 1
+2 0  0 b:A4A_9_aXbo1;VhVf_<m3 0 0 1

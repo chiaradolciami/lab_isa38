@@ -1,0 +1,795 @@
+
+Cadence Innovus(TM) Implementation System.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+
+Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+Options:	
+Date:		Mon Oct 26 20:10:07 2020
+Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+OS:		CentOS Linux release 7.6.1810 (Core) 
+
+License:
+		invs	Innovus Implementation System	17.1	checkout succeeded
+		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+
+**INFO:  MMMC transition support version v31-84 
+
+<CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+<CMD> suppressMessage ENCEXT-2799
+<CMD> getDrawView
+<CMD> loadWorkspace -name Physical
+<CMD> win
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> encMessage info 1
+<CMD> restoreDesign /home/isa38/Desktop/lab1/innovus/IIR.enc.dat IIR
+#% Begin load design ... (date=10/26 20:12:15, mem=409.7M)
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+% Begin Load MMMC data ... (date=10/26 20:12:15, mem=411.2M)
+% End Load MMMC data ... (date=10/26 20:12:16, total cpu=0:00:00.0, real=0:00:00.0, peak res=411.3M, current mem=411.3M)
+my_rc
+
+Loading LEF file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon Oct 26 20:12:16 2020
+viaInitial ends at Mon Oct 26 20:12:16 2020
+Loading view definition file from /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/viewDefinition.tcl
+Reading MY_LIBSET timing library '/software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib' ...
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND2_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND3_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AND4_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI21_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI22_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI211_X4' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X1' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+**WARN: (TECHLIB-436):	Attribute 'max_fanout' on 'output/inout' pin 'ZN' of cell 'AOI221_X2' is not defined in the library. (File /software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib)
+Message <TECHLIB-436> has exceeded the message display limit of '20'. Use 'set_message -no_limit -id list_of_msgIDs' to reset the message limit.
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.04min, real=0.10min, mem=21.0M, fe_cpu=0.47min, fe_real=2.25min, fe_mem=524.8M) ***
+% Begin Load netlist data ... (date=10/26 20:12:22, mem=506.0M)
+*** Begin netlist parsing (mem=524.8M) ***
+Created 134 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 532.809M, initial mem = 179.684M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=532.8M) ***
+% End Load netlist data ... (date=10/26 20:12:22, total cpu=0:00:00.0, real=0:00:00.0, peak res=506.0M, current mem=434.9M)
+Set top cell to IIR.
+Hooked 134 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell IIR ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 548 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 535.559M, initial mem = 179.684M) ***
+*info: set bottom ioPad orient R0
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/NCSU_FreePDK_45nm.capTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: master_techFreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: MyAnView
+    RC-Corner Name        : my_rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/NCSU_FreePDK_45nm.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/IIR.sdc' ...
+Current (total cpu=0:00:29.1, real=0:02:17, peak res=560.5M, current mem=560.5M)
+INFO (CTE): Constraints read successfully.
+WARNING (CTE-25): Line: 8 of File /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/IIR.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:01.0, peak res=577.0M, current mem=577.0M)
+Current (total cpu=0:00:29.3, real=0:02:18, peak res=577.0M, current mem=577.0M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+% Begin Load floorplan data ... (date=10/26 20:12:25, mem=579.1M)
+Reading floorplan file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.fp.gz (mem = 675.9M).
+% Begin Load floorplan data ... (date=10/26 20:12:25, mem=579.2M)
+*info: reset 739 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 112480 106960)
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.fp.spr.gz (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=10/26 20:12:25, total cpu=0:00:00.0, real=0:00:01.0, peak res=579.8M, current mem=579.8M)
+% End Load floorplan data ... (date=10/26 20:12:26, total cpu=0:00:00.1, real=0:00:01.0, peak res=579.8M, current mem=579.8M)
+% Begin Load SymbolTable ... (date=10/26 20:12:26, mem=579.8M)
+% End Load SymbolTable ... (date=10/26 20:12:26, total cpu=0:00:00.0, real=0:00:00.0, peak res=580.0M, current mem=580.0M)
+% Begin Load placement data ... (date=10/26 20:12:26, mem=580.0M)
+Reading placement file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.place.gz.
+*** Checked 2 GNC rules.
+*** applyConnectGlobalNets disabled.
+** Reading stdCellPlacement_binary (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020, version# 1) ...
+*** Checked 2 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:00.0 mem=675.9M) ***
+Total net length = 4.078e+03 (2.091e+03 1.987e+03) (ext = 2.017e+02)
+% End Load placement data ... (date=10/26 20:12:26, total cpu=0:00:00.1, real=0:00:00.0, peak res=581.2M, current mem=581.2M)
+*** Checked 2 GNC rules.
+*** Applying global-net connections...
+*** Applied 2 GNC rules (cpu = 0:00:00.0)
+% Begin Load routing data ... (date=10/26 20:12:26, mem=581.2M)
+Reading routing file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.route.gz.
+Reading Innovus routing data (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020 Format: 16.2) ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+*** Total 739 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:01.0 mem=675.9M) ***
+% End Load routing data ... (date=10/26 20:12:27, total cpu=0:00:00.1, real=0:00:01.0, peak res=583.1M, current mem=583.1M)
+Reading property file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=675.9M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=10/26 20:12:28, mem=583.8M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=10/26 20:12:28, total cpu=0:00:00.0, real=0:00:00.0, peak res=583.8M, current mem=583.5M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=10/26 20:12:28, mem=588.7M)
+AAE DB initialization (MEM=701.543 CPU=0:00:00.2 REAL=0:00:01.0) 
+% End load AAE data ... (date=10/26 20:12:29, total cpu=0:00:00.2, real=0:00:01.0, peak res=588.7M, current mem=587.8M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+#% End load design ... (date=10/26 20:12:29, total cpu=0:00:05.1, real=0:00:14.0, peak res=590.8M, current mem=590.8M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+WARNING   TECHLIB-436         20  Attribute '%s' on '%s' pin '%s' of cell ...
+*** Message Summary: 23 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> encMessage info 1
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> encMessage info 1
+<CMD> restoreDesign /home/isa38/Desktop/lab1/innovus/IIR.enc.dat IIR
+#% Begin load design ... (date=10/26 20:12:41, mem=591.3M)
+Resetting process node dependent CCOpt properties.
+Free PSO.
+Reset cap table.
+Cleaning up the current multi-corner RC extraction setup.
+Resetting process node dependent CCOpt properties.
+AAE DB initialization (MEM=711.184 CPU=0:00:00.2 REAL=0:00:01.0) 
+**WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+
+*** Memory Usage v#1 (Current mem = 548.793M, initial mem = 179.684M) ***
+
+
+Info (SM2C): Status of key globals:
+	 MMMC-by-default flow     : 1
+	 Default MMMC objs envvar : 0
+	 Data portability         : 0
+	 MMMC PV Emulation        : 0
+	 MMMC debug               : 0
+	 Init_Design flow         : 1
+
+
+	 CTE SM2C global          : false
+	 Reporting view filter    : false
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+% Begin Load MMMC data ... (date=10/26 20:12:45, mem=602.6M)
+% End Load MMMC data ... (date=10/26 20:12:45, total cpu=0:00:00.0, real=0:00:00.0, peak res=602.6M, current mem=469.3M)
+my_rc
+
+Loading LEF file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/lef/NangateOpenCellLibrary.lef ...
+Set DBUPerIGU to M2 pitch 380.
+
+viaInitial starts at Mon Oct 26 20:12:45 2020
+viaInitial ends at Mon Oct 26 20:12:45 2020
+Loading view definition file from /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/viewDefinition.tcl
+Reading MY_LIBSET timing library '/software/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib' ...
+Read 134 cells in library 'NangateOpenCellLibrary' 
+*** End library_loading (cpu=0.03min, real=0.07min, mem=8.0M, fe_cpu=0.58min, fe_real=2.70min, fe_mem=559.9M) ***
+% Begin Load netlist data ... (date=10/26 20:12:49, mem=461.4M)
+*** Begin netlist parsing (mem=559.9M) ***
+Created 134 new cells from 1 timing libraries.
+Reading netlist ...
+Backslashed names will retain backslash and a trailing blank character.
+Reading verilogBinary netlist '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.v.bin'
+Reading binary database version 1
+
+*** Memory Usage v#1 (Current mem = 566.902M, initial mem = 179.684M) ***
+*** End netlist parsing (cpu=0:00:00.0, real=0:00:00.0, mem=566.9M) ***
+% End Load netlist data ... (date=10/26 20:12:49, total cpu=0:00:00.0, real=0:00:00.0, peak res=464.1M, current mem=464.1M)
+Set top cell to IIR.
+Hooked 134 DB cells to tlib cells.
+Starting recursive module instantiation check.
+No recursion found.
+Building hierarchical netlist for Cell IIR ...
+*** Netlist is unique.
+** info: there are 135 modules.
+** info: there are 548 stdCell insts.
+
+*** Memory Usage v#1 (Current mem = 578.570M, initial mem = 179.684M) ***
+*info: set bottom ioPad orient R0
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+Set Default Net Delay as 1000 ps.
+Set Default Net Load as 0.5 pF. 
+Set Default Input Pin Transition as 0.1 ps.
+Loading preference file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/gui.pref.tcl ...
+**WARN: (IMPTCM-77):	Option "-drouteStartIteration" for command setNanoRouteMode is obsolete and will be removed in a future release. The obsolete option still works in this release but to avoid this warning and to ensure compatibility with future releases, remove the obsolete option from your script.
+addRing command will ignore shorts while creating rings.
+addRing command will disallow rings to go over rows.
+addRing command will consider rows while creating rings.
+The ring targets are set to core/block ring wires.
+**WARN: analysis view MyAnView not found, use default_view_setup
+Extraction setup Started 
+Initializing multi-corner RC extraction with 1 active RC Corners ...
+Reading Capacitance Table File /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/NCSU_FreePDK_45nm.capTbl ...
+Cap table was created using Encounter 08.10-p004_1.
+Process name: master_techFreePDK45.
+Importing multi-corner RC tables ... 
+Summary of Active RC-Corners : 
+ 
+ Analysis View: MyAnView
+    RC-Corner Name        : my_rc
+    RC-Corner Index       : 0
+    RC-Corner Temperature : 25 Celsius
+    RC-Corner Cap Table   : '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/NCSU_FreePDK_45nm.capTbl'
+    RC-Corner PreRoute Res Factor         : 1
+    RC-Corner PreRoute Cap Factor         : 1
+    RC-Corner PostRoute Res Factor        : 1 {1 1 1}
+    RC-Corner PostRoute Cap Factor        : 1 {1 1 1}
+    RC-Corner PostRoute XCap Factor       : 1 {1 1 1}
+    RC-Corner PreRoute Clock Res Factor   : 1	[Derived from postRoute_res (effortLevel low)]
+    RC-Corner PreRoute Clock Cap Factor   : 1	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Cap Factor  : 1 {1 1 1} 	[Derived from postRoute_cap (effortLevel low)]
+    RC-Corner PostRoute Clock Res Factor  : 1 {1 1 1} 	[Derived from postRoute_res (effortLevel low)]
+*Info: initialize multi-corner CTS.
+Reading timing constraints file '/home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/IIR.sdc' ...
+Current (total cpu=0:00:35.7, real=0:02:45, peak res=602.6M, current mem=583.2M)
+INFO (CTE): Constraints read successfully.
+WARNING (CTE-25): Line: 8 of File /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/libs/mmmc/IIR.sdc : Skipped unsupported command: set_units
+
+
+Ending "Constraint file reading stats" (total cpu=0:00:00.1, real=0:00:00.0, peak res=591.6M, current mem=591.6M)
+Current (total cpu=0:00:35.8, real=0:02:45, peak res=602.6M, current mem=591.6M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+% Begin Load floorplan data ... (date=10/26 20:12:52, mem=592.3M)
+Reading floorplan file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.fp.gz (mem = 699.8M).
+% Begin Load floorplan data ... (date=10/26 20:12:52, mem=592.3M)
+*info: reset 739 existing net BottomPreferredLayer and AvoidDetour
+Deleting old partition specification.
+Set FPlanBox to (0 0 112480 106960)
+Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+ ... processed partition successfully.
+Reading binary special route file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.fp.spr.gz (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020, version: 1)
+Extracting standard cell pins and blockage ...... 
+Pin and blockage extraction finished
+% End Load floorplan data ... (date=10/26 20:12:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=592.4M, current mem=592.4M)
+% End Load floorplan data ... (date=10/26 20:12:52, total cpu=0:00:00.1, real=0:00:00.0, peak res=592.4M, current mem=592.4M)
+% Begin Load SymbolTable ... (date=10/26 20:12:52, mem=592.4M)
+% End Load SymbolTable ... (date=10/26 20:12:52, total cpu=0:00:00.0, real=0:00:00.0, peak res=592.5M, current mem=592.5M)
+% Begin Load placement data ... (date=10/26 20:12:52, mem=592.5M)
+Reading placement file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.place.gz.
+*** Checked 2 GNC rules.
+*** applyConnectGlobalNets disabled.
+** Reading stdCellPlacement_binary (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020, version# 1) ...
+*** Checked 2 GNC rules.
+*** applyConnectGlobalNets disabled.
+*** Completed restorePlace (cpu=0:00:00.0 real=0:00:01.0 mem=699.8M) ***
+Total net length = 4.078e+03 (2.091e+03 1.987e+03) (ext = 2.017e+02)
+% End Load placement data ... (date=10/26 20:12:53, total cpu=0:00:00.1, real=0:00:01.0, peak res=593.4M, current mem=593.4M)
+*** Checked 2 GNC rules.
+*** Applying global-net connections...
+*** Applied 2 GNC rules (cpu = 0:00:00.0)
+% Begin Load routing data ... (date=10/26 20:12:53, mem=593.4M)
+Reading routing file - /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.route.gz.
+Reading Innovus routing data (Created by Innovus v17.11-s080_1 on Mon Oct 26 18:58:14 2020 Format: 16.2) ...
+Suppress "**WARN ..." messages.
+Un-suppress "**WARN ..." messages.
+*** Total 739 nets are successfully restored.
+*** Completed restoreRoute (cpu=0:00:00.0 real=0:00:00.0 mem=699.8M) ***
+% End Load routing data ... (date=10/26 20:12:53, total cpu=0:00:00.1, real=0:00:00.0, peak res=595.0M, current mem=595.0M)
+Reading property file /home/isa38/Desktop/lab1/innovus/IIR.enc.dat/IIR.prop
+*** Completed restoreProperty (cpu=0:00:00.0 real=0:00:00.0 mem=699.8M) ***
+Set Default Input Pin Transition as 0.1 ps.
+**WARN: (GLOBAL-100):	Global 'timing_enable_default_delay_arc' has become obsolete. It will be removed in the next release.
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+% Begin Load power constraints ... (date=10/26 20:12:53, mem=594.6M)
+'set_default_switching_activity' finished successfully.
+% End Load power constraints ... (date=10/26 20:12:53, total cpu=0:00:00.0, real=0:00:00.0, peak res=594.6M, current mem=594.6M)
+Start generating vias ...
+#Skip building auto via since it is not turned on.
+Via generation completed.
+% Begin load AAE data ... (date=10/26 20:12:54, mem=595.6M)
+AAE DB initialization (MEM=720.453 CPU=0:00:00.2 REAL=0:00:00.0) 
+% End load AAE data ... (date=10/26 20:12:54, total cpu=0:00:00.2, real=0:00:00.0, peak res=596.3M, current mem=596.3M)
+Total number of combinational cells: 99
+Total number of sequential cells: 29
+Total number of tristate cells: 6
+Total number of level shifter cells: 0
+Total number of power gating cells: 0
+Total number of isolation cells: 0
+Total number of power switch cells: 0
+Total number of pulse generator cells: 0
+Total number of always on buffers: 0
+Total number of retention cells: 0
+List of usable buffers: BUF_X1 BUF_X2 BUF_X4 BUF_X8 BUF_X16 BUF_X32 CLKBUF_X1 CLKBUF_X2 CLKBUF_X3
+Total number of usable buffers: 9
+List of unusable buffers:
+Total number of unusable buffers: 0
+List of usable inverters: INV_X1 INV_X2 INV_X4 INV_X8 INV_X16 INV_X32
+Total number of usable inverters: 6
+List of unusable inverters:
+Total number of unusable inverters: 0
+List of identified usable delay cells:
+Total number of identified usable delay cells: 0
+List of identified unusable delay cells:
+Total number of identified unusable delay cells: 0
+No delay cells were detected in the set of buffers. Buffers will be used to fix hold violations.
+#% End load design ... (date=10/26 20:12:54, total cpu=0:00:06.0, real=0:00:13.0, peak res=602.6M, current mem=596.3M)
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+WARNING   IMPTCM-77            1  Option "%s" for command %s is obsolete a...
+WARNING   GLOBAL-100           2  Global '%s' has become obsolete. It will...
+*** Message Summary: 4 warning(s), 0 error(s)
+
+<CMD> setDrawView fplan
+<CMD> encMessage warning 1
+<CMD> encMessage debug 0
+<CMD> encMessage info 1
+<CMD> setLayerPreference pinObj -isVisible 1
+<CMD> setLayerPreference cellBlkgObj -isVisible 1
+<CMD> setLayerPreference layoutObj -isVisible 1
+<CMD> setLayerPreference pinObj -isSelectable 1
+<CMD> setLayerPreference cellBlkgObj -isSelectable 1
+<CMD> setLayerPreference layoutObj -isSelectable 1
+<CMD> setLayerPreference mGrid -isVisible 1
+<CMD> setLayerPreference pGrid -isVisible 1
+<CMD> setLayerPreference userGrid -isVisible 1
+<CMD> setLayerPreference iGrid -isVisible 1
+<CMD> setLayerPreference fmGrid -isVisible 1
+<CMD> setLayerPreference fiGrid -isVisible 1
+<CMD> setLayerPreference fpGrid -isVisible 1
+<CMD> setLayerPreference gcell -isVisible 1
+<CMD> setLayerPreference trimGridObj -isVisible 1
+<CMD> setLayerPreference pgViaGridObj -isVisible 1
+<CMD> setLayerPreference mGrid -isVisible 0
+<CMD> setLayerPreference pGrid -isVisible 0
+<CMD> setLayerPreference userGrid -isVisible 0
+<CMD> setLayerPreference iGrid -isVisible 0
+<CMD> setLayerPreference fmGrid -isVisible 0
+<CMD> setLayerPreference fiGrid -isVisible 0
+<CMD> setLayerPreference fpGrid -isVisible 0
+<CMD> setLayerPreference gcell -isVisible 0
+<CMD> setLayerPreference trimGridObj -isVisible 0
+<CMD> setLayerPreference pgViaGridObj -isVisible 0
+<CMD> setLayerPreference densityMap -isVisible 1
+<CMD> setLayerPreference pinDensityMap -isVisible 1
+<CMD> setLayerPreference timingMap -isVisible 1
+<CMD> setLayerPreference metalDensityMap -isVisible 1
+<CMD> setLayerPreference powerDensity -isVisible 1
+<CMD> setLayerPreference groupmain_Congestion -isVisible 1
+<CMD> ::fit main.layout.win
+<CMD> setLayerPreference densityMap -isVisible 0
+<CMD> setLayerPreference pinDensityMap -isVisible 0
+<CMD> setLayerPreference timingMap -isVisible 0
+<CMD> setLayerPreference metalDensityMap -isVisible 0
+<CMD> setLayerPreference powerDensity -isVisible 0
+<CMD> setLayerPreference groupmain_Congestion -isVisible 0
+<CMD> setLayerPreference trackObj -isVisible 1
+<CMD> setLayerPreference nonPrefTrackObj -isVisible 1
+<CMD> setLayerPreference trackObj -isVisible 0
+<CMD> setLayerPreference nonPrefTrackObj -isVisible 0
+<CMD> zoomOut
+<CMD> zoomOut
+<CMD> zoomIn
+my_rc
+<CMD> reset_parasitics
+Performing RC Extraction ...
+<CMD> extractRC
+Extraction called for design 'IIR' of instances=1730 and nets=739 using extraction engine 'postRoute' at effort level 'low' .
+**WARN: (IMPEXT-3530):	The process node is not set. Use the command setDesignMode -process <process node> prior to extraction for maximum accuracy and optimal automatic threshold setting.
+Type 'man IMPEXT-3530' for more detail.
+PostRoute (effortLevel low) RC Extraction called for design IIR.
+RC Extraction called in multi-corner(1) mode.
+Process corner(s) are loaded.
+ Corner: my_rc
+extractDetailRC Option : -outfile /tmp/innovus_temp_8014_localhost.localdomain_isa38_VixhXb/IIR_8014_u1BGvF.rcdb.d  -extended
+RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+      RC Corner Indexes            0   
+Capacitance Scaling Factor   : 1.00000 
+Coupling Cap. Scaling Factor : 1.00000 
+Resistance Scaling Factor    : 1.00000 
+Clock Cap. Scaling Factor    : 1.00000 
+Clock Res. Scaling Factor    : 1.00000 
+Shrink Factor                : 1.00000
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 834.2M)
+Extracted 10.0342% (CPU Time= 0:00:00.0  MEM= 905.4M)
+Extracted 20.0304% (CPU Time= 0:00:00.0  MEM= 906.4M)
+Extracted 30.0266% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 40.0228% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 50.038% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 60.0342% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 70.0304% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 80.0266% (CPU Time= 0:00:00.1  MEM= 906.4M)
+Extracted 90.0228% (CPU Time= 0:00:00.1  MEM= 907.4M)
+Extracted 100% (CPU Time= 0:00:00.1  MEM= 907.4M)
+Number of Extracted Resistors     : 8503
+Number of Extracted Ground Cap.   : 9158
+Number of Extracted Coupling Cap. : 11504
+Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+ Corner: my_rc
+Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 891.4M)
+PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.2  Real Time: 0:00:01.0  MEM: 895.434M)
+<CMD> rcOut -setload IIR.setload -rc_corner my_rc
+RC Out has the following PVT Info:
+   RC:my_rc, Operating temperature 25 C
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 895.4M)
+<CMD> rcOut -setres IIR.setres -rc_corner my_rc
+RC Out has the following PVT Info:
+   RC:my_rc, Operating temperature 25 C
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 895.4M)
+<CMD> rcOut -spf IIR.spf -rc_corner my_rc
+RC Out has the following PVT Info:
+   RC:my_rc, Operating temperature 25 C
+Printing *|NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.1  MEM= 895.4M)
+<CMD> rcOut -spef IIR.spef -rc_corner my_rc
+RC Out has the following PVT Info:
+   RC:my_rc, Operating temperature 25 C
+Dumping Spef file.....
+Printing D_NET...
+RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 895.4M)
+<CMD> set_power_analysis_mode -reset
+<CMD> set_power_analysis_mode -method static -corner max -create_binary_db true -write_static_currents true -honor_negative_energy true -ignore_control_signals true
+**ERROR: (VOLTUS-1089):	Activity file () does not exist.
+<CMD> set_power_output_dir -reset
+<CMD> set_power_output_dir ./
+<CMD> set_default_switching_activity -reset
+<CMD> set_default_switching_activity -input_activity 0.2 -period 10.0
+'set_default_switching_activity' finished successfully.
+<CMD> read_activity_file -reset
+<CMD> read_activity_file -format VCD -scope /testIIR/UUT -start {} -end {} -block {} ../vcd/design.vcd
+'read_activity_file' finished successfully.
+<CMD> set_power -reset
+<CMD> set_powerup_analysis -reset
+<CMD> set_dynamic_power_simulation -reset
+<CMD> report_power -rail_analysis_format VS -outfile .//IIR.rpt
+
+Power Net Detected:
+    Voltage	    Name
+    0.00V	    VSS
+    1.10V	    VDD
+Starting SI iteration 1 using Infinite Timing Windows
+#################################################################################
+# Design Stage: PostRoute
+# Design Name: IIR
+# Design Mode: 90nm
+# Analysis Mode: MMMC OCV 
+# Parasitics Mode: SPEF/RCDB
+# Signoff Settings: SI On 
+#################################################################################
+AAE_INFO: 1 threads acquired from CTE.
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=895.434)
+Initializing multi-corner capacitance tables ... 
+Initializing multi-corner resistance tables ...
+AAE_INFO: 1 threads acquired from CTE.
+Total number of fetched objects 776
+AAE_INFO-618: Total number of nets in the design is 739,  100.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1142.5 CPU=0:00:00.6 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1045.12 CPU=0:00:01.1 REAL=0:00:02.0)
+Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1045.1M)
+Add other clocks and setupCteToAAEClockMapping during iter 1
+Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1045.1M)
+Starting SI iteration 2
+Calculate early delays in OCV mode...
+Calculate late delays in OCV mode...
+Start delay calculation (fullDC) (1 T). (MEM=1053.17)
+Glitch Analysis: View MyAnView -- Total Number of Nets Skipped = 0. 
+Glitch Analysis: View MyAnView -- Total Number of Nets Analyzed = 776. 
+Total number of fetched objects 776
+AAE_INFO-618: Total number of nets in the design is 739,  0.0 percent of the nets selected for SI analysis
+End delay calculation. (MEM=1021.17 CPU=0:00:00.0 REAL=0:00:00.0)
+End delay calculation (fullDC). (MEM=1021.17 CPU=0:00:00.1 REAL=0:00:01.0)
+
+Begin Power Analysis
+
+    0.00V	    VSS
+    1.10V	    VDD
+
+Begin Processing Timing Library for Power Calculation
+
+Begin Processing Timing Library for Power Calculation
+
+
+
+Begin Processing Power Net/Grid for Power Calculation
+
+Ended Processing Power Net/Grid for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=753.31MB/753.31MB)
+
+Begin Processing Timing Window Data for Power Calculation
+
+MY_CLK(83.3333MHz) Ended Processing Timing Window Data for Power Calculation: (cpu=0:00:00, real=0:00:00, mem(process/total)=753.51MB/753.51MB)
+
+Parsing VCD file ../vcd/design.vcd
+
+Starting Reading VCD variables
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+
+Finished Reading VCD variables
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+   
+The vcd command required:
+   		0.05 user, 0.04 system, and 0.12 real seconds
+
+   Total number of value changes: 0.
+
+   Total simulation time: 2.026e-06s.
+
+   With this vcd command,  0 value changes and 2.026e-06 second simulation
+time were counted for power consumption calculation.
+
+  Filename (activity)                    : ../vcd/design.vcd
+  Names in file that matched to design   : 0/0
+  Annotation coverage for this file      : 0/737 = 0%
+
+
+  Total annotation coverage for all files of type VCD: 0/737 = 0%
+  Percent of VCD annotated nets with zero toggles: 0/737 = 0%
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=778.69MB/778.69MB)
+
+Begin Processing Signal Activity
+
+
+Starting Levelizing
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 10%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 20%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 30%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 40%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 50%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 60%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 70%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 80%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 90%
+
+Finished Levelizing
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+
+Starting Activity Propagation
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 10%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 20%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 30%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 40%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 50%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 60%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 70%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 80%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 90%
+
+Finished Activity Propagation
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+
+Activity annotation summary:
+        Primary Inputs : 1/35 = 2.85714%
+          Flop outputs : 0/58 = 0%
+  Memory/Macro outputs : 0/0 = 0%
+      Tristate outputs : 0/0 = 0%
+            Total Nets : 1/737 = 0.135685%
+
+Ended Processing Signal Activity: (cpu=0:00:00, real=0:00:00, mem(process/total)=778.89MB/778.89MB)
+
+Begin Power Computation
+
+      ----------------------------------------------------------
+      # of cell(s) missing both power/leakage table: 0
+      # of cell(s) missing power table: 0
+      # of cell(s) missing leakage table: 0
+      # of MSMV cell(s) missing power_level: 0
+      ----------------------------------------------------------
+
+
+
+Starting Calculating power
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT)
+ ... Calculating switching power
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 10%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 20%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 30%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 40%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 50%
+ ... Calculating internal and leakage power
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 60%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 70%
+2020-Oct-26 20:19:01 (2020-Oct-26 19:19:01 GMT): 80%
+2020-Oct-26 20:19:02 (2020-Oct-26 19:19:02 GMT): 90%
+
+Finished Calculating power
+2020-Oct-26 20:19:02 (2020-Oct-26 19:19:02 GMT)
+Ended Power Computation: (cpu=0:00:00, real=0:00:00, mem(process/total)=779.27MB/779.27MB)
+
+Begin Processing User Attributes
+
+Ended Processing User Attributes: (cpu=0:00:00, real=0:00:00, mem(process/total)=779.27MB/779.27MB)
+
+Ended Power Analysis: (cpu=0:00:00, real=0:00:01, mem(process/total)=779.32MB/779.32MB)
+
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.19869868 	   52.3341%
+Total Switching Power:       0.15903583 	   41.8876%
+Total Leakage Power:         0.02193874 	    5.7783%
+Total Power:                 0.37967325
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=779.60MB/779.60MB)
+
+Begin Creating Binary Database
+Ended Creating Binary Database: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=779.61MB/779.61MB)
+
+Output file is .//IIR.rpt.
+<CMD> report_power -outfile ReportPower -sort { total }
+Begin Static Power Report Generation
+*
+
+
+
+Total Power
+-----------------------------------------------------------------------------------------
+Total Internal Power:        0.19869868 	   52.3341%
+Total Switching Power:       0.15903583 	   41.8876%
+Total Leakage Power:         0.02193874 	    5.7783%
+Total Power:                 0.37967325
+-----------------------------------------------------------------------------------------
+Ended Static Power Report Generation: (cpu=0:00:00, real=0:00:00,
+mem(process/total)=781.09MB/781.09MB)
+
+
+Output file is .//ReportPower.
+
+*** Memory Usage v#1 (Current mem = 1041.184M, initial mem = 179.684M) ***
+*** Message Summary: 28 warning(s), 4 error(s)
+
+--- Ending "Innovus" (totcpu=0:01:09, real=0:14:57, mem=1041.2M) ---
