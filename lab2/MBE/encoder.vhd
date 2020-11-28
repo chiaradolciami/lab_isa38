@@ -10,7 +10,7 @@ end encoder;
 architecture behavior of encoder is
 begin
 
-    process(A,B)
+    process(S)
     begin
         case S is												
                 when "000" =>  --0		
