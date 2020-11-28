@@ -2,9 +2,9 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity encoder is 
-Port (  I: 		In std_logic_vector (31 DOWNTO 0);
-        S: 		In std_logic_vector (2 DOWNTO 0);
-        O:  	Out std_logic_vector (32 DOWNTO 0));
+Port (  I: 		In std_logic_vector (31 downto 0);
+        S: 		In std_logic_vector (2 downto 0);
+        O:  	Out std_logic_vector (32 downto 0));
 end encoder;
 
 architecture behavior of encoder is
