@@ -1,0 +1,67 @@
+library ieee;
+use ieee.std_logic_1164.all; 
+
+
+--Package Declaration Levels------------------------------------------------
+package Level_type is
+type Partial_product_T is array (0 to 15) of std_logic_vector (32 downto 0);
+type Level7_T is array (0 to 16) of std_logic_vector (63 downto 0);
+type Level6_T is array (0 to 12) of std_logic_vector (63 downto 0);
+type Level5_T is array (0 to 8) of std_logic_vector (63 downto 0);
+type Level4_T is array (0 to 5) of std_logic_vector (63 downto 0);
+type Level3_T is array (0 to 3) of std_logic_vector (63 downto 0);
+type Level2_T is array (0 to 2) of std_logic_vector (63 downto 0);
+type Level1_T is array (0 to 1) of std_logic_vector (63 downto 0);
+end package Level_type;
+----------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all; 
+use work.Level_Type.all;
+
+
+ENTITY DaddaTrees is 
+  port(
+        pp:		in Partial_product_T;
+	B:		in std_logic_vector (31 downto 0);
+	TotalSum:	out std_logic_vector(63 downto 0));
+
+END DaddaTrees;
+
+
+
+
+ARCHITECTURE Behavioural of DaddaTrees is 
+
+-------------Components--------------------------------------------------
+
+COMPONENT Level7 is
+  port (
+	pp_l7:		in Partial_product_T;			--16*33--
+	B:		in std_logic_vector (31 downto 0);
+	L7_out: 	out Level7_T);				--17*64--
+END COMPONENT Level7;
+
+
+
+-------------------------------------------------------------------------
+
+
+
+----------Signals---------
+
+Signal sig_L7_out: Level7_T; 
+
+--------------------------
+
+BEGIN
+
+
+
+Level7_map: LEVEL7 PORT MAP (
+		    	      pp_l7  => pp, 		
+		    	      B      => B, 	
+	           	      L7_out => sig_L7_out);
+
+
+
+END Behavioural;
