@@ -1,0 +1,38 @@
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/data_maker.vhd
+vcom -93 -work ./work ../tb/data_sink.vhd
+
+vcom -93 -work ./work ../src/common/fpnormalize_fpnormalize.vhd
+vcom -93 -work ./work ../src/common/fpround_fpround.vhd
+vcom -93 -work ./work ../src/common/packfp_packfp.vhd
+vcom -93 -work ./work ../src/common/unpackfp_unpackfp.vhd
+
+vcom -93 -work ./work ../src/encoder.vhd
+vcom -93 -work ./work ../src/HA.vhd
+vcom -93 -work ./work ../src/FA.vhd
+vcom -93 -work ./work ../src/rca.vhd
+vcom -93 -work ./work ../src/mbe.vhd
+vcom -93 -work ./work ../src/MBE_multiplier.vhd
+
+vcom -93 -work ./work ../src/multiplier/fpmul_stage1_struct.vhd
+
+vcom -93 -work ./work ../src/FPmul_stage2_MBE_mult.vhd
+
+vcom -93 -work ./work ../src/multiplier/fpmul_stage3_struct.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_stage4_struct.vhd
+vcom -93 -work ./work ../src/multiplier/register.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_single_cycle.vhd
+vcom -93 -work ./work ../src/multiplier/fpmul_pipeline.vhd
+
+vcom -93 -work ./work ../src/Level1.vhd
+vcom -93 -work ./work ../src/Level2.vhd
+vcom -93 -work ./work ../src/Level3.vhd
+vcom -93 -work ./work ../src/Level4.vhd
+vcom -93 -work ./work ../src/Level5.vhd
+vcom -93 -work ./work ../src/Level6.vhd
+vcom -93 -work ./work ../src/Level7.vhd
+vcom -93 -work ./work ../src/DaddaTrees.vhd
+
+vlog -work ./work ../tb/tb_mult.v
+
+vsim work.test_fpmult

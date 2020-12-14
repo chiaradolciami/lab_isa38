@@ -1,0 +1,607 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees
+Edaddatrees
+Z0 w1607537566
+Z1 DPx4 work 10 level_type 0 22 :?`35c54gA;kLH8TCdB1T2
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier
+Z5 8D:/GitHub/lab_isa38/lab2/MBE/DaddaTrees.vhd
+Z6 FD:/GitHub/lab_isa38/lab2/MBE/DaddaTrees.vhd
+l0
+L22
+VH[>ne;69Bf0Dm[eIFn>Z51
+!s100 7WCC6cO8lV3BDi4B]4ggZ0
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1607539539
+!i10b 1
+Z9 !s108 1607539539.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/DaddaTrees.vhd|
+Z11 !s107 D:/GitHub/lab_isa38/lab2/MBE/DaddaTrees.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abehavioural
+R1
+R2
+R3
+DEx4 work 10 daddatrees 0 22 H[>ne;69Bf0Dm[eIFn>Z51
+l107
+L33
+VMWSnXcH8A^?<^8L[oF`z31
+!s100 mjPZI4]YP2L3z:JVAI1i?3
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eencoder
+Z14 w1606584259
+R2
+R3
+R4
+Z15 8D:/GitHub/lab_isa38/lab2/MBE/encoder.vhd
+Z16 FD:/GitHub/lab_isa38/lab2/MBE/encoder.vhd
+l0
+L4
+VVV3lm[9fC3o25AQL]c?dS0
+!s100 PE;NFOib7Wzd=5JcdXZzh1
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/encoder.vhd|
+Z18 !s107 D:/GitHub/lab_isa38/lab2/MBE/encoder.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+DEx4 work 7 encoder 0 22 VV3lm[9fC3o25AQL]c?dS0
+l11
+L10
+VN>JI>bB_IWHNfK>TE:0Tg2
+!s100 iA6OYFBaIUhj`=S[@6SOm1
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Efulladder
+R14
+R2
+R3
+R4
+Z19 8D:/GitHub/lab_isa38/lab2/MBE/FA.vhd
+Z20 FD:/GitHub/lab_isa38/lab2/MBE/FA.vhd
+l0
+L4
+VoD3bf8394HT[KLXDGgVPn3
+!s100 [RGl8:0azF<E1oz3_j?:Y2
+R7
+32
+Z21 !s110 1607539540
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/FA.vhd|
+Z23 !s107 D:/GitHub/lab_isa38/lab2/MBE/FA.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+DEx4 work 9 fulladder 0 22 oD3bf8394HT[KLXDGgVPn3
+l13
+L12
+VcZ2=?9l<IfQ626aDR@5;e0
+!s100 P7Rhi;U_i2c3bdYFQMA[W0
+R7
+32
+R21
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+Ehalfadder
+Z24 w1607536587
+R2
+R3
+R4
+Z25 8D:/GitHub/lab_isa38/lab2/MBE/HA.vhd
+Z26 FD:/GitHub/lab_isa38/lab2/MBE/HA.vhd
+l0
+L4
+Vh9iX0SGzc19]z;G6ODVi?2
+!s100 md[I2R?;D<:EoOO_ZD2RO1
+R7
+32
+R21
+!i10b 1
+Z27 !s108 1607539540.000000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/HA.vhd|
+Z29 !s107 D:/GitHub/lab_isa38/lab2/MBE/HA.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R2
+R3
+DEx4 work 9 halfadder 0 22 h9iX0SGzc19]z;G6ODVi?2
+l12
+L11
+VGDfFFP]c7Pg5Tgh;aG0nZ3
+!s100 iDIPNddEJJ2_GgQOUa;<l1
+R7
+32
+R21
+!i10b 1
+R27
+R28
+R29
+!i113 1
+R12
+R13
+Elevel1
+Z30 w1607537243
+R1
+R2
+R3
+R4
+Z31 8D:/GitHub/lab_isa38/lab2/MBE/Level1.vhd
+Z32 FD:/GitHub/lab_isa38/lab2/MBE/Level1.vhd
+l0
+L11
+V7Bn4ggRP_AnYMXcHmNILa3
+!s100 Oa>KJPfJnhU5SIbZ]Y`oT1
+R7
+32
+R21
+!i10b 1
+R27
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/Level1.vhd|
+Z34 !s107 D:/GitHub/lab_isa38/lab2/MBE/Level1.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R2
+R3
+DEx4 work 6 level1 0 22 7Bn4ggRP_AnYMXcHmNILa3
+l40
+L18
+VZB]CG2D_DWBYH99]bI03?2
+!s100 SZFDMNl^2Fd]BSK5JBGM>2
+R7
+32
+R21
+!i10b 1
+R27
+R33
+R34
+!i113 1
+R12
+R13
+Elevel2
+Z35 w1607535104
+R1
+R2
+R3
+R4
+Z36 8D:/GitHub/lab_isa38/lab2/MBE/Level2.vhd
+Z37 FD:/GitHub/lab_isa38/lab2/MBE/Level2.vhd
+l0
+L11
+VHmjo[654`PK<H6D<^;<jh1
+!s100 n6cD4>NGWP75ZcUj6CV7j3
+R7
+32
+R21
+!i10b 1
+R27
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/Level2.vhd|
+Z39 !s107 D:/GitHub/lab_isa38/lab2/MBE/Level2.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R2
+R3
+DEx4 work 6 level2 0 22 Hmjo[654`PK<H6D<^;<jh1
+l40
+L18
+VJUnJV0c]Io?Fh<953g7nR1
+!s100 ;_dz[WGhO0JWXZUFO[[aX1
+R7
+32
+R21
+!i10b 1
+R27
+R38
+R39
+!i113 1
+R12
+R13
+Elevel3
+Z40 w1607537265
+R1
+R2
+R3
+R4
+Z41 8D:/GitHub/lab_isa38/lab2/MBE/Level3.vhd
+Z42 FD:/GitHub/lab_isa38/lab2/MBE/Level3.vhd
+l0
+L11
+VVKbfm2ZdkO>61mii<cZKF0
+!s100 QnCVPa?36;[a>@Ng=fhZb0
+R7
+32
+R21
+!i10b 1
+R27
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/Level3.vhd|
+Z44 !s107 D:/GitHub/lab_isa38/lab2/MBE/Level3.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R2
+R3
+DEx4 work 6 level3 0 22 VKbfm2ZdkO>61mii<cZKF0
+l40
+L18
+Vc^D1Cn8I3V6cZdR968`4U0
+!s100 cig3RZRVffJ64GATJhf=m0
+R7
+32
+R21
+!i10b 1
+R27
+R43
+R44
+!i113 1
+R12
+R13
+Elevel4
+Z45 w1607537374
+R1
+R2
+R3
+R4
+Z46 8D:/GitHub/lab_isa38/lab2/MBE/Level4.vhd
+Z47 FD:/GitHub/lab_isa38/lab2/MBE/Level4.vhd
+l0
+L11
+VWf5f>3n0Tg@hEkA9iKmiH2
+!s100 5mbQLaLI?]@h:[2<k]J@G1
+R7
+32
+R21
+!i10b 1
+R27
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/Level4.vhd|
+Z49 !s107 D:/GitHub/lab_isa38/lab2/MBE/Level4.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R2
+R3
+DEx4 work 6 level4 0 22 Wf5f>3n0Tg@hEkA9iKmiH2
+l40
+L18
+V_Hch@6Ih_jf>F?XPeEJNT1
+!s100 DZVFjUVWHQi>QXZTJWz9z3
+R7
+32
+R21
+!i10b 1
+R27
+R48
+R49
+!i113 1
+R12
+R13
+Elevel5
+Z50 w1607372204
+R1
+Z51 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R4
+Z52 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd
+Z53 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd
+l0
+L12
+VmlHTV8kie_6i@gR`@]O_D0
+!s100 gX>HGP?O[28@H_Oh7?WYE3
+R7
+32
+R21
+!i10b 1
+R27
+Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd|
+Z55 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R51
+R2
+R3
+Z56 DEx4 work 6 level5 0 22 mlHTV8kie_6i@gR`@]O_D0
+l42
+L20
+Z57 VFfgWHk657kRN5`_<3?X>81
+Z58 !s100 @3b^Y6=C0DLPRa8nKkVB^1
+R7
+32
+R21
+!i10b 1
+R27
+R54
+R55
+!i113 1
+R12
+R13
+Elevel6
+Z59 w1607372076
+R1
+R51
+R2
+R3
+R4
+Z60 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd
+Z61 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd
+l0
+L12
+VE83eF_3W]Of@BUAkFIg7a0
+!s100 7AXZd0mC2WP_UmXoTCV?50
+R7
+32
+R21
+!i10b 1
+R27
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd|
+Z63 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R51
+R2
+R3
+DEx4 work 6 level6 0 22 E83eF_3W]Of@BUAkFIg7a0
+l41
+L19
+V@S4WHBL>HA7`kHb87V9Jb2
+!s100 0L:7e9ZeB7C`QCY7Q4d:M3
+R7
+32
+R21
+!i10b 1
+R27
+R62
+R63
+!i113 1
+R12
+R13
+Elevel7
+R35
+R1
+R2
+R3
+R4
+Z64 8D:/GitHub/lab_isa38/lab2/MBE/Level7.vhd
+Z65 FD:/GitHub/lab_isa38/lab2/MBE/Level7.vhd
+l0
+L11
+VzW5oWYOQ``5@;g<=OA2go2
+!s100 =bgXAN7>27:3dRRhg:UAO2
+R7
+32
+R21
+!i10b 1
+R27
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/Level7.vhd|
+Z67 !s107 D:/GitHub/lab_isa38/lab2/MBE/Level7.vhd|
+!i113 1
+R12
+R13
+Abehavioural
+R1
+R2
+R3
+DEx4 work 6 level7 0 22 zW5oWYOQ``5@;g<=OA2go2
+l23
+L18
+V63j@cMz;;[HdzcY;Pn[=I3
+!s100 983PTaWfO;9EM?c=cNY;g1
+R7
+32
+R21
+!i10b 1
+R27
+R66
+R67
+!i113 1
+R12
+R13
+Plevel_type
+R2
+R3
+R0
+R4
+R5
+R6
+l0
+L6
+V:?`35c54gA;kLH8TCdB1T2
+!s100 YcB:>5l=JNSzYj]=N_T2o1
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Embe
+Z68 w1607536759
+R1
+R51
+R2
+R3
+R4
+Z69 8D:/GitHub/lab_isa38/lab2/MBE/mbe.vhd
+Z70 FD:/GitHub/lab_isa38/lab2/MBE/mbe.vhd
+l0
+L7
+VCj]WOj2<MllXHaA^4NjT<1
+!s100 keMO7YP5J0fa>VS?n0fNe2
+R7
+32
+R21
+!i10b 1
+R27
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/mbe.vhd|
+Z72 !s107 D:/GitHub/lab_isa38/lab2/MBE/mbe.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R51
+R2
+R3
+DEx4 work 3 mbe 0 22 Cj]WOj2<MllXHaA^4NjT<1
+l26
+L13
+VEP`XiG[770Y@GjhhAfmX;3
+!s100 ?cMKZ2;F@8RA75j>Nbblb1
+R7
+32
+R21
+!i10b 1
+R27
+R71
+R72
+!i113 1
+R12
+R13
+Embe_multiplier
+Z73 w1607539477
+R1
+R51
+R2
+R3
+R4
+Z74 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd
+Z75 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd
+l0
+L6
+V:LOH3<hfT4=:;`odOO5Pf0
+!s100 CD4P@[Oc4F[8O=Z3WBFo:1
+R7
+32
+R8
+!i10b 1
+R9
+Z76 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd|
+Z77 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R1
+R51
+R2
+R3
+DEx4 work 14 mbe_multiplier 0 22 :LOH3<hfT4=:;`odOO5Pf0
+l34
+L14
+V^a23K`Ud]M<K>OBbD<G]R3
+!s100 =:20;XTCK]PC09gkDi6j=3
+R7
+32
+R8
+!i10b 1
+R9
+R76
+R77
+!i113 1
+R12
+R13
+Eripplecarry
+Z78 w1607536659
+R51
+R2
+R3
+R4
+Z79 8D:/GitHub/lab_isa38/lab2/MBE/rca.vhd
+Z80 FD:/GitHub/lab_isa38/lab2/MBE/rca.vhd
+l0
+L5
+V?WQc4R]3PD9cQVC3HP=[30
+!s100 NinAmomTCMHHA_Q^i3Xg_2
+R7
+32
+R21
+!i10b 1
+R27
+Z81 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|D:/GitHub/lab_isa38/lab2/MBE/rca.vhd|
+Z82 !s107 D:/GitHub/lab_isa38/lab2/MBE/rca.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R51
+R2
+R3
+DEx4 work 11 ripplecarry 0 22 ?WQc4R]3PD9cQVC3HP=[30
+l32
+L13
+VR2_nf_jUbe?=P^Vf]9NPa0
+!s100 80BL_ZL^D;9^:3J:ojWcD0
+R7
+32
+R21
+!i10b 1
+R27
+R81
+R82
+!i113 1
+R12
+R13
