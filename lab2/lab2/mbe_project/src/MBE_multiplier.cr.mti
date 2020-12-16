@@ -1,0 +1,184 @@
+{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level1
+-- Compiling architecture behavioural of Level1
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfadder
+-- Compiling architecture behavior of halfadder
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level2
+-- Compiling architecture behavioural of Level2
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 19:45:18 on Dec 09,2020
+vcom -reportprogress 300 -work work -2002 -explicit D:/GitHub/lab_isa38/lab2/MBE/Level1.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package std_logic_1164
+-- Loading package Level_type
+Start time: 19:45:18 on Dec 09,2020
+-- Compiling entity Level1
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd 
+** Warning: (vcom-6) -- Waiting for lock by "Utente@DESKTOP-AUFLOKH, pid = 10940
+-- Compiling architecture behavioural of Level1
+End time: 19:45:18 on Dec 09,2020, Elapsed time: 0:00:00
+". Lockfile is "C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/work/_lock".
+Errors: 0, Warnings: 0
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity MBE_multiplier
+-- Compiling architecture BEHAVIORAL of MBE_multiplier
+End time: 19:45:19 on Dec 09,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 1
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level3
+-- Compiling architecture behavioural of Level3
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level4
+-- Compiling architecture behavioural of Level4
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 19:45:26 on Dec 09,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level5.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level5
+-- Compiling architecture behavioural of Level5
+End time: 19:45:26 on Dec 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level5
+-- Compiling architecture behavioural of Level5
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ripplecarry
+-- Compiling architecture behavior of ripplecarry
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level6
+-- Compiling architecture behavioural of Level6
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level7
+-- Compiling architecture behavioural of Level7
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity encoder
+-- Compiling architecture behavior of encoder
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package Level_type
+-- Loading package Level_type
+-- Compiling entity DaddaTrees
+-- Compiling architecture Behavioural of DaddaTrees
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity MBE_multiplier
+-- Compiling architecture BEHAVIORAL of MBE_multiplier
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/mbe.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:\Users\Utente\Desktop\Magistrale Micro Elettronica\ISA Integrated System Architecture\Laboratory\Lab2\MBE_multiplier\mbe.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity mbe
+-- Compiling architecture behavior of mbe
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 19:45:25 on Dec 09,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees/Level6.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level6
+-- Compiling architecture behavioural of Level6
+End time: 19:45:25 on Dec 09,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture behavior of fulladder
+
+} {} {}}

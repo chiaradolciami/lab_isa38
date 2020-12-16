@@ -1,0 +1,229 @@
+--Level5--
+
+library ieee;
+use ieee.std_logic_1164.all; 
+----------------------------------------------------------------------------
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all; 
+use work.Level_Type.all;
+
+
+ENTITY Level5 is
+  port (
+	L5_in:		in Level6_T;
+	L5_out: 	out Level5_T);				
+END Level5;
+
+
+
+ARCHITECTURE behavioural of Level5 is 
+
+------------- Components --------------------------------------------------
+
+COMPONENT fulladder is
+Port (  A: 		In std_logic;
+        B: 		In std_logic;
+        Cin: 		In std_logic;
+        S: 		Out std_logic;
+        Cout: 		Out std_logic);
+end COMPONENT;
+
+COMPONENT halfadder is       
+Port (  A: 		In std_logic;
+        B: 		In std_logic;
+        S: 		Out std_logic;
+        Cout: 		Out std_logic);
+END COMPONENT;
+
+----------------------------------------------------------------------------
+
+
+BEGIN
+
+--------------- Half Adder Net --- 12 HA -------------------------------------------------------------------------------------------------------------
+
+Column1_16to17_row_0to1: for i in 16 to 17 generate
+			 begin
+			 	Ha_1to2: halfadder port map ( A => L5_in(0)(i),  B => L5_in(1)(i), S => L5_out(0)(i), Cout => L5_out(1)(i+1));
+			 end generate;
+
+Column1_18to19_row_3to4: for i in 18 to 19 generate
+			 begin
+			 	Ha_3to4: halfadder port map ( A => L5_in(3)(i),  B => L5_in(4)(i), S => L5_out(2)(i), Cout => L5_out(3)(i+1));
+			 end generate;
+
+Column1_20to21_row_6to7: for i in 20 to 21 generate
+			 begin
+			 	Ha_5to6: halfadder port map ( A => L5_in(6)(i),  B => L5_in(7)(i), S => L5_out(4)(i), Cout => L5_out(5)(i+1));
+			 end generate;
+
+Column1_22to23_row_9to10: for i in 22 to 23 generate
+			 begin
+			 	Ha_7to8: halfadder port map ( A => L5_in(9)(i),  B => L5_in(10)(i), S => L5_out(6)(i), Cout => L5_out(7)(i+1));
+			 end generate;
+
+Ha_9: halfadder port map ( A => L5_in(9)(44),  B => L5_in(10)(44), S => L5_out(6)(44), Cout => L5_out(7)(45));
+Ha_10: halfadder port map ( A => L5_in(6)(46),  B => L5_in(7)(46), S => L5_out(4)(46), Cout => L5_out(5)(47));
+Ha_11: halfadder port map ( A => L5_in(3)(48),  B => L5_in(4)(48), S => L5_out(2)(48), Cout => L5_out(3)(49));
+Ha_12: halfadder port map ( A => L5_in(0)(50),  B => L5_in(1)(50), S => L5_out(0)(50), Cout => L5_out(1)(51));
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+--------------- Full Adder Net --- 96 FA ------------------------------------------------------------------------------------------------------------------------------
+
+
+Column_18to49_row_0to2: for i in 18 to 49 generate
+			begin
+				FA_1to30 : fulladder port map (A => L5_in(0)(i), B => L5_in(1)(i), Cin => L5_in(2)(i), S => L5_out(0)(i), Cout => L5_out(1)(i+1));
+
+			end generate;
+
+Column_20to47_row_3to5: for i in 20 to 47 generate
+			begin
+				FA_31to56 : fulladder port map (A => L5_in(3)(i), B => L5_in(4)(i), Cin => L5_in(5)(i), S => L5_out(2)(i), Cout => L5_out(3)(i+1));
+
+			end generate;
+
+Column_22to45_row_6to8: for i in 22 to 45 generate
+			begin
+				FA_57to78 : fulladder port map (A => L5_in(6)(i), B => L5_in(7)(i), Cin => L5_in(8)(i), S => L5_out(4)(i), Cout => L5_out(5)(i+1));
+
+			end generate;
+
+Column_24to43_row_6to8: for i in 24 to 43 generate
+			begin
+				FA_79to96: fulladder port map (A => L5_in(9)(i), B => L5_in(10)(i), Cin => L5_in(11)(i), S => L5_out(6)(i), Cout => L5_out(7)(i+1));
+
+			end generate;
+
+
+--------------------------------------------------------------------------------------------
+
+
+
+--------------- The remaining bits witch don't need compression at this Level ---------
+
+--- Column 0 to 15 
+
+Row_0to8: for i in 0 to 8 generate -- Rows are matched to the output rows
+	      begin
+
+		    Column_0to15: for j in 0 to 15 generate 
+	      			  begin
+					 L5_out(i)(j) <= L5_in(i)(j);
+				  end generate;
+			
+	      end generate;
+---
+
+Column_16: for i in 1 to 8 generate 
+	      begin
+		    L5_out(i)(16) <= L5_in(i+1)(16);
+	      end generate;
+
+Column_17: for i in 2 to 8 generate 
+	      begin
+		    L5_out(i)(17) <= L5_in(i)(17);
+	      end generate;
+
+Column_18: for i in 3 to 8 generate 
+	      begin
+		    L5_out(i)(18) <= L5_in(i+2)(18);
+	      end generate;
+
+Column_19: for i in 4 to 8 generate 
+	      begin
+		    L5_out(i)(19) <= L5_in(i+1)(19);
+	      end generate;
+
+Column_20: for i in 5 to 8 generate 
+	      begin
+		    L5_out(i)(20) <= L5_in(i+3)(20);
+	      end generate;
+
+Column_21: for i in 6 to 8 generate 
+	      begin
+		    L5_out(i)(21) <= L5_in(i+2)(21);
+	      end generate;
+
+Column_22: for i in 7 to 8 generate 
+	      begin
+		    L5_out(i)(22) <= L5_in(i+4)(22);
+	      end generate;
+
+
+L5_out(8)(23) <= L5_in(11)(23);
+
+Column_24to41: for i in 24 to 43 generate 
+	      begin
+		    L5_out(8)(i) <= L5_in(12)(i);
+	      end generate;
+
+--L5_out(8)(42) <= L5_in(11)(42);
+--L5_out(8)(43) <= L5_in(10)(43);
+--L5_out(6)(43) <= L5_in(9)(43); --- bit exception
+
+
+L5_out(8)(44) <= L5_in(11)(44);
+
+
+L5_out(8)(45) <= L5_in(10)(45);
+L5_out(6)(45) <= L5_in(9)(45); --- bit exception
+
+Column_46: for i in 6 to 8 generate 
+	      begin
+		    L5_out(i)(46) <= L5_in(i+2)(46);
+	      end generate;
+
+			
+Column_47: for i in 6 to 8 generate 
+	      begin
+		    L5_out(i)(47) <= L5_in(i+1)(47);
+	      end generate;
+L5_out(4)(47) <= L5_in(6)(47); --- bit exception
+
+Column_48: for i in 4 to 8 generate 
+	      begin
+		    L5_out(i)(48) <= L5_in(i+1)(48);
+	      end generate;
+
+Column_49: for i in 4 to 8 generate 
+	      begin
+		    L5_out(i)(49) <= L5_in(i)(49);
+	      end generate;
+L5_out(2)(49) <= L5_in(3)(49); --- bit exception
+
+Column_50: for i in 2 to 8 generate 
+	      begin
+		    L5_out(i)(50) <= L5_in(i)(50);
+	      end generate;
+
+Column_51: for i in 2 to 8 generate 
+	      begin
+		    L5_out(i)(51) <= L5_in(i-1)(51);
+	      end generate;
+L5_out(0)(51) <= L5_in(0)(51); --- bit exception
+
+
+
+
+
+--- Column 50 to 63 
+
+Row_0to8_2: for i in 0 to 8 generate
+	      begin
+
+		    Column_50to63: for j in 52 to 63 generate 
+	      			  begin
+					 L5_out(i)(j) <= L5_in(i)(j);
+				  end generate;
+			
+	      end generate;
+---
+
+-------------------------------------------------------------------------------------------
+
+END behavioural;

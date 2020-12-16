@@ -1,0 +1,460 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec 16 20:42:06 2020
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: I1/B_SIG_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: I2/SIG_in_reg[27]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  FPmul              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  I1/B_SIG_reg[2]/CK (DFF_X1)                             0.00       0.00 r
+  I1/B_SIG_reg[2]/Q (DFF_X1)                              0.10       0.10 r
+  I1/B_SIG[2] (FPmul_stage1)                              0.00       0.10 r
+  I2/B_SIG[2] (FPmul_stage2_MBE_mult)                     0.00       0.10 r
+  I2/MBE_multiplier_1/B[2] (MBE_multiplier)               0.00       0.10 r
+  I2/MBE_multiplier_1/mbe_0/B[2] (mbe)                    0.00       0.10 r
+  I2/MBE_multiplier_1/mbe_0/line_i_1/S[1] (encoder_16)
+                                                          0.00       0.10 r
+  I2/MBE_multiplier_1/mbe_0/line_i_1/U78/ZN (XNOR2_X1)
+                                                          0.08       0.18 r
+  I2/MBE_multiplier_1/mbe_0/line_i_1/U45/ZN (NAND2_X1)
+                                                          0.05       0.22 f
+  I2/MBE_multiplier_1/mbe_0/line_i_1/U49/ZN (OAI22_X1)
+                                                          0.06       0.28 r
+  I2/MBE_multiplier_1/mbe_0/line_i_1/O[4] (encoder_16)
+                                                          0.00       0.28 r
+  I2/MBE_multiplier_1/mbe_0/U271/Z (XOR2_X1)              0.08       0.36 r
+  I2/MBE_multiplier_1/mbe_0/P[1][4] (mbe)                 0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/pp[1][4] (DaddaTrees)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level7_map/pp_l7[1][4] (Level7)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level7_map/L7_out[1][6] (Level7)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level6_map/L6_in[1][6] (Level6)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level6_map/L6_out[1][6] (Level6)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level5_map/L5_in[1][6] (Level5)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level5_map/L5_out[1][6] (Level5)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level4_map/L4_in[1][6] (Level4)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level4_map/L4_out[1][6] (Level4)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level3_map/L3_in[1][6] (Level3)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level3_map/Ha_1/B (halfadder_12)
+                                                          0.00       0.36 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level3_map/Ha_1/U2/Z (XOR2_X1)
+                                                          0.08       0.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level3_map/Ha_1/S (halfadder_12)
+                                                          0.00       0.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level3_map/L3_out[0][6] (Level3)
+                                                          0.00       0.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/L2_in[0][6] (Level2)
+                                                          0.00       0.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/FA_1to55_6/A (fulladder_179)
+                                                          0.00       0.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/FA_1to55_6/U4/Z (XOR2_X1)
+                                                          0.08       0.52 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/FA_1to55_6/U3/Z (XOR2_X1)
+                                                          0.08       0.60 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/FA_1to55_6/S (fulladder_179)
+                                                          0.00       0.60 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level2_map/L2_out[0][6] (Level2)
+                                                          0.00       0.60 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/L1_in[0][6] (Level1)
+                                                          0.00       0.60 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/FA_1to57_6/A (fulladder_121)
+                                                          0.00       0.60 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/FA_1to57_6/U4/Z (XOR2_X1)
+                                                          0.08       0.68 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/FA_1to57_6/U3/Z (XOR2_X1)
+                                                          0.08       0.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/FA_1to57_6/S (fulladder_121)
+                                                          0.00       0.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/Level1_map/L1_out[0][6] (Level1)
+                                                          0.00       0.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/A[6] (ripplecarry)
+                                                          0.00       0.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_6/A (fulladder_58)
+                                                          0.00       0.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_6/U4/Z (XOR2_X1)
+                                                          0.08       0.83 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_6/U9/ZN (INV_X1)
+                                                          0.02       0.86 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_6/U5/ZN (OAI22_X1)
+                                                          0.06       0.92 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_6/Cout (fulladder_58)
+                                                          0.00       0.92 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_7/Cin (fulladder_57)
+                                                          0.00       0.92 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_7/U2/ZN (AOI22_X1)
+                                                          0.04       0.96 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_7/U5/ZN (INV_X1)
+                                                          0.03       0.99 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_7/Cout (fulladder_57)
+                                                          0.00       0.99 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_8/Cin (fulladder_56)
+                                                          0.00       0.99 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_8/U5/ZN (AOI22_X1)
+                                                          0.03       1.03 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_8/U6/ZN (INV_X1)
+                                                          0.03       1.06 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_8/Cout (fulladder_56)
+                                                          0.00       1.06 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_9/Cin (fulladder_55)
+                                                          0.00       1.06 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_9/U2/ZN (AOI22_X1)
+                                                          0.03       1.09 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_9/U5/ZN (INV_X1)
+                                                          0.03       1.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_9/Cout (fulladder_55)
+                                                          0.00       1.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_10/Cin (fulladder_54)
+                                                          0.00       1.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_10/U5/ZN (AOI22_X1)
+                                                          0.03       1.15 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_10/U2/ZN (INV_X1)
+                                                          0.03       1.19 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_10/Cout (fulladder_54)
+                                                          0.00       1.19 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_11/Cin (fulladder_53)
+                                                          0.00       1.19 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_11/U2/ZN (AOI22_X1)
+                                                          0.03       1.22 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_11/U5/ZN (INV_X1)
+                                                          0.03       1.25 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_11/Cout (fulladder_53)
+                                                          0.00       1.25 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_12/Cin (fulladder_52)
+                                                          0.00       1.25 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_12/U5/ZN (AOI22_X1)
+                                                          0.03       1.28 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_12/U2/ZN (INV_X1)
+                                                          0.03       1.31 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_12/Cout (fulladder_52)
+                                                          0.00       1.31 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_13/Cin (fulladder_51)
+                                                          0.00       1.31 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_13/U2/ZN (AOI22_X1)
+                                                          0.03       1.35 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_13/U5/ZN (INV_X1)
+                                                          0.03       1.38 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_13/Cout (fulladder_51)
+                                                          0.00       1.38 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_14/Cin (fulladder_50)
+                                                          0.00       1.38 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_14/U2/ZN (AOI22_X1)
+                                                          0.03       1.41 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_14/U5/ZN (INV_X1)
+                                                          0.03       1.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_14/Cout (fulladder_50)
+                                                          0.00       1.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_15/Cin (fulladder_49)
+                                                          0.00       1.44 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_15/U5/ZN (AOI22_X1)
+                                                          0.03       1.48 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_15/U2/ZN (INV_X1)
+                                                          0.03       1.51 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_15/Cout (fulladder_49)
+                                                          0.00       1.51 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_16/Cin (fulladder_48)
+                                                          0.00       1.51 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_16/U2/ZN (AOI22_X1)
+                                                          0.03       1.54 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_16/U5/ZN (INV_X1)
+                                                          0.03       1.57 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_16/Cout (fulladder_48)
+                                                          0.00       1.57 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_17/Cin (fulladder_47)
+                                                          0.00       1.57 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_17/U5/ZN (AOI22_X1)
+                                                          0.03       1.60 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_17/U2/ZN (INV_X1)
+                                                          0.03       1.63 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_17/Cout (fulladder_47)
+                                                          0.00       1.63 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_18/Cin (fulladder_46)
+                                                          0.00       1.63 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_18/U2/ZN (AOI22_X1)
+                                                          0.03       1.67 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_18/U5/ZN (INV_X1)
+                                                          0.03       1.70 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_18/Cout (fulladder_46)
+                                                          0.00       1.70 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_19/Cin (fulladder_45)
+                                                          0.00       1.70 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_19/U2/ZN (AOI22_X1)
+                                                          0.03       1.73 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_19/U5/ZN (INV_X1)
+                                                          0.03       1.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_19/Cout (fulladder_45)
+                                                          0.00       1.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_20/Cin (fulladder_44)
+                                                          0.00       1.76 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_20/U5/ZN (AOI22_X1)
+                                                          0.03       1.80 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_20/U2/ZN (INV_X1)
+                                                          0.03       1.83 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_20/Cout (fulladder_44)
+                                                          0.00       1.83 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_21/Cin (fulladder_43)
+                                                          0.00       1.83 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_21/U2/ZN (AOI22_X1)
+                                                          0.03       1.86 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_21/U5/ZN (INV_X1)
+                                                          0.03       1.89 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_21/Cout (fulladder_43)
+                                                          0.00       1.89 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_22/Cin (fulladder_42)
+                                                          0.00       1.89 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_22/U5/ZN (AOI22_X1)
+                                                          0.03       1.92 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_22/U2/ZN (INV_X1)
+                                                          0.03       1.95 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_22/Cout (fulladder_42)
+                                                          0.00       1.95 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_23/Cin (fulladder_41)
+                                                          0.00       1.95 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_23/U2/ZN (AOI22_X1)
+                                                          0.03       1.99 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_23/U5/ZN (INV_X1)
+                                                          0.03       2.02 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_23/Cout (fulladder_41)
+                                                          0.00       2.02 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_24/Cin (fulladder_40)
+                                                          0.00       2.02 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_24/U2/ZN (AOI22_X1)
+                                                          0.03       2.05 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_24/U5/ZN (INV_X1)
+                                                          0.03       2.08 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_24/Cout (fulladder_40)
+                                                          0.00       2.08 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_25/Cin (fulladder_39)
+                                                          0.00       2.08 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_25/U5/ZN (AOI22_X1)
+                                                          0.03       2.12 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_25/U2/ZN (INV_X1)
+                                                          0.03       2.15 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_25/Cout (fulladder_39)
+                                                          0.00       2.15 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_26/Cin (fulladder_38)
+                                                          0.00       2.15 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_26/U2/ZN (AOI22_X1)
+                                                          0.03       2.18 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_26/U5/ZN (INV_X1)
+                                                          0.03       2.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_26/Cout (fulladder_38)
+                                                          0.00       2.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_27/Cin (fulladder_37)
+                                                          0.00       2.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_27/U5/ZN (AOI22_X1)
+                                                          0.03       2.24 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_27/U2/ZN (INV_X1)
+                                                          0.03       2.27 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_27/Cout (fulladder_37)
+                                                          0.00       2.27 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_28/Cin (fulladder_36)
+                                                          0.00       2.27 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_28/U2/ZN (AOI22_X1)
+                                                          0.03       2.31 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_28/U5/ZN (INV_X1)
+                                                          0.03       2.34 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_28/Cout (fulladder_36)
+                                                          0.00       2.34 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_29/Cin (fulladder_35)
+                                                          0.00       2.34 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_29/U2/ZN (AOI22_X1)
+                                                          0.03       2.37 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_29/U5/ZN (INV_X1)
+                                                          0.03       2.40 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_29/Cout (fulladder_35)
+                                                          0.00       2.40 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_30/Cin (fulladder_34)
+                                                          0.00       2.40 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_30/U5/ZN (INV_X1)
+                                                          0.02       2.43 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_30/U1/ZN (OAI22_X1)
+                                                          0.05       2.48 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_30/Cout (fulladder_34)
+                                                          0.00       2.48 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_31/Cin (fulladder_33)
+                                                          0.00       2.48 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_31/U6/ZN (INV_X1)
+                                                          0.02       2.50 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_31/U1/ZN (OAI22_X1)
+                                                          0.06       2.56 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_31/Cout (fulladder_33)
+                                                          0.00       2.56 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_32/Cin (fulladder_32)
+                                                          0.00       2.56 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_32/U6/ZN (INV_X1)
+                                                          0.02       2.58 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_32/U1/ZN (OAI22_X1)
+                                                          0.06       2.64 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_32/Cout (fulladder_32)
+                                                          0.00       2.64 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_33/Cin (fulladder_31)
+                                                          0.00       2.64 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_33/U6/ZN (INV_X1)
+                                                          0.02       2.67 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_33/U1/ZN (OAI22_X1)
+                                                          0.06       2.72 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_33/Cout (fulladder_31)
+                                                          0.00       2.72 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_34/Cin (fulladder_30)
+                                                          0.00       2.72 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_34/U6/ZN (INV_X1)
+                                                          0.02       2.75 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_34/U1/ZN (OAI22_X1)
+                                                          0.06       2.80 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_34/Cout (fulladder_30)
+                                                          0.00       2.80 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_35/Cin (fulladder_29)
+                                                          0.00       2.80 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_35/U6/ZN (INV_X1)
+                                                          0.02       2.83 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_35/U1/ZN (OAI22_X1)
+                                                          0.06       2.88 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_35/Cout (fulladder_29)
+                                                          0.00       2.88 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_36/Cin (fulladder_28)
+                                                          0.00       2.88 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_36/U6/ZN (INV_X1)
+                                                          0.02       2.91 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_36/U1/ZN (OAI22_X1)
+                                                          0.06       2.96 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_36/Cout (fulladder_28)
+                                                          0.00       2.96 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_37/Cin (fulladder_27)
+                                                          0.00       2.96 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_37/U6/ZN (INV_X1)
+                                                          0.02       2.99 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_37/U1/ZN (OAI22_X1)
+                                                          0.06       3.04 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_37/Cout (fulladder_27)
+                                                          0.00       3.04 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_38/Cin (fulladder_26)
+                                                          0.00       3.04 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_38/U6/ZN (INV_X1)
+                                                          0.02       3.07 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_38/U1/ZN (OAI22_X1)
+                                                          0.06       3.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_38/Cout (fulladder_26)
+                                                          0.00       3.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_39/Cin (fulladder_25)
+                                                          0.00       3.12 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_39/U6/ZN (INV_X1)
+                                                          0.02       3.15 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_39/U1/ZN (OAI22_X1)
+                                                          0.06       3.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_39/Cout (fulladder_25)
+                                                          0.00       3.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_40/Cin (fulladder_24)
+                                                          0.00       3.21 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_40/U6/ZN (INV_X1)
+                                                          0.02       3.23 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_40/U1/ZN (OAI22_X1)
+                                                          0.06       3.29 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_40/Cout (fulladder_24)
+                                                          0.00       3.29 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_41/Cin (fulladder_23)
+                                                          0.00       3.29 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_41/U6/ZN (INV_X1)
+                                                          0.02       3.31 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_41/U1/ZN (OAI22_X1)
+                                                          0.06       3.37 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_41/Cout (fulladder_23)
+                                                          0.00       3.37 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_42/Cin (fulladder_22)
+                                                          0.00       3.37 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_42/U6/ZN (INV_X1)
+                                                          0.02       3.39 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_42/U1/ZN (OAI22_X1)
+                                                          0.06       3.45 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_42/Cout (fulladder_22)
+                                                          0.00       3.45 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_43/Cin (fulladder_21)
+                                                          0.00       3.45 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_43/U6/ZN (INV_X1)
+                                                          0.02       3.47 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_43/U1/ZN (OAI22_X1)
+                                                          0.06       3.53 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_43/Cout (fulladder_21)
+                                                          0.00       3.53 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_44/Cin (fulladder_20)
+                                                          0.00       3.53 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_44/U6/ZN (INV_X1)
+                                                          0.02       3.55 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_44/U1/ZN (OAI22_X1)
+                                                          0.06       3.61 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_44/Cout (fulladder_20)
+                                                          0.00       3.61 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_45/Cin (fulladder_19)
+                                                          0.00       3.61 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_45/U6/ZN (INV_X1)
+                                                          0.02       3.63 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_45/U1/ZN (OAI22_X1)
+                                                          0.06       3.69 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_45/Cout (fulladder_19)
+                                                          0.00       3.69 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_46/Cin (fulladder_18)
+                                                          0.00       3.69 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_46/U6/ZN (INV_X1)
+                                                          0.02       3.71 f
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_46/U1/ZN (OAI22_X1)
+                                                          0.06       3.77 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_46/Cout (fulladder_18)
+                                                          0.00       3.77 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_47/Cin (fulladder_17)
+                                                          0.00       3.77 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_47/U3/ZN (XNOR2_X1)
+                                                          0.06       3.84 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/FAi_47/S (fulladder_17)
+                                                          0.00       3.84 r
+  I2/MBE_multiplier_1/DaddaTrees_0/RCA_map/S[47] (ripplecarry)
+                                                          0.00       3.84 r
+  I2/MBE_multiplier_1/DaddaTrees_0/TotalSum[47] (DaddaTrees)
+                                                          0.00       3.84 r
+  I2/MBE_multiplier_1/output[47] (MBE_multiplier)         0.00       3.84 r
+  I2/SIG_in_reg[27]/D (DFF_X1)                            0.01       3.85 r
+  data arrival time                                                  3.85
+
+  clock MY_CLK (rise edge)                                3.42       3.42
+  clock network delay (ideal)                             0.00       3.42
+  clock uncertainty                                      -0.07       3.35
+  I2/SIG_in_reg[27]/CK (DFF_X1)                           0.00       3.35 r
+  library setup time                                     -0.03       3.32
+  data required time                                                 3.32
+  --------------------------------------------------------------------------
+  data required time                                                 3.32
+  data arrival time                                                 -3.85
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.53
+
+
+1

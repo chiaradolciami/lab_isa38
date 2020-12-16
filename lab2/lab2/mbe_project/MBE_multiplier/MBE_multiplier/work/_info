@@ -1,0 +1,740 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/DaddaTrees
+Eclk_gen
+Z0 w1604402016
+Z1 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z5 dC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier
+Z6 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/clk_gen.vhd
+Z7 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/clk_gen.vhd
+l0
+L6
+VH>a4Me7ml?`iUii:hVSc?3
+!s100 bGHA2bCR2PZIZEikmX8z11
+Z8 OV;C;10.5b;63
+32
+Z9 !s110 1608048908
+!i10b 1
+Z10 !s108 1608048908.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/clk_gen.vhd|
+Z12 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/clk_gen.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Abeh
+R1
+R2
+R3
+R4
+DEx4 work 7 clk_gen 0 22 H>a4Me7ml?`iUii:hVSc?3
+l18
+L13
+Va07SOajGGTP7]SZK?X33z1
+!s100 DVcz[llZS4[gS:i4lC3QQ1
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edaddatrees
+Z15 w1608055003
+Z16 DPx4 work 10 level_type 0 22 k0HWNV4f_7AOX2oC[W`kb1
+R3
+R4
+R5
+Z17 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd
+Z18 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd
+l0
+L22
+VimU<B0Ec>Z<E0lWz]F@`_3
+!s100 ^jmNf`I1XiUQ3i5HB_0CW3
+R8
+32
+Z19 !s110 1608130145
+!i10b 1
+Z20 !s108 1608130145.000000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd|
+Z22 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 10 daddatrees 0 22 imU<B0Ec>Z<E0lWz]F@`_3
+l107
+L33
+VMWSnXcH8A^?<^8L[oF`z31
+!s100 mjPZI4]YP2L3z:JVAI1i?3
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Edata_maker
+Z23 w1604397532
+Z24 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R1
+R2
+R3
+R4
+R5
+Z25 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_maker.vhd
+Z26 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_maker.vhd
+l0
+L10
+VYRKOV=Q?C8`8AEF0hk<hC3
+!s100 1J]6BW;MQD1fNgL32=HQo1
+R8
+32
+Z27 !s110 1608048905
+!i10b 1
+Z28 !s108 1608048905.000000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_maker.vhd|
+Z30 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_maker.vhd|
+!i113 1
+R13
+R14
+Abeh
+R24
+R1
+R2
+R3
+R4
+DEx4 work 10 data_maker 0 22 YRKOV=Q?C8`8AEF0hk<hC3
+l18
+L16
+VClhif<A]A[J60bDl?JgB>3
+!s100 Z>^a5oj1jaomFP0TJK_V]3
+R8
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R13
+R14
+Edata_sink
+Z31 w1607543017
+R24
+R1
+R2
+R3
+R4
+R5
+Z32 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_sink.vhd
+Z33 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_sink.vhd
+l0
+L10
+V;S>RHeXNk?0RaNfX=3<4n2
+!s100 9W9QZY?^>HF46bb`U3AAz2
+R8
+32
+Z34 !s110 1608048898
+!i10b 1
+Z35 !s108 1608048898.000000
+Z36 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_sink.vhd|
+Z37 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/data_sink.vhd|
+!i113 1
+R13
+R14
+Abeh
+R24
+R1
+R2
+R3
+R4
+DEx4 work 9 data_sink 0 22 ;S>RHeXNk?0RaNfX=3<4n2
+l21
+L17
+VdF]h@[`mIBf>LG1Woz4LT1
+!s100 nZb9k0cI<QG6j][?JC5Pa1
+R8
+32
+R34
+!i10b 1
+R35
+R36
+R37
+!i113 1
+R13
+R14
+Eencoder
+Z38 w1608128480
+R3
+R4
+R5
+Z39 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd
+Z40 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd
+l0
+L4
+VVV3lm[9fC3o25AQL]c?dS0
+!s100 PE;NFOib7Wzd=5JcdXZzh1
+R8
+32
+R19
+!i10b 1
+R20
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd|
+Z42 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 7 encoder 0 22 VV3lm[9fC3o25AQL]c?dS0
+l11
+L10
+V6F==>YIC7HM8>YzMnYdU63
+!s100 mKX65D>9CQZO4Q>DUj40o0
+R8
+32
+R19
+!i10b 1
+R20
+R41
+R42
+!i113 1
+R13
+R14
+Efulladder
+Z43 w1607537846
+R3
+R4
+R5
+Z44 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd
+Z45 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd
+l0
+L4
+VoD3bf8394HT[KLXDGgVPn3
+!s100 [RGl8:0azF<E1oz3_j?:Y2
+R8
+32
+R19
+!i10b 1
+R20
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd|
+Z47 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 9 fulladder 0 22 oD3bf8394HT[KLXDGgVPn3
+l13
+L12
+VcZ2=?9l<IfQ626aDR@5;e0
+!s100 P7Rhi;U_i2c3bdYFQMA[W0
+R8
+32
+R19
+!i10b 1
+R20
+R46
+R47
+!i113 1
+R13
+R14
+Ehalfadder
+Z48 w1607537671
+R3
+R4
+R5
+Z49 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd
+Z50 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd
+l0
+L4
+Vh9iX0SGzc19]z;G6ODVi?2
+!s100 md[I2R?;D<:EoOO_ZD2RO1
+R8
+32
+R19
+!i10b 1
+R20
+Z51 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd|
+Z52 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R3
+R4
+DEx4 work 9 halfadder 0 22 h9iX0SGzc19]z;G6ODVi?2
+l12
+L11
+VGDfFFP]c7Pg5Tgh;aG0nZ3
+!s100 iDIPNddEJJ2_GgQOUa;<l1
+R8
+32
+R19
+!i10b 1
+R20
+R51
+R52
+!i113 1
+R13
+R14
+Elevel1
+Z53 w1608128225
+R16
+R3
+R4
+R5
+Z54 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd
+Z55 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd
+l0
+L11
+V7Bn4ggRP_AnYMXcHmNILa3
+!s100 Oa>KJPfJnhU5SIbZ]Y`oT1
+R8
+32
+R19
+!i10b 1
+R20
+Z56 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd|
+Z57 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 6 level1 0 22 7Bn4ggRP_AnYMXcHmNILa3
+l40
+L18
+VCdWf5?Ki]HUKiF81e]7Df2
+!s100 f]9YzcJl=XU8SMXJoih>?2
+R8
+32
+R19
+!i10b 1
+R20
+R56
+R57
+!i113 1
+R13
+R14
+Elevel2
+Z58 w1608127871
+R16
+R3
+R4
+R5
+Z59 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd
+Z60 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd
+l0
+L11
+V1RP:;TI^jCWmlgz>ObD_J2
+!s100 B6H7fY]G?_J86iYjRFcAj2
+R8
+32
+R19
+!i10b 1
+R20
+Z61 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd|
+Z62 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 6 level2 0 22 1RP:;TI^jCWmlgz>ObD_J2
+l40
+L18
+VW4oi<R?TjAkJM=h[YA<ZF0
+!s100 oGSUn9PZPOJ0Jhm2`:B=^1
+R8
+32
+R19
+!i10b 1
+R20
+R61
+R62
+!i113 1
+R13
+R14
+Elevel3
+Z63 w1608127676
+R16
+R3
+R4
+R5
+Z64 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd
+Z65 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd
+l0
+L11
+VVKbfm2ZdkO>61mii<cZKF0
+!s100 QnCVPa?36;[a>@Ng=fhZb0
+R8
+32
+R19
+!i10b 1
+R20
+Z66 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd|
+Z67 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 6 level3 0 22 VKbfm2ZdkO>61mii<cZKF0
+l40
+L18
+Vm>6YNn:LNhVEVB0e6]KVg3
+!s100 @l:@V?E]UX;kc1oA1QG>50
+R8
+32
+R19
+!i10b 1
+R20
+R66
+R67
+!i113 1
+R13
+R14
+Elevel4
+Z68 w1608067614
+R16
+R3
+R4
+R5
+Z69 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd
+Z70 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd
+l0
+L11
+VWf5f>3n0Tg@hEkA9iKmiH2
+!s100 5mbQLaLI?]@h:[2<k]J@G1
+R8
+32
+Z71 !s110 1608130146
+!i10b 1
+Z72 !s108 1608130146.000000
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd|
+Z74 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 6 level4 0 22 Wf5f>3n0Tg@hEkA9iKmiH2
+l40
+L18
+VZ9J0m]AFoO4=b<Nh_N_4[2
+!s100 Bo8=]aLSTlScY?Hz=55FP1
+R8
+32
+R71
+!i10b 1
+R72
+R73
+R74
+!i113 1
+R13
+R14
+Elevel5
+Z75 w1608127408
+R16
+Z76 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R3
+R4
+R5
+Z77 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd
+Z78 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd
+l0
+L12
+VmlHTV8kie_6i@gR`@]O_D0
+!s100 gX>HGP?O[28@H_Oh7?WYE3
+R8
+32
+R71
+!i10b 1
+R72
+Z79 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd|
+Z80 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R76
+R3
+R4
+DEx4 work 6 level5 0 22 mlHTV8kie_6i@gR`@]O_D0
+l42
+L20
+V5YHGYNL=O3M[gB5Lll6mc3
+!s100 Qg_:o8UL;>k0=:ZPTgXAI3
+R8
+32
+R71
+!i10b 1
+R72
+R79
+R80
+!i113 1
+R13
+R14
+Elevel6
+Z81 w1608127089
+R16
+R76
+R3
+R4
+R5
+Z82 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd
+Z83 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd
+l0
+L12
+VE83eF_3W]Of@BUAkFIg7a0
+!s100 7AXZd0mC2WP_UmXoTCV?50
+R8
+32
+R71
+!i10b 1
+R72
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd|
+Z85 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R76
+R3
+R4
+DEx4 work 6 level6 0 22 E83eF_3W]Of@BUAkFIg7a0
+l41
+L19
+Vo5:H_^0?IMFE@2`Emb^Ul0
+!s100 >o5;nEgha:cgX@m@`@9X41
+R8
+32
+R71
+!i10b 1
+R72
+R84
+R85
+!i113 1
+R13
+R14
+Elevel7
+Z86 w1608056043
+R16
+R3
+R4
+R5
+Z87 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd
+Z88 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd
+l0
+L11
+VzW5oWYOQ``5@;g<=OA2go2
+!s100 =bgXAN7>27:3dRRhg:UAO2
+R8
+32
+R71
+!i10b 1
+R72
+Z89 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd|
+Z90 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd|
+!i113 1
+R13
+R14
+Abehavioural
+R16
+R3
+R4
+DEx4 work 6 level7 0 22 zW5oWYOQ``5@;g<=OA2go2
+l23
+L18
+VP6NG38dIhBYIAh`OKId2l0
+!s100 ?M6mG4NQX_HRX6boBX=^]2
+R8
+32
+R71
+!i10b 1
+R72
+R89
+R90
+!i113 1
+R13
+R14
+Plevel_type
+R3
+R4
+R15
+R5
+R17
+R18
+l0
+L6
+Vk0HWNV4f_7AOX2oC[W`kb1
+!s100 lH]lB1HB4UBZm3^;zz<Vn2
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+Embe
+Z91 w1608130125
+R16
+R76
+R3
+R4
+R5
+Z92 8C:\Users\Utente\Desktop\Magistrale Micro Elettronica\ISA Integrated System Architecture\Laboratory\Lab2\MBE_multiplier\mbe.vhd
+Z93 FC:\Users\Utente\Desktop\Magistrale Micro Elettronica\ISA Integrated System Architecture\Laboratory\Lab2\MBE_multiplier\mbe.vhd
+l0
+L7
+V?A[6E8[?]nYk1YOM?DkhK1
+!s100 ^k[;gi69k1RclXKCc]ze^3
+R8
+32
+R71
+!i10b 1
+R72
+Z94 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\Utente\Desktop\Magistrale Micro Elettronica\ISA Integrated System Architecture\Laboratory\Lab2\MBE_multiplier\mbe.vhd|
+Z95 !s107 C:\Users\Utente\Desktop\Magistrale Micro Elettronica\ISA Integrated System Architecture\Laboratory\Lab2\MBE_multiplier\mbe.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R16
+R76
+R3
+R4
+DEx4 work 3 mbe 0 22 ?A[6E8[?]nYk1YOM?DkhK1
+l26
+L13
+V^zmk]nJJ1Sl6^n<42mOX:0
+!s100 Y4ezG`AD9WgJ72n?GJ`nW3
+R8
+32
+R71
+!i10b 1
+R72
+R94
+R95
+!i113 1
+R13
+R14
+Embe_multiplier
+Z96 w1607539477
+R16
+R76
+R3
+R4
+R5
+Z97 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd
+Z98 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd
+l0
+L6
+V:LOH3<hfT4=:;`odOO5Pf0
+!s100 CD4P@[Oc4F[8O=Z3WBFo:1
+R8
+32
+R71
+!i10b 1
+R72
+Z99 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd|
+Z100 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd|
+!i113 1
+R13
+R14
+Abehavioral
+R16
+R76
+R3
+R4
+DEx4 work 14 mbe_multiplier 0 22 :LOH3<hfT4=:;`odOO5Pf0
+l34
+L14
+V^a23K`Ud]M<K>OBbD<G]R3
+!s100 =:20;XTCK]PC09gkDi6j=3
+R8
+32
+R71
+!i10b 1
+R72
+R99
+R100
+!i113 1
+R13
+R14
+Eripplecarry
+Z101 w1607538184
+R76
+R3
+R4
+R5
+Z102 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd
+Z103 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd
+l0
+L5
+V?WQc4R]3PD9cQVC3HP=[30
+!s100 NinAmomTCMHHA_Q^i3Xg_2
+R8
+32
+R71
+!i10b 1
+R72
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd|
+Z105 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd|
+!i113 1
+R13
+R14
+Abehavior
+R76
+R3
+R4
+Z106 DEx4 work 11 ripplecarry 0 22 ?WQc4R]3PD9cQVC3HP=[30
+l32
+L13
+Z107 VR2_nf_jUbe?=P^Vf]9NPa0
+Z108 !s100 80BL_ZL^D;9^:3J:ojWcD0
+R8
+32
+R71
+!i10b 1
+R72
+R104
+R105
+!i113 1
+R13
+R14

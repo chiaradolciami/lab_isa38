@@ -1,0 +1,402 @@
+{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level1
+-- Compiling architecture behavioural of Level1
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/HA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity halfadder
+-- Compiling architecture behavior of halfadder
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage2_struct.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage2_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage2
+-- Compiling architecture struct of FPmul_stage2
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpnormalize_fpnormalize.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpnormalize_fpnormalize.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity FPnormalize
+-- Compiling architecture FPnormalize of FPnormalize
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level2.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level2
+-- Compiling architecture behavioural of Level2
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/data_sink.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/data_sink.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package std_logic_textio
+-- Compiling entity data_sink
+-- Compiling architecture beh of data_sink
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level3.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level3
+-- Compiling architecture behavioural of Level3
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage4_struct.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage4_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage4
+-- Compiling architecture struct of FPmul_stage4
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity FPnormalize
+-- Loading entity PackFP
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/unpackfp_unpackfp.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/unpackfp_unpackfp.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:17:59 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/unpackfp_unpackfp.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity UnpackFP
+-- Compiling architecture UnpackFP of UnpackFP
+End time: 11:17:59 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level4.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level4
+-- Compiling architecture behavioural of Level4
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level5.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level5
+-- Compiling architecture behavioural of Level5
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/packfp_packfp.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/packfp_packfp.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/packfp_packfp.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity PackFP
+-- Compiling architecture PackFP of PackFP
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FPmul_stage2_MBE_mult.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FPmul_stage2_MBE_mult.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage2_MBE_mult
+-- Compiling architecture struct of FPmul_stage2
+-- Loading entity FPmul_stage2
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level6.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity Level6
+-- Compiling architecture behavioural of Level6
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/rca.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ripplecarry
+-- Compiling architecture behavior of ripplecarry
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpround_fpround.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpround_fpround.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpround_fpround.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity FPround
+-- Compiling architecture FPround of FPround
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/Level7.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package Level_type
+-- Compiling entity Level7
+-- Compiling architecture behavioural of Level7
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage1_struct.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage1_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage1_struct.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage1
+-- Compiling architecture struct of FPmul_stage1
+-- Loading entity UnpackFP
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage1_struct.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage1_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage1
+-- Compiling architecture struct of FPmul_stage1
+-- Loading entity UnpackFP
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/encoder.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity encoder
+-- Compiling architecture behavior of encoder
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage2_struct.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage2_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage2_struct.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage2
+-- Compiling architecture struct of FPmul_stage2
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpnormalize_fpnormalize.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpnormalize_fpnormalize.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpnormalize_fpnormalize.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity FPnormalize
+-- Compiling architecture FPnormalize of FPnormalize
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/DaddaTrees.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package Level_type
+-- Loading package Level_type
+-- Compiling entity DaddaTrees
+-- Compiling architecture Behavioural of DaddaTrees
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage3_struct.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage3_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage3_struct.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage3
+-- Compiling architecture struct of FPmul_stage3
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity FPnormalize
+-- Loading entity FPround
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage3_struct.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage3_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage3
+-- Compiling architecture struct of FPmul_stage3
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity FPnormalize
+-- Loading entity FPround
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/MBE_multiplier.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity MBE_multiplier
+-- Compiling architecture BEHAVIORAL of MBE_multiplier
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/unpackfp_unpackfp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/unpackfp_unpackfp.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity UnpackFP
+-- Compiling architecture UnpackFP of UnpackFP
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage4_struct.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage4_struct.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:18:00 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_stage4_struct.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul_stage4
+-- Compiling architecture struct of FPmul_stage4
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading entity FPnormalize
+-- Loading entity PackFP
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/mbe.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/mbe.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package Level_type
+-- Compiling entity mbe
+-- Compiling architecture behavior of mbe
+
+} {} {}} {{C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_pipeline.vhd}} {1 {vcom -work work -2002 -explicit {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_pipeline.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+Start time: 11:17:59 on Nov 03,2020
+vcom -reportprogress 300 -work work -2002 -explicit C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_pipeline.vhd 
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul
+-- Compiling architecture pipeline of FPmul
+-- Loading entity FPmul_stage1
+-- Loading entity FPmul_stage2
+-- Loading entity FPmul_stage3
+-- Loading entity FPmul_stage4
+End time: 11:18:00 on Nov 03,2020, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/packfp_packfp.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/packfp_packfp.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity PackFP
+-- Compiling architecture PackFP of PackFP
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/data_maker.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/data_maker.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package std_logic_textio
+-- Compiling entity data_maker
+-- Compiling architecture beh of data_maker
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_pipeline.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpmul_pipeline.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Compiling entity FPmul
+-- Compiling architecture pipeline of FPmul
+-- Loading entity FPmul_stage1
+-- Loading entity FPmul_stage2
+-- Loading entity FPmul_stage3
+-- Loading entity FPmul_stage4
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpround_fpround.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/fpround_fpround.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity FPround
+-- Compiling architecture FPround of FPround
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/tb_mult.v} {1 {vlog -work work -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/tb_mult.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module test_fpmult
+
+Top level modules:
+	test_fpmult
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/clk_gen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/tb/clk_gen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clk_gen
+-- Compiling architecture beh of clk_gen
+
+} {} {}} {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab2/MBE_multiplier/FA.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity fulladder
+-- Compiling architecture behavior of fulladder
+
+} {} {}}
