@@ -1,0 +1,6 @@
+
+
+
+
+vcd2saif -input ../myRiscV.vcd -output ../saif/myRiscV.saif
+

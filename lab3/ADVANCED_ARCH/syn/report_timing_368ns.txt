@@ -1,0 +1,128 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RiscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RiscV
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 22:31:19 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Memory_Stage/stage4/rd_out_wb_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Execution_Stage/pipe/ALURes_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RiscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Memory_Stage/stage4/rd_out_wb_reg[0]/CK (DFFR_X1)       0.00       0.00 r
+  Memory_Stage/stage4/rd_out_wb_reg[0]/Q (DFFR_X1)        0.09       0.09 f
+  Memory_Stage/stage4/rd_out_wb[0] (pipe_MEMWB)           0.00       0.09 f
+  Memory_Stage/rd_wb[0] (MEMORY)                          0.00       0.09 f
+  Forwarding_Unit_portmap/MEM_Rd[0] (Forwarding_Unit)     0.00       0.09 f
+  Forwarding_Unit_portmap/U40/Z (XOR2_X1)                 0.07       0.16 f
+  Forwarding_Unit_portmap/U51/ZN (NOR4_X1)                0.09       0.25 r
+  Forwarding_Unit_portmap/U27/ZN (NAND2_X1)               0.04       0.29 f
+  Forwarding_Unit_portmap/U48/ZN (OAI21_X1)               0.05       0.34 r
+  Forwarding_Unit_portmap/ForwardB[0] (Forwarding_Unit)
+                                                          0.00       0.34 r
+  Execution_Stage/Forward_B[0] (EX_unit)                  0.00       0.34 r
+  Execution_Stage/Mux_forwarding_B/sel[0] (multiplexer_3to1_2)
+                                                          0.00       0.34 r
+  Execution_Stage/Mux_forwarding_B/U93/ZN (INV_X1)        0.03       0.37 f
+  Execution_Stage/Mux_forwarding_B/U60/ZN (AND2_X1)       0.05       0.41 f
+  Execution_Stage/Mux_forwarding_B/U94/ZN (AOI222_X1)     0.11       0.52 r
+  Execution_Stage/Mux_forwarding_B/U95/ZN (INV_X1)        0.03       0.55 f
+  Execution_Stage/Mux_forwarding_B/OUTPUT[0] (multiplexer_3to1_2)
+                                                          0.00       0.55 f
+  Execution_Stage/alu_unit/RS2[0] (ALU)                   0.00       0.55 f
+  Execution_Stage/alu_unit/U4/Z (CLKBUF_X1)               0.05       0.59 f
+  Execution_Stage/alu_unit/add_30/B[0] (ALU_DW01_add_0)
+                                                          0.00       0.59 f
+  Execution_Stage/alu_unit/add_30/U1_0/CO (FA_X1)         0.09       0.69 f
+  Execution_Stage/alu_unit/add_30/U1_1/CO (FA_X1)         0.09       0.78 f
+  Execution_Stage/alu_unit/add_30/U1_2/CO (FA_X1)         0.09       0.87 f
+  Execution_Stage/alu_unit/add_30/U1_3/CO (FA_X1)         0.09       0.96 f
+  Execution_Stage/alu_unit/add_30/U1_4/CO (FA_X1)         0.09       1.05 f
+  Execution_Stage/alu_unit/add_30/U1_5/CO (FA_X1)         0.09       1.14 f
+  Execution_Stage/alu_unit/add_30/U1_6/CO (FA_X1)         0.09       1.23 f
+  Execution_Stage/alu_unit/add_30/U1_7/CO (FA_X1)         0.09       1.32 f
+  Execution_Stage/alu_unit/add_30/U1_8/CO (FA_X1)         0.10       1.42 f
+  Execution_Stage/alu_unit/add_30/U4/ZN (NAND2_X1)        0.03       1.45 r
+  Execution_Stage/alu_unit/add_30/U6/ZN (NAND3_X1)        0.05       1.50 f
+  Execution_Stage/alu_unit/add_30/U34/ZN (NAND2_X1)       0.04       1.54 r
+  Execution_Stage/alu_unit/add_30/U36/ZN (NAND3_X1)       0.04       1.57 f
+  Execution_Stage/alu_unit/add_30/U1_11/CO (FA_X1)        0.09       1.66 f
+  Execution_Stage/alu_unit/add_30/U1_12/CO (FA_X1)        0.09       1.76 f
+  Execution_Stage/alu_unit/add_30/U1_13/CO (FA_X1)        0.09       1.85 f
+  Execution_Stage/alu_unit/add_30/U1_14/CO (FA_X1)        0.09       1.94 f
+  Execution_Stage/alu_unit/add_30/U1_15/CO (FA_X1)        0.09       2.03 f
+  Execution_Stage/alu_unit/add_30/U1_16/CO (FA_X1)        0.09       2.12 f
+  Execution_Stage/alu_unit/add_30/U1_17/CO (FA_X1)        0.09       2.21 f
+  Execution_Stage/alu_unit/add_30/U1_18/CO (FA_X1)        0.09       2.30 f
+  Execution_Stage/alu_unit/add_30/U1_19/CO (FA_X1)        0.09       2.39 f
+  Execution_Stage/alu_unit/add_30/U1_20/CO (FA_X1)        0.09       2.48 f
+  Execution_Stage/alu_unit/add_30/U1_21/CO (FA_X1)        0.09       2.57 f
+  Execution_Stage/alu_unit/add_30/U1_22/CO (FA_X1)        0.09       2.66 f
+  Execution_Stage/alu_unit/add_30/U1_23/CO (FA_X1)        0.09       2.75 f
+  Execution_Stage/alu_unit/add_30/U1_24/CO (FA_X1)        0.10       2.85 f
+  Execution_Stage/alu_unit/add_30/U40/ZN (NAND2_X1)       0.04       2.89 r
+  Execution_Stage/alu_unit/add_30/U19/ZN (NAND3_X1)       0.05       2.94 f
+  Execution_Stage/alu_unit/add_30/U16/ZN (NAND2_X1)       0.04       2.98 r
+  Execution_Stage/alu_unit/add_30/U22/ZN (NAND3_X1)       0.03       3.02 f
+  Execution_Stage/alu_unit/add_30/U27/ZN (NAND2_X1)       0.03       3.04 r
+  Execution_Stage/alu_unit/add_30/U30/ZN (NAND3_X1)       0.04       3.09 f
+  Execution_Stage/alu_unit/add_30/U10/ZN (NAND2_X1)       0.04       3.12 r
+  Execution_Stage/alu_unit/add_30/U12/ZN (NAND3_X1)       0.05       3.17 f
+  Execution_Stage/alu_unit/add_30/U52/ZN (NAND2_X1)       0.05       3.22 r
+  Execution_Stage/alu_unit/add_30/U54/ZN (NAND3_X1)       0.04       3.26 f
+  Execution_Stage/alu_unit/add_30/U56/ZN (NAND2_X1)       0.03       3.28 r
+  Execution_Stage/alu_unit/add_30/U17/ZN (AND3_X1)        0.05       3.34 r
+  Execution_Stage/alu_unit/add_30/U18/ZN (XNOR2_X1)       0.03       3.37 f
+  Execution_Stage/alu_unit/add_30/SUM[31] (ALU_DW01_add_0)
+                                                          0.00       3.37 f
+  Execution_Stage/alu_unit/U119/ZN (AOI22_X1)             0.05       3.41 r
+  Execution_Stage/alu_unit/U117/ZN (OAI211_X1)            0.04       3.45 f
+  Execution_Stage/alu_unit/AluRes[31] (ALU)               0.00       3.45 f
+  Execution_Stage/Mux_data/I00[31] (multiplexer_3to1_1)
+                                                          0.00       3.45 f
+  Execution_Stage/Mux_data/U23/ZN (NAND2_X1)              0.03       3.49 r
+  Execution_Stage/Mux_data/U7/ZN (NAND3_X1)               0.03       3.52 f
+  Execution_Stage/Mux_data/OUTPUT[31] (multiplexer_3to1_1)
+                                                          0.00       3.52 f
+  Execution_Stage/pipe/ALURes_in[31] (pipe_EXMEM)         0.00       3.52 f
+  Execution_Stage/pipe/U52/ZN (AND2_X1)                   0.04       3.56 f
+  Execution_Stage/pipe/ALURes_out_reg[31]/D (DFFR_X1)     0.01       3.56 f
+  data arrival time                                                  3.56
+
+  clock MY_CLK (rise edge)                                3.68       3.68
+  clock network delay (ideal)                             0.00       3.68
+  clock uncertainty                                      -0.07       3.61
+  Execution_Stage/pipe/ALURes_out_reg[31]/CK (DFFR_X1)
+                                                          0.00       3.61 r
+  library setup time                                     -0.04       3.57
+  data required time                                                 3.57
+  --------------------------------------------------------------------------
+  data required time                                                 3.57
+  data arrival time                                                 -3.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.01
+
+
+1

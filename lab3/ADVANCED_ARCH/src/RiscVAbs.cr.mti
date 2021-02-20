@@ -1,0 +1,220 @@
+{C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/mux4_1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/mux4_1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mux4_1
+-- Compiling architecture arch of mux4_1
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/IM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/IM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity IM
+-- Compiling architecture Behaviour of IM
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/DM} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/DM}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DM
+-- Compiling architecture Behaviour of DM
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/WB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/WB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity WB
+-- Compiling architecture arch of WB
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ALU.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ALU.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALU
+-- Compiling architecture beh of ALU
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Forwarding_Unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Forwarding_Unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Forwarding_Unit
+-- Compiling architecture beh of Forwarding_Unit
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/PC.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/PC.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity program_counter
+-- Compiling architecture arch of program_counter
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ALUControl.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ALUControl.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ALUControl
+-- Compiling architecture beh of ALUControl
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/clk_gen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/clk_gen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Compiling entity clk_gen
+-- Compiling architecture beh of clk_gen
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/tb_RiscV} {1 {vlog -work work -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/tb_RiscV}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_IDEXE.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_IDEXE.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pipe_IDEXE
+-- Compiling architecture behavior of pipe_IDEXE
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/imm_gen.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/imm_gen.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity imm_gen
+-- Compiling architecture Arch of imm_gen
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ID.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ID.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity DECODE
+-- Compiling architecture arch of DECODE
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/reg_file.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/reg_file.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RF
+-- Compiling architecture Arch of RF
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/RiscV.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/RiscV.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity RiscV
+-- Compiling architecture Behaviour of RiscV
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/MEM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/MEM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity MEMORY
+-- Compiling architecture arch of MEMORY
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/IF.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/IF.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity FETCH
+-- Compiling architecture arch of FETCH
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Control_unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Control_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Control_unit
+-- Compiling architecture beh of Control_unit
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_IFID.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_IFID.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pipe_IFID
+-- Compiling architecture behavior of pipe_IFID
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_EXMEM.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_EXMEM.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pipe_EXMEM
+-- Compiling architecture behavior of pipe_EXMEM
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Mux3to1.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Mux3to1.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity multiplexer_3to1
+-- Compiling architecture beh of multiplexer_3to1
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity Flush_Unit
+-- Compiling architecture Beh of Flush_Unit
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Hazard_Unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/Hazard_Unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Hazard_Unit
+-- Compiling architecture beh of Hazard_Unit
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ABSV_unit.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/ABSV_unit.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity ABS_unit
+-- Compiling architecture beh of ABS_unit
+
+} {} {}} {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_MEMWB.vhd} {1 {vcom -work work -2002 -explicit -stats=none {C:/Users/chiar/Desktop/chiaar/poliTo/Integrated System Architecture/lab/lab3/ADVANCED/Modelsim_RiscV_Sim/pipe_MEMWB.vhd}
+Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity pipe_MEMWB
+-- Compiling architecture behavior of pipe_MEMWB
+
+} {} {}}

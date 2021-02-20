@@ -1,0 +1,38 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity ABS_unit is 
+port(
+
+RS1: in std_logic_vector(31 downto 0);
+RS2: in std_logic_vector(31 downto 0);
+IsAbs: in std_logic;
+result_ABS: out std_logic_vector(31 downto 0));
+end ABS_unit;
+
+architecture beh of ABS_unit is
+
+signal RS2_temp: std_logic_vector(31 downto 0);
+signal carry: signed(31 downto 0);
+
+begin
+
+RS2_temp<= (31 downto 0 =>RS2(31));
+
+
+carry<= to_signed(0, 32) when RS2(31) ='0' else to_signed(1, 32) when RS2(31) ='1' else to_signed(0, 32);
+
+process(IsAbs, RS1, RS2_temp, carry)
+
+begin
+if (IsAbs='1') then
+
+result_ABS<=std_logic_vector(signed(RS1 xor RS2_temp) + carry);
+else
+result_ABS<=(others=>'0');
+end if;
+
+end process;
+
+end beh;

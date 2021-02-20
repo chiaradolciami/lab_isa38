@@ -1,0 +1,59 @@
+define_design_lib WORK -path ./work
+set search_path [list . /software/synopsys/syn_current_64.18/libraries/syn /software/dk/nangate45/synopsys ]
+set link_library [list "*" "NangateOpenCellLibrary_typical_ecsm_nowlm.db" "dw_foundation.sldb" ]
+set target_library [list "NangateOpenCellLibrary_typical_ecsm_nowlm.db" ]
+set synthetic_library [list "dw_foundation.sldb" ]
+
+analyze -f vhdl -lib WORK ../src/ABSV_unit.vhd
+analyze -f vhdl -lib WORK ../src/ALU.vhd
+analyze -f vhdl -lib WORK ../src/ALUControl.vhd
+analyze -f vhdl -lib WORK ../src/Control_unit.vhd
+analyze -f vhdl -lib WORK ../src/EXE.vhd
+analyze -f vhdl -lib WORK ../src/FLUSH_UNIT.vhd
+analyze -f vhdl -lib WORK ../src/Forwarding_Unit.vhd
+analyze -f vhdl -lib WORK ../src/Hazard_Unit.vhd
+analyze -f vhdl -lib WORK ../src/ID.vhd
+analyze -f vhdl -lib WORK ../src/IF.vhd
+analyze -f vhdl -lib WORK ../src/imm_gen.vhd
+analyze -f vhdl -lib WORK ../src/MEM.vhd
+analyze -f vhdl -lib WORK ../src/Mux3to1.vhd
+analyze -f vhdl -lib WORK ../src/mux4_1.vhd
+analyze -f vhdl -lib WORK ../src/PC.vhd
+analyze -f vhdl -lib WORK ../src/pipe_EXMEM.vhd
+analyze -f vhdl -lib WORK ../src/pipe_IDEXE.vhd
+analyze -f vhdl -lib WORK ../src/pipe_IFID.vhd
+analyze -f vhdl -lib WORK ../src/pipe_MEMWB.vhd
+analyze -f vhdl -lib WORK ../src/reg_file.vhd
+analyze -f vhdl -lib WORK ../src/RiscV.vhd
+analyze -f vhdl -lib WORK ../src/WB.vhd
+
+
+set power_preserve_rtl_hier_names true
+elaborate RiscV -arch Behaviour -lib WORK > elaborate.txt
+create_clock -name MY_CLK -period 3.69 Clock
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.05 -max -clock MY_CLK [remove_from_collection [all_inputs] Clock]
+set_output_delay 0.05 -max -clock MY_CLK [all_outputs]
+set 0LOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $0LOAD [all_outputs]
+
+compile 
+
+report_timing > ./report_timing_369ns.txt
+report_area > ./report_area_369ns.txt
+
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ../netlist/RiscV.sdf
+write -f verilog -hierarchy -output ../netlist/RiscV.v
+write_sdc ../netlist/RiscV.sdc
+
+
+read_verilog -netlist ../netlist/RiscV.v
+read_saif -input ../saif/myRiscV.saif -instance tb/UUT -unit ns -scale 1
+create_clock -name MY_CLK Clock
+report_power > ./report_power_369ns.txt
+
+
+

@@ -1,0 +1,90 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+
+ENTITY MEMORY IS
+PORT(   clock, resetn : in std_logic;
+        
+        --address_addsum_mem_in: in std_logic_vector(31 downto 0); -- address to fetch
+        --address_addsum_mem_out: out std_logic_vector(31 downto 0); -- address to fetch
+
+        data_write_mem_in : in std_logic_vector(31 downto 0); -- data memory
+		data_write_mem_out: out std_logic_vector(31 downto 0); -- data memory
+
+		ZeroFlag_mem: in std_logic;
+		Branch_mem      : in std_logic;
+        PCRsc   : OUT std_logic;
+		Jump_mem        : in std_logic;
+
+        --write_data_wb : OUT std_logic_vector (31 downto 0);
+        --mem_read : OUT std_logic;
+
+		MemR_mem        : in std_logic;
+        MemR_out        : OUT std_logic;
+		MemW_mem        : in std_logic;
+        MemW_out        : OUT std_logic;
+        -- pipe signals
+		Mem_to_Reg_mem  : in std_logic;
+        Mem_to_Reg_wb  : out std_logic;
+        Reg_Write_mem   : in std_logic;	
+        Reg_Write_wb   : out std_logic;
+        read_data_mem : IN std_logic_vector(31 downto 0);
+        read_data_wb   : out std_logic_vector(31 downto 0);
+        address_mem: in std_logic_vector(31 downto 0); -- ALURes_mem address memory
+        address_wb : OUT std_logic_vector(31 downto 0);
+        rd_mem : in  std_logic_vector(4 downto 0); --rd to bypass
+        rd_wb : out  std_logic_vector(4 downto 0)
+);
+END entity MEMORY;
+
+
+ARCHITECTURE arch OF MEMORY IS
+
+COMPONENT pipe_MEMWB IS
+PORT (  clock, flush : IN std_logic;
+        reg_write_in : IN std_logic;
+        read_data_in : IN std_logic_vector(31 downto 0);
+        address_in   : IN std_logic_vector(31 downto 0);
+        rd_in_wb     : IN std_logic_vector(4 downto 0);
+        memtoreg_in  : IN std_logic;
+
+        reg_write_out : OUT std_logic;
+        read_data_out : OUT std_logic_vector(31 downto 0);
+        address_out   : OUT std_logic_vector(31 downto 0);
+        rd_out_wb     : OUT std_logic_vector(4 downto 0);
+        memtoreg_out  : OUT std_logic
+);
+END COMPONENT;
+
+BEGIN
+init_proc_PCsrc : process (resetn, ZeroFlag_mem, Branch_mem, Jump_mem) 
+		  begin 
+			if (resetn = '0') then
+			    PCRsc <= '0';
+			else 
+			    PCRsc<= (ZeroFlag_mem AND Branch_mem) OR Jump_mem;
+			end if;
+		  end process; 
+
+
+
+    --address_addsum_mem_out<=address_addsum_mem_in;
+    data_write_mem_out<=data_write_mem_in;
+    MemR_out<=MemR_mem;
+    MemW_out<=MemW_mem;
+--PCRsc<= (ZeroFlag_mem AND Branch_mem) OR Jump_mem;    
+
+stage4: pipe_MEMWB PORT MAP (  clock=>clock, flush=>resetn,
+                                
+        reg_write_in => Reg_Write_mem,
+        read_data_in => read_data_mem,
+        address_in => address_mem,   
+        rd_in_wb => rd_mem,    
+        memtoreg_in => Mem_to_Reg_mem,
+
+        reg_write_out => Reg_Write_wb,
+        read_data_out => read_data_wb,
+        address_out => address_wb,   
+        rd_out_wb => rd_wb, 
+        memtoreg_out => Mem_to_Reg_wb
+);
+END arch;

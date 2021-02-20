@@ -1,0 +1,43 @@
+vcom -93 -work ./work ../tb/clk_gen.vhd
+vcom -93 -work ./work ../tb/IM.vhd
+vcom -93 -work ./work ../tb/DM.vhd
+
+vcom -93 -work ./work ../src/ABSV_unit.vhd
+vcom -93 -work ./work ../src/ALU.vhd
+vcom -93 -work ./work ../src/ALUControl.vhd
+vcom -93 -work ./work ../src/Control_unit.vhd
+vcom -93 -work ./work ../src/EXE.vhd
+vcom -93 -work ./work ../src/FLUSH_UNIT.vhd
+vcom -93 -work ./work ../src/Forwarding_Unit.vhd
+vcom -93 -work ./work ../src/Hazard_Unit.vhd
+
+vcom -93 -work ./work ../src/ID.vhd
+vcom -93 -work ./work ../src/IF.vhd
+vcom -93 -work ./work ../src/imm_gen.vhd
+vcom -93 -work ./work ../src/MEM.vhd
+vcom -93 -work ./work ../src/Mux3to1.vhd
+vcom -93 -work ./work ../src/mux4_1.vhd
+vcom -93 -work ./work ../src/PC.vhd
+
+vcom -93 -work ./work ../src/pipe_EXMEM.vhd
+vcom -93 -work ./work ../src/pipe_IDEXE.vhd
+vcom -93 -work ./work ../src/pipe_IFID.vhd
+vcom -93 -work ./work ../src/pipe_MEMWB.vhd
+vcom -93 -work ./work ../src/reg_file.vhd
+vcom -93 -work ./work ../src/WB.vhd
+vcom -93 -work ./work ../src/RiscV.vhd
+
+vlog -work ./work ../netlist/RiscV.v
+vlog -work ./work ../tb/tb_RiscV.v
+
+vsim -L /software/dk/nangate45/verilog/msim6.2g work.tb
+vsim -L /software/dk/nangate45/verilog/msim6.2g -sdftyp /tb/UUT=../netlist/RiscV.sdf work.tb
+
+vcd file ../vcd/myRiscV.vcd
+vcd add /tb/UUT/*
+
+run 5 us
+
+
+
+

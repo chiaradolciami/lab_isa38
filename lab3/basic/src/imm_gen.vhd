@@ -1,0 +1,30 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+ENTITY imm_gen IS
+PORT(   instruction_in  : IN std_logic_vector(31 DOWNTO 0);
+        immediate_out : OUT std_logic_vector(31 DOWNTO 0));	
+END imm_gen;
+
+ARCHITECTURE Arch OF imm_gen IS
+ 
+BEGIN
+
+immediate_out<= instruction_in(31 downto 12)& "000000000000" WHEN instruction_in(6 downto 0)="0110111" ELSE --LUI
+                instruction_in(31 downto 12)& "000000000000" WHEN instruction_in(6 downto 0)="0010111" ELSE --AUIPC
+					 
+					 
+					 
+                (31 downto 12 =>instruction_in(31))&instruction_in(31 downto 20) WHEN (instruction_in(6 downto 0)="0010011" AND instruction_in(14 downto 12)="000") ELSE --ADDI
+		(31 downto 12 =>instruction_in(31))&instruction_in(31 downto 20) WHEN (instruction_in(6 downto 0)="0010011" AND instruction_in(14 downto 12)="111") else --ANDI
+		(31 downto 5 =>instruction_in(31))&instruction_in(24 downto 20) when (instruction_in(6 downto 0) ="0010011" AND instruction_in(14 downto 12)="101") ELSE --SRAI
+                (31 downto 12 =>instruction_in(31))&instruction_in(31 downto 20) WHEN instruction_in(6 downto 0)="0000011" ELSE --LW
+
+                (31 downto 12 =>instruction_in(31))&instruction_in(31)&instruction_in(7)&instruction_in(30 downto 25)&instruction_in(11 downto 8)WHEN instruction_in(6 downto 0)="1100011" ELSE --BEQ
+                (31 downto 20 =>instruction_in(31))&instruction_in(31)&instruction_in(19 downto 12)&instruction_in(20)&instruction_in(30 downto 21) WHEN instruction_in(6 downto 0)="1101111" ELSE --JAL
+                (31 downto 12 =>instruction_in(31))&instruction_in(31 downto 25)&instruction_in(11 downto 7) WHEN instruction_in(6 downto 0)="0100011" ELSE --SW
+                
+		(OTHERS=>'0'); --XOR, SLT, ADD
+
+END Arch;

@@ -1,0 +1,107 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RiscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RiscV
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 21:52:33 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Decode_Stage/stage2/Add_reg2_out_reg[0]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Execution_Stage/pipe/ALURes_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RiscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Decode_Stage/stage2/Add_reg2_out_reg[0]/CK (DFF_X1)     0.00       0.00 r
+  Decode_Stage/stage2/Add_reg2_out_reg[0]/Q (DFF_X1)      0.08       0.08 f
+  Decode_Stage/stage2/Add_reg2_out[0] (pipe_IDEXE)        0.00       0.08 f
+  Decode_Stage/F_add_reg2[0] (DECODE)                     0.00       0.08 f
+  Forwarding_Unit_portmap/ID_Rs2[0] (Forwarding_Unit)     0.00       0.08 f
+  Forwarding_Unit_portmap/U32/Z (XOR2_X1)                 0.07       0.16 f
+  Forwarding_Unit_portmap/U36/ZN (NOR4_X1)                0.09       0.25 r
+  Forwarding_Unit_portmap/U21/ZN (NAND3_X1)               0.04       0.29 f
+  Forwarding_Unit_portmap/U20/ZN (NOR2_X1)                0.08       0.37 r
+  Forwarding_Unit_portmap/ForwardB[1] (Forwarding_Unit)
+                                                          0.00       0.37 r
+  Execution_Stage/Forward_B[1] (EX_unit)                  0.00       0.37 r
+  Execution_Stage/Mux_forwarding_B/sel[1] (multiplexer_3to1_2)
+                                                          0.00       0.37 r
+  Execution_Stage/Mux_forwarding_B/U9/ZN (XNOR2_X1)       0.05       0.42 f
+  Execution_Stage/Mux_forwarding_B/U89/ZN (AOI222_X1)     0.10       0.53 r
+  Execution_Stage/Mux_forwarding_B/U90/ZN (INV_X1)        0.03       0.56 f
+  Execution_Stage/Mux_forwarding_B/OUTPUT[31] (multiplexer_3to1_2)
+                                                          0.00       0.56 f
+  Execution_Stage/absv_unit/RS2[31] (ABS_unit)            0.00       0.56 f
+  Execution_Stage/absv_unit/U10/Z (BUF_X2)                0.06       0.62 f
+  Execution_Stage/absv_unit/U36/Z (XOR2_X1)               0.06       0.68 r
+  Execution_Stage/absv_unit/add_31/A[10] (ABS_unit_DW01_add_1)
+                                                          0.00       0.68 r
+  Execution_Stage/absv_unit/add_31/U172/ZN (NAND2_X1)     0.03       0.71 f
+  Execution_Stage/absv_unit/add_31/U159/ZN (NOR2_X1)      0.05       0.76 r
+  Execution_Stage/absv_unit/add_31/U107/ZN (AND4_X2)      0.07       0.83 r
+  Execution_Stage/absv_unit/add_31/U17/CO (HA_X1)         0.06       0.89 r
+  Execution_Stage/absv_unit/add_31/U16/CO (HA_X1)         0.06       0.95 r
+  Execution_Stage/absv_unit/add_31/U15/CO (HA_X1)         0.06       1.01 r
+  Execution_Stage/absv_unit/add_31/U14/CO (HA_X1)         0.06       1.07 r
+  Execution_Stage/absv_unit/add_31/U13/CO (HA_X1)         0.06       1.12 r
+  Execution_Stage/absv_unit/add_31/U12/CO (HA_X1)         0.06       1.18 r
+  Execution_Stage/absv_unit/add_31/U11/CO (HA_X1)         0.06       1.24 r
+  Execution_Stage/absv_unit/add_31/U10/CO (HA_X1)         0.06       1.30 r
+  Execution_Stage/absv_unit/add_31/U9/CO (HA_X1)          0.06       1.35 r
+  Execution_Stage/absv_unit/add_31/U8/CO (HA_X1)          0.06       1.41 r
+  Execution_Stage/absv_unit/add_31/U7/CO (HA_X1)          0.06       1.47 r
+  Execution_Stage/absv_unit/add_31/U6/CO (HA_X1)          0.06       1.53 r
+  Execution_Stage/absv_unit/add_31/U5/CO (HA_X1)          0.06       1.59 r
+  Execution_Stage/absv_unit/add_31/U4/CO (HA_X1)          0.06       1.64 r
+  Execution_Stage/absv_unit/add_31/U3/CO (HA_X1)          0.06       1.70 r
+  Execution_Stage/absv_unit/add_31/U2/CO (HA_X1)          0.06       1.76 r
+  Execution_Stage/absv_unit/add_31/U121/ZN (XNOR2_X1)     0.03       1.78 f
+  Execution_Stage/absv_unit/add_31/SUM[31] (ABS_unit_DW01_add_1)
+                                                          0.00       1.78 f
+  Execution_Stage/absv_unit/U78/ZN (AND2_X1)              0.04       1.82 f
+  Execution_Stage/absv_unit/result_ABS[31] (ABS_unit)     0.00       1.82 f
+  Execution_Stage/Mux_data/I10[31] (multiplexer_3to1_1)
+                                                          0.00       1.82 f
+  Execution_Stage/Mux_data/U79/ZN (AOI222_X1)             0.06       1.89 r
+  Execution_Stage/Mux_data/U80/ZN (INV_X1)                0.02       1.91 f
+  Execution_Stage/Mux_data/OUTPUT[31] (multiplexer_3to1_1)
+                                                          0.00       1.91 f
+  Execution_Stage/pipe/ALURes_in[31] (pipe_EXMEM)         0.00       1.91 f
+  Execution_Stage/pipe/U7/ZN (AND2_X1)                    0.04       1.94 f
+  Execution_Stage/pipe/ALURes_out_reg[31]/D (DFFR_X1)     0.01       1.95 f
+  data arrival time                                                  1.95
+
+  clock MY_CLK (rise edge)                                1.79       1.79
+  clock network delay (ideal)                             0.00       1.79
+  clock uncertainty                                      -0.07       1.72
+  Execution_Stage/pipe/ALURes_out_reg[31]/CK (DFFR_X1)
+                                                          0.00       1.72 r
+  library setup time                                     -0.04       1.68
+  data required time                                                 1.68
+  --------------------------------------------------------------------------
+  data required time                                                 1.68
+  data arrival time                                                 -1.95
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.27
+
+
+1

@@ -1,0 +1,201 @@
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/gtech.db'
+Loading db file '/software/synopsys/syn_current_64.18/libraries/syn/standard.sldb'
+  Loading link library 'NangateOpenCellLibrary'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Warning:  ../src/RiscV.vhd:314: Floating pin 'flush of cell Fetch_Stage' connected to ground. (ELAB-294)
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'RiscV'.
+Information: Building the design 'FETCH'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'DECODE'. (HDL-193)
+Warning:  ../src/ID.vhd:188: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 184 in file
+	'../src/ID.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           188            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'EX_unit'. (HDL-193)
+Warning:  ../src/EXE.vhd:212: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+Warning:  ../src/EXE.vhd:227: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 210 in file
+	'../src/EXE.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           212            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 225 in file
+	'../src/EXE.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           227            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'MEMORY'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'WB'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Hazard_Unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Forwarding_Unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'Flush_Unit'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'mux4_1'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'program_counter'. (HDL-193)
+
+Inferred memory devices in process
+	in routine program_counter line 16 in file
+		'../src/PC.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     PC_out_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'pipe_IFID'. (HDL-193)
+
+Inferred memory devices in process
+	in routine pipe_IFID line 15 in file
+		'../src/pipe_IFID.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    addr_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    instr_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'RF'. (HDL-193)
+
+Inferred memory devices in process
+	in routine RF line 50 in file
+		'../src/reg_file.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     dataRF_reg      | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     dataRF_reg      | Flip-flop |  992  |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|      RF/47       |   32   |   32    |      5       |
+|      RF/48       |   32   |   32    |      5       |
+======================================================
+Presto compilation completed successfully.
+Information: Building the design 'imm_gen'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'pipe_IDEXE'. (HDL-193)
+
+Inferred memory devices in process
+	in routine pipe_IDEXE line 51 in file
+		'../src/pipe_IDEXE.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Add_reg2_out_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+|   address_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     op1_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     op2_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     rd_out_reg      | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|  imm_inst_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    func3_out_reg    | Flip-flop |   4   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    ALUOp_out_reg    | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   ALU_src_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|   Branch_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    Jump_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    MemR_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    MemW_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| Mem_to_Reg_out_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  Reg_Write_out_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  Add_reg1_out_reg   | Flip-flop |   5   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'Control_unit'. (HDL-193)
+
+Statistics for case statements in always block at line 24 in file
+	'../src/Control_unit.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            36            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'pipe_EXMEM'. (HDL-193)
+
+Inferred memory devices in process
+	in routine pipe_EXMEM line 47 in file
+		'../src/pipe_EXMEM.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  Reg_Write_out_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  ZeroFlag_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  addr_sum_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   ALURes_out_reg    | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|     RS2_out_reg     | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   rd_addr_out_reg   | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   Branch_out_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    Jump_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    MemR_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|    MemW_out_reg     | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+| Mem_to_Reg_out_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'ALU'. (HDL-193)
+
+Statistics for case statements in always block at line 21 in file
+	'../src/ALU.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            24            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'ALUControl'. (HDL-193)
+
+Statistics for case statements in always block at line 25 in file
+	'../src/ALUControl.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            29            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'multiplexer_3to1'. (HDL-193)
+
+Statistics for case statements in always block at line 17 in file
+	'../src/Mux3to1.vhd'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            19            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'pipe_MEMWB'. (HDL-193)
+
+Inferred memory devices in process
+	in routine pipe_MEMWB line 24 in file
+		'../src/pipe_MEMWB.vhd'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|  memtoreg_out_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  reg_write_out_reg  | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+|  read_data_out_reg  | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|   address_out_reg   | Flip-flop |  32   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    rd_out_wb_reg    | Flip-flop |   5   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+1

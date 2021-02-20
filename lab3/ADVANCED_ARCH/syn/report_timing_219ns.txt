@@ -1,0 +1,131 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RiscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RiscV
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 21:59:43 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Decode_Stage/stage2/address_out_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Execution_Stage/pipe/ALURes_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RiscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Decode_Stage/stage2/address_out_reg[1]/CK (DFFRS_X2)
+                                                          0.00       0.00 r
+  Decode_Stage/stage2/address_out_reg[1]/Q (DFFRS_X2)     0.09       0.09 f
+  Decode_Stage/stage2/address_out[1] (pipe_IDEXE)         0.00       0.09 f
+  Decode_Stage/address_out[1] (DECODE)                    0.00       0.09 f
+  Execution_Stage/addr_in[1] (EX_unit)                    0.00       0.09 f
+  Execution_Stage/add_220/A[1] (EX_unit_DW01_add_0)       0.00       0.09 f
+  Execution_Stage/add_220/U66/ZN (AND2_X1)                0.05       0.13 f
+  Execution_Stage/add_220/U72/ZN (NAND2_X1)               0.03       0.16 r
+  Execution_Stage/add_220/U74/ZN (NAND3_X1)               0.04       0.20 f
+  Execution_Stage/add_220/U19/ZN (NAND2_X1)               0.04       0.24 r
+  Execution_Stage/add_220/U86/ZN (NAND3_X1)               0.03       0.27 f
+  Execution_Stage/add_220/U106/ZN (NAND2_X1)              0.03       0.30 r
+  Execution_Stage/add_220/U89/ZN (NAND3_X1)               0.04       0.34 f
+  Execution_Stage/add_220/U92/ZN (NAND2_X1)               0.03       0.37 r
+  Execution_Stage/add_220/U95/ZN (NAND3_X1)               0.03       0.40 f
+  Execution_Stage/add_220/U1_6/CO (FA_X1)                 0.10       0.50 f
+  Execution_Stage/add_220/U100/ZN (NAND2_X1)              0.04       0.54 r
+  Execution_Stage/add_220/U60/ZN (NAND3_X1)               0.04       0.58 f
+  Execution_Stage/add_220/U77/ZN (NAND2_X1)               0.03       0.61 r
+  Execution_Stage/add_220/U62/ZN (NAND3_X1)               0.04       0.65 f
+  Execution_Stage/add_220/U129/ZN (NAND2_X1)              0.04       0.69 r
+  Execution_Stage/add_220/U126/ZN (NAND3_X1)              0.04       0.72 f
+  Execution_Stage/add_220/U169/ZN (NAND2_X1)              0.04       0.76 r
+  Execution_Stage/add_220/U166/ZN (NAND3_X1)              0.04       0.80 f
+  Execution_Stage/add_220/U187/ZN (NAND2_X1)              0.04       0.83 r
+  Execution_Stage/add_220/U50/ZN (NAND3_X1)               0.04       0.87 f
+  Execution_Stage/add_220/U20/ZN (NAND2_X1)               0.04       0.91 r
+  Execution_Stage/add_220/U209/ZN (NAND3_X1)              0.03       0.94 f
+  Execution_Stage/add_220/U176/ZN (NAND2_X1)              0.03       0.98 r
+  Execution_Stage/add_220/U178/ZN (NAND3_X1)              0.04       1.01 f
+  Execution_Stage/add_220/U213/ZN (NAND2_X1)              0.04       1.05 r
+  Execution_Stage/add_220/U68/ZN (NAND3_X1)               0.04       1.09 f
+  Execution_Stage/add_220/U5/ZN (NAND2_X1)                0.04       1.13 r
+  Execution_Stage/add_220/U16/ZN (NAND3_X1)               0.04       1.17 f
+  Execution_Stage/add_220/U4/ZN (NAND2_X1)                0.03       1.20 r
+  Execution_Stage/add_220/U221/ZN (NAND3_X1)              0.03       1.23 f
+  Execution_Stage/add_220/U121/ZN (NAND2_X1)              0.03       1.27 r
+  Execution_Stage/add_220/U123/ZN (NAND3_X1)              0.04       1.30 f
+  Execution_Stage/add_220/U224/ZN (NAND2_X1)              0.04       1.34 r
+  Execution_Stage/add_220/U227/ZN (NAND3_X1)              0.04       1.37 f
+  Execution_Stage/add_220/U200/ZN (NAND2_X1)              0.04       1.41 r
+  Execution_Stage/add_220/U183/ZN (NAND3_X1)              0.04       1.45 f
+  Execution_Stage/add_220/U231/ZN (NAND2_X1)              0.04       1.48 r
+  Execution_Stage/add_220/U141/ZN (NAND3_X1)              0.04       1.52 f
+  Execution_Stage/add_220/U155/ZN (NAND2_X1)              0.04       1.56 r
+  Execution_Stage/add_220/U143/ZN (NAND3_X1)              0.04       1.59 f
+  Execution_Stage/add_220/U236/ZN (NAND2_X1)              0.04       1.63 r
+  Execution_Stage/add_220/U81/ZN (NAND3_X1)               0.04       1.67 f
+  Execution_Stage/add_220/U136/ZN (NAND2_X1)              0.04       1.70 r
+  Execution_Stage/add_220/U124/ZN (NAND3_X1)              0.04       1.74 f
+  Execution_Stage/add_220/U249/ZN (NAND2_X1)              0.04       1.78 r
+  Execution_Stage/add_220/U17/ZN (NAND3_X1)               0.04       1.82 f
+  Execution_Stage/add_220/U194/ZN (NAND2_X1)              0.04       1.85 r
+  Execution_Stage/add_220/U181/ZN (NAND3_X1)              0.04       1.89 f
+  Execution_Stage/add_220/U253/ZN (NAND2_X1)              0.04       1.92 r
+  Execution_Stage/add_220/U256/ZN (NAND3_X1)              0.04       1.96 f
+  Execution_Stage/add_220/U55/ZN (NAND2_X1)               0.04       2.00 r
+  Execution_Stage/add_220/U57/ZN (NAND3_X1)               0.04       2.04 f
+  Execution_Stage/add_220/U242/ZN (NAND2_X1)              0.04       2.07 r
+  Execution_Stage/add_220/U140/ZN (NAND3_X1)              0.04       2.11 f
+  Execution_Stage/add_220/U150/ZN (NAND2_X1)              0.04       2.15 r
+  Execution_Stage/add_220/U138/ZN (NAND3_X1)              0.04       2.18 f
+  Execution_Stage/add_220/U258/ZN (NAND2_X1)              0.03       2.21 r
+  Execution_Stage/add_220/U203/ZN (AND3_X1)               0.05       2.26 r
+  Execution_Stage/add_220/U239/ZN (XNOR2_X1)              0.06       2.32 r
+  Execution_Stage/add_220/SUM[31] (EX_unit_DW01_add_0)
+                                                          0.00       2.32 r
+  Execution_Stage/alu_unit/addr_sum[31] (ALU)             0.00       2.32 r
+  Execution_Stage/alu_unit/U305/ZN (AOI21_X1)             0.03       2.35 f
+  Execution_Stage/alu_unit/U306/ZN (OAI211_X1)            0.04       2.39 r
+  Execution_Stage/alu_unit/AluRes[31] (ALU)               0.00       2.39 r
+  Execution_Stage/Mux_data/I00[31] (multiplexer_3to1_1)
+                                                          0.00       2.39 r
+  Execution_Stage/Mux_data/U21/ZN (NAND2_X1)              0.03       2.42 f
+  Execution_Stage/Mux_data/U7/ZN (NAND3_X1)               0.03       2.45 r
+  Execution_Stage/Mux_data/OUTPUT[31] (multiplexer_3to1_1)
+                                                          0.00       2.45 r
+  Execution_Stage/pipe/ALURes_in[31] (pipe_EXMEM)         0.00       2.45 r
+  Execution_Stage/pipe/U130/ZN (AND2_X1)                  0.04       2.48 r
+  Execution_Stage/pipe/ALURes_out_reg[31]/D (DFFR_X1)     0.01       2.49 r
+  data arrival time                                                  2.49
+
+  clock MY_CLK (rise edge)                                2.19       2.19
+  clock network delay (ideal)                             0.00       2.19
+  clock uncertainty                                      -0.07       2.12
+  Execution_Stage/pipe/ALURes_out_reg[31]/CK (DFFR_X1)
+                                                          0.00       2.12 r
+  library setup time                                     -0.03       2.09
+  data required time                                                 2.09
+  --------------------------------------------------------------------------
+  data required time                                                 2.09
+  data arrival time                                                 -2.49
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.41
+
+
+1

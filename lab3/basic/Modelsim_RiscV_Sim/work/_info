@@ -1,0 +1,1065 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dD:/QuartusLiteEdition18.1.0.625
+Ealu
+Z0 w1613072917
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim
+Z5 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALU.vhd
+Z6 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALU.vhd
+l0
+L5
+VN@ARDMo_68@GKAP=UT4Uo2
+!s100 `QcPf7LQ=:_?K9:RFN]Xn1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1613781108
+!i10b 1
+Z9 !s108 1613781108.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALU.vhd|
+Z11 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALU.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abeh
+R1
+R2
+R3
+DEx4 work 3 alu 0 22 N@ARDMo_68@GKAP=UT4Uo2
+l19
+L17
+VPg>eg6KJ3^aRg<C;21O=I3
+!s100 ;4d4PEPALlggZ87?I3giG0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealucontrol
+Z14 w1613751104
+R1
+R2
+R3
+R4
+Z15 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALUControl.vhd
+Z16 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALUControl.vhd
+l0
+L5
+V0]CZNLbBiYnN<lU`ldbMm1
+!s100 OF>]nLTz7jFoYa<A3Y`453
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALUControl.vhd|
+Z18 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ALUControl.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+DEx4 work 10 alucontrol 0 22 0]CZNLbBiYnN<lU`ldbMm1
+l19
+L15
+VdYmf<_>53n21>>]gGGAWG3
+!s100 1@SGnfb<N@A<i41oQLkz40
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Eclk_gen
+Z19 w1613775063
+Z20 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z21 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+R4
+Z22 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/clk_gen.vhd
+Z23 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/clk_gen.vhd
+l0
+L6
+VH>a4Me7ml?`iUii:hVSc?3
+!s100 bGHA2bCR2PZIZEikmX8z11
+R7
+32
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/clk_gen.vhd|
+Z25 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/clk_gen.vhd|
+!i113 1
+R12
+R13
+Abeh
+R20
+R21
+R2
+R3
+DEx4 work 7 clk_gen 0 22 H>a4Me7ml?`iUii:hVSc?3
+l18
+L13
+V2Xfimf:3=cacd1YohJD7P0
+!s100 MTF<G[D^@Hhf3]Ta7m?[Y2
+R7
+32
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Econtrol_unit
+Z26 w1613754037
+R1
+R2
+R3
+R4
+Z27 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Control_unit.vhd
+Z28 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Control_unit.vhd
+l0
+L5
+Vnn^j^7G3DzGE>^CQI^oWH3
+!s100 ?EA_?EUTUM:TJI_Qel;@c2
+R7
+32
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Control_unit.vhd|
+Z30 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Control_unit.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+DEx4 work 12 control_unit 0 22 nn^j^7G3DzGE>^CQI^oWH3
+l22
+L20
+VW2Oc7f[:_G3K`j=A`eDa]1
+!s100 COZgj2?BT[B?TUWAGIa]z3
+R7
+32
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Edecode
+Z31 w1613648868
+R2
+R3
+R4
+Z32 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ID.vhd
+Z33 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ID.vhd
+l0
+L4
+VZ5KV;60?;;eGYcecN3Wjh1
+!s100 d;Z0Mg7L6C]DRz6JOOPZe1
+R7
+32
+R8
+!i10b 1
+R9
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ID.vhd|
+Z35 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/ID.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 6 decode 0 22 Z5KV;60?;;eGYcecN3Wjh1
+l128
+L34
+V6Kdl48f9V=ckHU7hZIamF3
+!s100 RnmazJe;b^=2b<`Qe_[_S0
+R7
+32
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Edm
+Z36 w1613779248
+R1
+R2
+R3
+R4
+Z37 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/DM
+Z38 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/DM
+l0
+L5
+VWn;_m]fV<IiXkGR5CDb_c2
+!s100 5JeKBfiOZL7PCi?>WDz<g3
+R7
+32
+R8
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/DM|
+Z40 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/DM|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 2 dm 0 22 Wn;_m]fV<IiXkGR5CDb_c2
+l25
+L17
+VRTc5f5=j600aG^:Q@2LFS0
+!s100 350_;[a2JJZLPnVC]VjHm3
+R7
+32
+R8
+!i10b 1
+R9
+R39
+R40
+!i113 1
+R12
+R13
+Eex_unit
+Z41 w1613746573
+R1
+R2
+R3
+R4
+Z42 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/EXE.vhd
+Z43 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/EXE.vhd
+l0
+L5
+VaRaQ6_K5[m`>NSHTDlF640
+!s100 WF5i@n`[>?Bodl6cl1RN_1
+R7
+32
+Z44 !s110 1613781110
+!i10b 1
+Z45 !s108 1613781110.000000
+Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/EXE.vhd|
+Z47 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/EXE.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+DEx4 work 7 ex_unit 0 22 aRaQ6_K5[m`>NSHTDlF640
+l132
+L56
+V67PL=LLH<m][9BWPV=5fW3
+!s100 ;]536:Yk^UDD>AGgj]l5G3
+R7
+32
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 1
+R12
+R13
+Efetch
+Z48 w1613681690
+R1
+R2
+R3
+R4
+Z49 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IF.vhd
+Z50 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IF.vhd
+l0
+L5
+VVi]a9j4f9S47EOcR@RYgU1
+!s100 z?LH?PPT_zciYc=nL8H2L1
+R7
+32
+Z51 !s110 1613781109
+!i10b 1
+Z52 !s108 1613781109.000000
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IF.vhd|
+Z54 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IF.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 5 fetch 0 22 Vi]a9j4f9S47EOcR@RYgU1
+l44
+L16
+VbG1fZGDAYb=OGonnlJ1H?0
+!s100 iaW=bZ]8bU6a;Y9g]Q=`_0
+R7
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R12
+R13
+Eflush_unit
+Z55 w1613781106
+R1
+R2
+R3
+R4
+Z56 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd
+Z57 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd
+l0
+L5
+V;2_O<eWddKoU@]VoM6VFc2
+!s100 oJajlgBZ]lhJnmfc?QDGm0
+R7
+32
+R44
+!i10b 1
+R45
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd|
+Z59 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/FLUSH_UNIT.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+DEx4 work 10 flush_unit 0 22 ;2_O<eWddKoU@]VoM6VFc2
+l13
+L12
+VGO[G>g63O1T<iRSV1_S@k1
+!s100 VfjOklTF3aV2V=TN9fJ:c0
+R7
+32
+R44
+!i10b 1
+R45
+R58
+R59
+!i113 1
+R12
+R13
+Astructure
+R1
+R2
+R3
+DEx4 work 10 flush_unit 0 22 ?IbX;U3f44ezmW:C[W?:>3
+l17
+L16
+V<`M3?f_zWWfD68]j:gaMd3
+!s100 V=inK>b1ead@<LUo<dX=I0
+R7
+32
+!s110 1613590124
+!i10b 1
+!s108 1613590124.000000
+R58
+R59
+!i113 1
+R12
+R13
+w1581861400
+Eforwarding_unit
+Z60 w1613590114
+R2
+R3
+R4
+Z61 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Forwarding_Unit.vhd
+Z62 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Forwarding_Unit.vhd
+l0
+L4
+V8kXVTeEZSdmTh8WI`VWC70
+!s100 2;9_o_?0T<ai34W@m]N<_3
+R7
+32
+R44
+!i10b 1
+R45
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Forwarding_Unit.vhd|
+Z64 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Forwarding_Unit.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+DEx4 work 15 forwarding_unit 0 22 8kXVTeEZSdmTh8WI`VWC70
+l21
+L19
+VoeEc<Rk8C3Fz1IgLRWMDK3
+!s100 [8d?@1FhI^HUzT>88UPPQ2
+R7
+32
+R44
+!i10b 1
+R45
+R63
+R64
+!i113 1
+R12
+R13
+Abehavioural
+R2
+R3
+DEx4 work 15 forwarding_unit 0 22 <;f5^1FgN;TUOPg66Y_z03
+l23
+L21
+VkglzkFO]KLL8@oZnm=S^S0
+!s100 0iEa7iJRMF0VBa`73MMYB0
+R7
+32
+!s110 1613586862
+!i10b 1
+!s108 1613586862.000000
+R63
+R64
+!i113 1
+R12
+R13
+w1578278176
+Ehazard_unit
+Z65 w1613763456
+R2
+R3
+R4
+Z66 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Hazard_Unit.vhd
+Z67 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Hazard_Unit.vhd
+l0
+L4
+Vn;TC^LoQOWS`LZbL4HEk42
+!s100 CaKTAM@hK?_D1;F3dN7z>2
+R7
+32
+R44
+!i10b 1
+R45
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Hazard_Unit.vhd|
+Z69 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Hazard_Unit.vhd|
+!i113 1
+R12
+R13
+Abeh
+R2
+R3
+DEx4 work 11 hazard_unit 0 22 n;TC^LoQOWS`LZbL4HEk42
+l25
+L23
+V40Vi@QagU?DKbVQ_z7A2k2
+!s100 =KJCBdZVXKgJ71fRj<nXZ2
+R7
+32
+R44
+!i10b 1
+R45
+R68
+R69
+!i113 1
+R12
+R13
+Abehavioural
+R2
+R3
+DEx4 work 11 hazard_unit 0 22 VA[R<QAbPNzS?ZY`cSXPl2
+l21
+L19
+V2<XTI=XjR4O9_eaHQbM`31
+!s100 W5A<iNR=8JSmQ4CeCQ[2i1
+R7
+32
+!s110 1613422395
+!i10b 1
+!s108 1613422395.000000
+R68
+R69
+!i113 1
+R12
+R13
+w1581656102
+Eim
+Z70 w1613773737
+R1
+R2
+R3
+R4
+Z71 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IM
+Z72 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IM
+l0
+L5
+VH]NezAMZPm`gIU:7d7ReJ3
+!s100 o5P=:bgeBm8=b2JzeOb>`3
+R7
+32
+R51
+!i10b 1
+R52
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IM|
+Z74 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/IM|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 2 im 0 22 H]NezAMZPm`gIU:7d7ReJ3
+l47
+L13
+V@EOM]f2609c9Akeo5lEVn3
+!s100 YL^<dPoIK<80k6m`P70c91
+R7
+32
+R51
+!i10b 1
+R52
+R73
+R74
+!i113 1
+R12
+R13
+Eimm_gen
+Z75 w1613761503
+R1
+R2
+R3
+R4
+Z76 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/imm_gen.vhd
+Z77 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/imm_gen.vhd
+l0
+L5
+Vk<D<Z3S:4CmgP8Hi8501V2
+!s100 NI?O3n]>Qbbg`aofX^YFT0
+R7
+32
+R8
+!i10b 1
+R9
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/imm_gen.vhd|
+Z79 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/imm_gen.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 7 imm_gen 0 22 k<D<Z3S:4CmgP8Hi8501V2
+l12
+L10
+VQCmf0<zi55Vd5jW3KKNX]0
+!s100 gBGc5X`hDJNI<eJEJCH;52
+R7
+32
+R8
+!i10b 1
+R9
+R78
+R79
+!i113 1
+R12
+R13
+Ememory
+Z80 w1613679085
+R2
+R3
+R4
+Z81 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/MEM.vhd
+Z82 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/MEM.vhd
+l0
+L4
+VFINOl;>R=kHdGi9jKX1EG0
+!s100 QG=EZD5;<L1c?@Q?eY0AY3
+R7
+32
+R51
+!i10b 1
+R52
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/MEM.vhd|
+Z84 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/MEM.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 6 memory 0 22 FINOl;>R=kHdGi9jKX1EG0
+l58
+L40
+Vc:d1=TVf1O>U@DWRm:e1h2
+!s100 @^6Hj^R[2PUU[E1ELf2zc2
+R7
+32
+R51
+!i10b 1
+R52
+R83
+R84
+!i113 1
+R12
+R13
+Emultiplexer_3to1
+Z85 w1613671671
+R1
+R2
+R3
+R4
+Z86 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Mux3to1.vhd
+Z87 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Mux3to1.vhd
+l0
+L5
+VQn`NOMRNicDAH8P>U2kCK1
+!s100 1GLNgG7RMiDQn_b@h:mij2
+R7
+32
+R44
+!i10b 1
+R45
+Z88 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Mux3to1.vhd|
+Z89 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/Mux3to1.vhd|
+!i113 1
+R12
+R13
+Abeh
+R1
+R2
+R3
+Z90 DEx4 work 16 multiplexer_3to1 0 22 Qn`NOMRNicDAH8P>U2kCK1
+l15
+L13
+Z91 VD>7BmdWSE34fO?4?Agd_i3
+Z92 !s100 B13cD]4O6PcE2@^_3aP?M0
+R7
+32
+R44
+!i10b 1
+R45
+R88
+R89
+!i113 1
+R12
+R13
+Emux4_1
+Z93 w1613158426
+R1
+R2
+R3
+R4
+Z94 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/mux4_1.vhd
+Z95 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/mux4_1.vhd
+l0
+L5
+VQ6V;<:D6DQLdNgRcLjRzZ2
+!s100 jCE[hdemme6=jChPkLGBN1
+R7
+32
+R51
+!i10b 1
+R52
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/mux4_1.vhd|
+Z97 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/mux4_1.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 6 mux4_1 0 22 Q6V;<:D6DQLdNgRcLjRzZ2
+l17
+L15
+VWlzoWRLhlz`E66<2;;2VL1
+!s100 E1SmYlMJii1o=Uh9T8QFn3
+R7
+32
+R51
+!i10b 1
+R52
+R96
+R97
+!i113 1
+R12
+R13
+Epipe_exmem
+Z98 w1613780942
+R1
+R2
+R3
+R4
+Z99 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_EXMEM.vhd
+Z100 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_EXMEM.vhd
+l0
+L5
+VnOYfI6mR[ISh=ah9zQMbd2
+!s100 i?ok@TS6m>K5m]8oe]Dh;2
+R7
+32
+R51
+!i10b 1
+R52
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_EXMEM.vhd|
+Z102 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_EXMEM.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 10 pipe_exmem 0 22 nOYfI6mR[ISh=ah9zQMbd2
+l45
+L43
+VB`cnzoJANB5feSJRiB@V<1
+!s100 alP7Mz6UhY:OI8FYCAPMl0
+R7
+32
+R51
+!i10b 1
+R52
+R101
+R102
+!i113 1
+R12
+R13
+Epipe_idexe
+Z103 w1613781064
+R1
+R2
+R3
+R4
+Z104 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IDEXE.vhd
+Z105 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IDEXE.vhd
+l0
+L5
+VG0k]e;R;?k20<W8bkiJ063
+!s100 4Q405zhWohj=e<8ELXHMH0
+R7
+32
+R51
+!i10b 1
+R52
+Z106 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IDEXE.vhd|
+Z107 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IDEXE.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 10 pipe_idexe 0 22 G0k]e;R;?k20<W8bkiJ063
+l49
+L47
+V:nklQ6lAc5154P^V@Oloz0
+!s100 =bW[Mfo[W7NY_XnKa5V3C1
+R7
+32
+R51
+!i10b 1
+R52
+R106
+R107
+!i113 1
+R12
+R13
+Epipe_ifid
+Z108 w1613767698
+R1
+R2
+R3
+R4
+Z109 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IFID.vhd
+Z110 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IFID.vhd
+l0
+L5
+VjLjDN?R1Z:8<@[SW^JI6S3
+!s100 o_S=Uo53hh6S=61d3G]]W2
+R7
+32
+R51
+!i10b 1
+R52
+Z111 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IFID.vhd|
+Z112 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_IFID.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 9 pipe_ifid 0 22 jLjDN?R1Z:8<@[SW^JI6S3
+l13
+L11
+V=?=bWFRNkD4H4<mzaFZda0
+!s100 nZ`K<kHcNWS:VjiF@6nCO2
+R7
+32
+R51
+!i10b 1
+R52
+R111
+R112
+!i113 1
+R12
+R13
+Epipe_memwb
+Z113 w1613078974
+R1
+R2
+R3
+R4
+Z114 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_MEMWB.vhd
+Z115 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_MEMWB.vhd
+l0
+L5
+V=A3Q=FVM6boNHLYhjL?kX0
+!s100 _A0_8AS4;e[^E[K1WMQfD0
+R7
+32
+R51
+!i10b 1
+R52
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_MEMWB.vhd|
+Z117 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/pipe_MEMWB.vhd|
+!i113 1
+R12
+R13
+Abehavior
+R1
+R2
+R3
+DEx4 work 10 pipe_memwb 0 22 =A3Q=FVM6boNHLYhjL?kX0
+l22
+L20
+Vd20Ulad1]]j:F0;NIO1W^0
+!s100 OV@X[80nmiOLQPOAVAK0E0
+R7
+32
+R51
+!i10b 1
+R52
+R116
+R117
+!i113 1
+R12
+R13
+Eprogram_counter
+Z118 w1613765149
+R1
+R2
+R3
+R4
+Z119 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/PC.vhd
+Z120 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/PC.vhd
+l0
+L5
+Ve7lT4hZAba7Mo=@:_ln9F2
+!s100 GdXiRT_FM@[=XeKjUJChE2
+R7
+32
+R51
+!i10b 1
+R52
+Z121 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/PC.vhd|
+Z122 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/PC.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 15 program_counter 0 22 e7lT4hZAba7Mo=@:_ln9F2
+l14
+L12
+VoR5Y@CX7fh<HIRWfK8`Xg2
+!s100 lkf_lef3XF;V2?0gK`4Sb3
+R7
+32
+R51
+!i10b 1
+R52
+R121
+R122
+!i113 1
+R12
+R13
+Erf
+Z123 w1613774434
+R1
+R2
+R3
+R4
+Z124 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/reg_file.vhd
+Z125 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/reg_file.vhd
+l0
+L5
+VCfGTdz@;XK[iNS6B>4gbj2
+!s100 ;nd5=iY`mX47TIgN_zf=_2
+R7
+32
+R44
+!i10b 1
+R45
+Z126 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/reg_file.vhd|
+Z127 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/reg_file.vhd|
+!i113 1
+R12
+R13
+Aarch
+R1
+R2
+R3
+DEx4 work 2 rf 0 22 CfGTdz@;XK[iNS6B>4gbj2
+l20
+L12
+VWYUi]KkWKJV;SnM?YoOj@3
+!s100 Y>036_[UWCEQHgUA]2^e32
+R7
+32
+R44
+!i10b 1
+R45
+R126
+R127
+!i113 1
+R12
+R13
+Eriscv
+Z128 w1613780948
+R1
+R2
+R3
+R4
+Z129 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/RiscV.vhd
+Z130 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/RiscV.vhd
+l0
+L6
+V`gT^9lhVnohb3lz?2a3R=1
+!s100 aL9U>cc`T4DX:7I`@V>b63
+R7
+32
+R44
+!i10b 1
+R45
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/RiscV.vhd|
+Z132 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/RiscV.vhd|
+!i113 1
+R12
+R13
+Abehaviour
+R1
+R2
+R3
+DEx4 work 5 riscv 0 22 `gT^9lhVnohb3lz?2a3R=1
+l311
+L27
+VQD=mTBB9nRSRQnmI[BRaA2
+!s100 ac31BYM1JBQhbf_<ld;5g2
+R7
+32
+R44
+!i10b 1
+R45
+R131
+R132
+!i113 1
+R12
+R13
+vtb
+R8
+!i10b 1
+!s100 g^8cDE7Gc;QNOZCLW13^M0
+I:Vk?P5?SoX;6V43oV^>;31
+VDg1SIo80bB@j0V0VzS_@n1
+R4
+w1613159900
+8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/tb_RiscV
+FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/tb_RiscV
+L0 5
+OV;L;10.5b;63
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/tb_RiscV|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/tb_RiscV|
+!i113 1
+o-work work
+tCvgOpt 0
+Ewb
+Z133 w1613421541
+R2
+R3
+R4
+Z134 8C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/WB.vhd
+Z135 FC:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/WB.vhd
+l0
+L4
+VUZzk1AWVMB`oIE4SSjG2d1
+!s100 E@mgTY]Xcb5S4JTl58zL]0
+R7
+32
+R8
+!i10b 1
+R9
+Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/WB.vhd|
+Z137 !s107 C:/Users/Utente/Desktop/Magistrale Micro Elettronica/ISA Integrated System Architecture/Laboratory/Lab3/Modelsim_RiscV_Sim/WB.vhd|
+!i113 1
+R12
+R13
+Aarch
+R2
+R3
+DEx4 work 2 wb 0 22 UZzk1AWVMB`oIE4SSjG2d1
+l20
+L11
+VNhomj_e>m0@6[@e450NWO1
+!s100 A64`bzA8dYJ6A:fRz>bH<3
+R7
+32
+R8
+!i10b 1
+R9
+R136
+R137
+!i113 1
+R12
+R13

@@ -1,0 +1,151 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+use IEEE.Numeric_Std.all;
+
+entity DM is
+  port (
+    
+    Address_in_Alu : in  std_logic_vector(31 downto 0);
+    Write_Data_IN : in  std_logic_vector(31 downto 0);
+    Read_Data_OUT : out std_logic_vector(31 downto 0);
+    
+
+    RST, M_read, M_write : in std_logic
+  );
+end DM;
+
+Architecture Behaviour of DM is
+
+
+    TYPE MEM_DM_TYPE is array (0 to 31) of std_logic_vector(7 downto 0);
+    Signal Data1: MEM_DM_TYPE := (others => (others => '0'));
+    SIGNAL address_DM : STD_LOGIC_VECTOR(31 DOWNTO 0) := "00000000000000000000000000000000";
+
+
+Begin 
+	address_DM <= Address_in_Alu;
+   
+--------------------------WRITE------------------------------------------------------------------------------------   
+   proc_write : process(Write_Data_IN ,RST ,Address_in_Alu ) is
+	
+	Variable Address_w : integer;
+	begin 
+	if (RST = '0') then 
+	
+	-- inizializzazione della memoria al programma iniziale.
+		Data1(0) <= "00000000";     -- 10 --
+		Data1(1) <= "00000000";     --
+		Data1(2) <= "00000000";     --  
+		Data1(3) <= "00001010";     --------      
+		
+		Data1(4) <= "11111111";     -- -47 --
+		Data1(5) <= "11111111";     --
+		Data1(6) <= "11111111";     --  
+		Data1(7) <= "11010001";     ---------
+		
+		Data1(8) <= "00000000";     -- 22 --
+		Data1(9) <= "00000000";    --
+		Data1(10) <= "00000000";    --  
+		Data1(11) <= "00010110";    --------
+		
+		Data1(12) <= "11111111";    -- -3 --
+		Data1(13) <= "11111111";    --
+		Data1(14) <= "11111111";    --  
+		Data1(15) <= "11111101";    ---------		
+
+		Data1(16) <= "00000000";    -- 15 --
+		Data1(17) <= "00000000";    --
+		Data1(18) <= "00000000";    --  
+		Data1(19) <= "00001111";    --------
+
+		Data1(20) <= "00000000";    -- 27 --
+		Data1(21) <= "00000000";    --
+		Data1(22) <= "00000000";    --  
+		Data1(23) <= "00011011";    --------
+
+		Data1(24) <= "11111111";     -- -4 --
+		Data1(25) <= "11111111";     --
+		Data1(26) <= "11111111";     --  
+		Data1(27) <= "11111100";     ---------
+
+		--inizializzo il minimo 'm' al valore '0'
+		Data1(28) <= "01111111";    -- m = 0 ---
+		Data1(29) <= "11111111";    --
+		Data1(30) <= "11111111";    --  
+		Data1(31) <= "11111111";    --------
+	
+	elsif (M_Write = '1') then 
+        -- Per ora scrivo dove dice l'ALU, altrimenti posso ricavare il primo indirizzo libero della memoria 
+		Address_w := to_integer(unsigned(Address_in_Alu));
+		if (Address_w > 528613375) then
+		Address_w := Address_w - (528613376);
+		Data1(Address_w) <= Write_Data_IN(31 downto 24);
+		Data1(Address_w+1) <= Write_Data_IN(23 downto 16);
+		Data1(Address_w+2) <= Write_Data_IN(15 downto 8);
+		Data1(Address_w+3) <= Write_Data_IN(7 downto 0);
+		end if;
+		
+	end if;
+    end process proc_write;
+  
+--------------------------------------------------------------------------------------------------------------------
+
+--------------------------READ--------------------------------------------------------------------------------------
+
+
+
+    proc_read : process(Address_in_Alu ) is
+
+
+   	Variable Address_r : integer;
+	begin
+	if (M_read = '1') then 
+		Address_r := to_integer(signed(Address_in_Alu));
+		if (Address_r > (528613000)) then
+		Address_r := Address_r - (528613376);
+		Read_Data_OUT (31 downto 24) <= Data1(Address_r);
+		Read_Data_OUT (23 downto 16) <= Data1(Address_r+1);
+		Read_Data_OUT (15 downto 8) <= Data1(Address_r+2);
+		Read_Data_OUT (7 downto 0) <= Data1(Address_r+3);
+	--	elsif(Address_r > 528621579) then 
+--		Address_r := Address_r - 528621580;
+--		Read_Data_OUT (31 downto 24) <= Data1(Address_r);
+--		Read_Data_OUT (23 downto 16) <= Data1(Address_r+1);
+--		Read_Data_OUT (15 downto 8) <= Data1(Address_r+2);
+--		Read_Data_OUT (7 downto 0) <= Data1(Address_r+3);
+		else 
+--		Read_Data_OUT <= "00000000000000000000000000000000";
+		Address_r := Address_r - (528613376);
+		Read_Data_OUT (31 downto 24) <= Data1(Address_r);
+		Read_Data_OUT (23 downto 16) <= Data1(Address_r+1);
+		Read_Data_OUT (15 downto 8) <= Data1(Address_r+2);
+		Read_Data_OUT (7 downto 0) <= Data1(Address_r+3);
+		
+		end if;
+		
+	end if;
+    end process proc_read;
+
+--proc_read : process(Address_in_Alu ) is
+
+--    	Variable Address_r : integer;
+--	begin
+--	if (M_read = '1') then 
+--		Address_r := to_integer(unsigned(address_DM));
+--		if (Address_r < 31) then
+--		Read_Data_OUT (31 downto 24) <= Data1(Address_r);
+--		Read_Data_OUT (23 downto 16) <= Data1(Address_r+1);
+--		Read_Data_OUT (15 downto 8) <= Data1(Address_r+2);
+--		Read_Data_OUT (7 downto 0) <= Data1(Address_r+3);
+--		else
+--		Read_Data_OUT <= "00000000000000000000000000000000";
+--		end if;
+--		
+--	end if;
+--    end process proc_read;
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
+End Behaviour;

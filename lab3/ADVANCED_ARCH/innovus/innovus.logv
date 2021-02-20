@@ -1,0 +1,142 @@
+[02/20 22:58:47      0s] 
+[02/20 22:58:47      0s] Cadence Innovus(TM) Implementation System.
+[02/20 22:58:47      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[02/20 22:58:47      0s] 
+[02/20 22:58:47      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[02/20 22:58:47      0s] Options:	
+[02/20 22:58:47      0s] Date:		Sat Feb 20 22:58:47 2021
+[02/20 22:58:47      0s] Host:		localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB)
+[02/20 22:58:47      0s] OS:		CentOS Linux release 7.6.1810 (Core) 
+[02/20 22:58:47      0s] 
+[02/20 22:58:47      0s] License:
+[02/20 22:58:47      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[02/20 22:58:47      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[02/20 22:59:41     20s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[02/20 22:59:41     20s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[02/20 22:59:41     20s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[02/20 22:59:41     20s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[02/20 22:59:41     20s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[02/20 22:59:41     20s] @(#)CDS: CPE v17.11-s095
+[02/20 22:59:41     20s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[02/20 22:59:41     20s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[02/20 22:59:41     20s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[02/20 22:59:41     20s] @(#)CDS: RCDB 11.10
+[02/20 22:59:41     20s] --- Running on localhost.localdomain (x86_64 w/Linux 3.10.0-957.5.1.el7.x86_64) (1core*2cpus*Westmere E56xx/L56xx/X56xx (Nehalem-C) 4096KB) ---
+[02/20 22:59:41     20s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_28098_localhost.localdomain_isa38_RIAYMX.
+
+[02/20 22:59:41     20s] Change the soft stacksize limit to 0.2%RAM (31 mbytes). Set global soft_stack_size_limit to change the value.
+[02/20 22:59:45     21s] 
+[02/20 22:59:45     21s] **INFO:  MMMC transition support version v31-84 
+[02/20 22:59:45     21s] 
+[02/20 22:59:45     21s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[02/20 22:59:45     21s] <CMD> suppressMessage ENCEXT-2799
+[02/20 22:59:46     21s] <CMD> getDrawView
+[02/20 22:59:46     21s] <CMD> loadWorkspace -name Physical
+[02/20 22:59:46     21s] <CMD> win
+[02/20 23:01:22     24s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:01:31     24s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:02:16     25s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:02:25     25s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:03:49     27s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:03:59     27s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:06:19     31s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:06:25     31s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:07:07     33s] **ERROR: couldn't read file "/home/isa38/Desktop/RISCV/ADVANCED": no such file or directory
+[02/20 23:07:31     33s] <CMD> set init_design_netlisttype verilog
+[02/20 23:07:31     33s] <CMD> set init_design_settop 1
+[02/20 23:07:31     33s] <CMD> set init_top_cell RiscV
+[02/20 23:07:31     33s] <CMD> set init_verilog ../netlist/RiscV.v
+[02/20 23:07:31     33s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[02/20 23:07:31     33s] <CMD> set init_gnd_net VSS
+[02/20 23:07:31     33s] <CMD> set init_pwr_net VDD
+[02/20 23:07:43     34s] <CMD> init_design
+[02/20 23:07:43     34s] **ERROR: (IMPSYT-6284):	Failed to open file ../../ADVANCED for read.
+[02/20 23:07:51     34s] 
+[02/20 23:07:51     34s] Loading LEF file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef ...
+[02/20 23:07:51     34s] Set DBUPerIGU to M2 pitch 380.
+[02/20 23:07:51     34s] 
+[02/20 23:07:51     34s] viaInitial starts at Sat Feb 20 23:07:51 2021
+viaInitial ends at Sat Feb 20 23:07:51 2021
+Loading view definition file from ../../ADVANCED
+[02/20 23:07:51     34s] *** End library_loading (cpu=0.00min, real=0.00min, mem=0.0M, fe_cpu=0.58min, fe_real=9.07min, fe_mem=503.1M) ***
+[02/20 23:07:52     34s] #% Begin Load netlist data ... (date=02/20 23:07:51, mem=417.2M)
+[02/20 23:07:52     34s] *** Begin netlist parsing (mem=503.1M) ***
+[02/20 23:07:52     34s] Created 0 new cells from 0 timing libraries.
+[02/20 23:07:52     34s] Reading netlist ...
+[02/20 23:07:52     34s] Backslashed names will retain backslash and a trailing blank character.
+[02/20 23:07:52     34s] Reading verilog netlist '../netlist/RiscV.v'
+[02/20 23:07:52     34s] 
+[02/20 23:07:52     34s] *** Memory Usage v#1 (Current mem = 508.051M, initial mem = 187.684M) ***
+[02/20 23:07:52     34s] *** End netlist parsing (cpu=0:00:00.2, real=0:00:00.0, mem=508.1M) ***
+[02/20 23:07:52     34s] #% End Load netlist data ... (date=02/20 23:07:52, total cpu=0:00:00.2, real=0:00:00.0, peak res=421.8M, current mem=421.8M)
+[02/20 23:07:52     34s] Set top cell to RiscV.
+[02/20 23:07:53     34s] Hooked 0 DB cells to tlib cells.
+[02/20 23:07:53     34s] Starting recursive module instantiation check.
+[02/20 23:07:53     34s] No recursion found.
+[02/20 23:07:53     34s] Building hierarchical netlist for Cell RiscV ...
+[02/20 23:07:53     35s] *** Netlist is unique.
+[02/20 23:07:53     35s] ** info: there are 135 modules.
+[02/20 23:07:53     35s] ** info: there are 7613 stdCell insts.
+[02/20 23:07:53     35s] 
+[02/20 23:07:53     35s] *** Memory Usage v#1 (Current mem = 517.715M, initial mem = 187.684M) ***
+[02/20 23:07:53     35s] Generated pitch 1.68 in metal10 is different from 1.6 defined in technology file in preferred direction.
+[02/20 23:07:53     35s] Generated pitch 0.84 in metal8 is different from 0.8 defined in technology file in preferred direction.
+[02/20 23:07:53     35s] Generated pitch 0.84 in metal7 is different from 0.8 defined in technology file in preferred direction.
+[02/20 23:07:53     35s] Set Default Net Delay as 1000 ps.
+[02/20 23:07:53     35s] Set Default Net Load as 0.5 pF. 
+[02/20 23:07:53     35s] Set Default Input Pin Transition as 0.1 ps.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell XOR2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell XNOR2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell SDFFR_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OR4_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OR3_X2; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OR3_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OR2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI33_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI22_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI222_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI221_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI21_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell OAI211_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NOR4_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NOR3_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NOR2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NAND4_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NAND3_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell NAND2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (IMPSYC-2):	Timing information is not defined for cell MUX2_X1; Check the timing library (.lib) file and make sure the timing information exists for the cell and you can run the checkTimingLibrary command to verify if the timing library has complete information after the design is loaded.
+[02/20 23:07:53     35s] Type 'man IMPSYC-2' for more detail.
+[02/20 23:07:53     35s] **WARN: (EMS-27):	Message (IMPSYC-2) has exceeded the current message display limit of 20.
+[02/20 23:07:53     35s] To increase the message display limit, refer to the product command reference manual.
+[02/20 23:07:55     35s] **ERROR: **ERROR: (IMPSYT-7007):	clink executable was not found.
+[02/20 23:07:55     35s] 
+[02/20 23:08:15     37s] 
+[02/20 23:08:15     37s] *** Memory Usage v#1 (Current mem = 629.051M, initial mem = 187.684M) ***
+[02/20 23:08:15     37s] 
+[02/20 23:08:15     37s] *** Summary of all messages that are not suppressed in this session:
+[02/20 23:08:15     37s] Severity  ID               Count  Summary                                  
+[02/20 23:08:15     37s] ERROR     IMPSYT-6284          2  Failed to open file %s for read.         
+[02/20 23:08:15     37s] ERROR     IMPSYT-7007          1  clink executable was not found.          
+[02/20 23:08:15     37s] WARNING   IMPSYC-2            39  Timing information is not defined for ce...
+[02/20 23:08:15     37s] *** Message Summary: 39 warning(s), 3 error(s)
+[02/20 23:08:15     37s] 
+[02/20 23:08:15     37s] --- Ending "Innovus" (totcpu=0:00:37.2, real=0:09:28, mem=629.1M) ---

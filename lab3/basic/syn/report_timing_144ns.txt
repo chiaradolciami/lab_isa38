@@ -1,0 +1,100 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RiscV' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RiscV
+Version: O-2018.06-SP4
+Date   : Sat Feb 20 12:47:50 2021
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Execution_Stage/pipe/rd_addr_out_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Execution_Stage/pipe/ALURes_out_reg[31]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RiscV              5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Execution_Stage/pipe/rd_addr_out_reg[2]/CK (DFFR_X1)
+                                                          0.00       0.00 r
+  Execution_Stage/pipe/rd_addr_out_reg[2]/QN (DFFR_X1)
+                                                          0.07       0.07 r
+  Execution_Stage/pipe/U6/ZN (INV_X1)                     0.03       0.09 f
+  Execution_Stage/pipe/rd_addr_out[2] (pipe_EXMEM)        0.00       0.09 f
+  Execution_Stage/rd_addr_out[2] (EX_unit)                0.00       0.09 f
+  Forwarding_Unit_portmap/EX_Rd[2] (Forwarding_Unit)      0.00       0.09 f
+  Forwarding_Unit_portmap/U39/Z (XOR2_X1)                 0.07       0.17 f
+  Forwarding_Unit_portmap/U42/ZN (NOR4_X1)                0.09       0.25 r
+  Forwarding_Unit_portmap/U16/ZN (NAND3_X1)               0.05       0.30 f
+  Forwarding_Unit_portmap/U43/ZN (OAI21_X1)               0.04       0.34 r
+  Forwarding_Unit_portmap/ForwardB[0] (Forwarding_Unit)
+                                                          0.00       0.34 r
+  Execution_Stage/Forward_B[0] (EX_unit)                  0.00       0.34 r
+  Execution_Stage/Mux_forwarding_B/sel[0] (multiplexer_3to1_1)
+                                                          0.00       0.34 r
+  Execution_Stage/Mux_forwarding_B/U53/ZN (INV_X1)        0.03       0.37 f
+  Execution_Stage/Mux_forwarding_B/U40/Z (XOR2_X1)        0.09       0.46 f
+  Execution_Stage/Mux_forwarding_B/U67/ZN (AOI222_X1)     0.12       0.58 r
+  Execution_Stage/Mux_forwarding_B/U22/ZN (INV_X1)        0.04       0.62 f
+  Execution_Stage/Mux_forwarding_B/OUTPUT[11] (multiplexer_3to1_1)
+                                                          0.00       0.62 f
+  Execution_Stage/alu_unit/RS2[11] (ALU)                  0.00       0.62 f
+  Execution_Stage/alu_unit/add_30/B[11] (ALU_DW01_add_1)
+                                                          0.00       0.62 f
+  Execution_Stage/alu_unit/add_30/U443/ZN (NOR2_X1)       0.04       0.67 r
+  Execution_Stage/alu_unit/add_30/U441/ZN (OAI21_X1)      0.03       0.70 f
+  Execution_Stage/alu_unit/add_30/U506/ZN (AOI21_X1)      0.05       0.76 r
+  Execution_Stage/alu_unit/add_30/U505/ZN (OAI21_X1)      0.03       0.79 f
+  Execution_Stage/alu_unit/add_30/U433/ZN (AOI21_X1)      0.06       0.84 r
+  Execution_Stage/alu_unit/add_30/U522/ZN (OAI21_X1)      0.03       0.88 f
+  Execution_Stage/alu_unit/add_30/U315/ZN (AOI21_X1)      0.04       0.92 r
+  Execution_Stage/alu_unit/add_30/U529/ZN (OAI21_X1)      0.03       0.95 f
+  Execution_Stage/alu_unit/add_30/U519/ZN (AOI21_X1)      0.04       0.99 r
+  Execution_Stage/alu_unit/add_30/U527/ZN (OAI21_X1)      0.03       1.02 f
+  Execution_Stage/alu_unit/add_30/U524/ZN (AOI21_X1)      0.04       1.07 r
+  Execution_Stage/alu_unit/add_30/U460/ZN (INV_X1)        0.02       1.09 f
+  Execution_Stage/alu_unit/add_30/U4/CO (FA_X1)           0.09       1.18 f
+  Execution_Stage/alu_unit/add_30/U3/CO (FA_X1)           0.09       1.27 f
+  Execution_Stage/alu_unit/add_30/U407/ZN (XNOR2_X1)      0.06       1.32 f
+  Execution_Stage/alu_unit/add_30/SUM[31] (ALU_DW01_add_1)
+                                                          0.00       1.32 f
+  Execution_Stage/alu_unit/U340/ZN (AOI22_X1)             0.06       1.38 r
+  Execution_Stage/alu_unit/U342/ZN (OAI211_X1)            0.04       1.42 f
+  Execution_Stage/alu_unit/AluRes[31] (ALU)               0.00       1.42 f
+  Execution_Stage/U82/Z (MUX2_X1)                         0.07       1.49 f
+  Execution_Stage/pipe/ALURes_in[31] (pipe_EXMEM)         0.00       1.49 f
+  Execution_Stage/pipe/U5/ZN (AND2_X1)                    0.04       1.52 f
+  Execution_Stage/pipe/ALURes_out_reg[31]/D (DFFR_X1)     0.01       1.53 f
+  data arrival time                                                  1.53
+
+  clock MY_CLK (rise edge)                                1.44       1.44
+  clock network delay (ideal)                             0.00       1.44
+  clock uncertainty                                      -0.07       1.37
+  Execution_Stage/pipe/ALURes_out_reg[31]/CK (DFFR_X1)
+                                                          0.00       1.37 r
+  library setup time                                     -0.04       1.33
+  data required time                                                 1.33
+  --------------------------------------------------------------------------
+  data required time                                                 1.33
+  data arrival time                                                 -1.53
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.20
+
+
+1

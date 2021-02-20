@@ -1,0 +1,492 @@
+LIBRARY IEEE;
+USE ieee.std_logic_1164.all;
+USE ieee.numeric_std.all;
+
+
+ENTITY RiscV is 
+Port (
+			Clock :				IN std_logic;
+			Reset :				IN std_logic;
+			
+			Instruction_IM :	IN std_logic_vector(31 downto 0);
+			Read_Data_DM :		IN std_logic_vector(31 downto 0);
+			
+			-- Control Sig Data Memory --
+			f_DM_MemRead :		OUT std_logic;
+			f_DM_MemWrite :	OUT std_logic;
+			
+			PC_IM	:				OUT std_logic_vector(31 downto 0);
+			ALU_Address_DM :	OUT std_logic_vector(31 downto 0);
+			Write_Data_DM :	OUT std_logic_vector(31 downto 0)
+			
+);
+END RiscV;
+
+
+
+ARCHITECTURE Behaviour of RiscV is
+
+
+
+COMPONENT FETCH IS
+PORT(
+	CLK, RSTn, flush, PCSrc                 : IN  STD_LOGIC;
+    	mem_address, instruction_in   		: IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+	LoadPC					: IN std_logic;
+	PC_for_Im		      		: OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+	instruction_out, address_out            : OUT STD_LOGIC_VECTOR(31 DOWNTO 0));
+END COMPONENT;
+
+
+COMPONENT DECODE IS
+PORT(   clock, resetn, flush, regWrite      : IN STD_LOGIC;
+        instruction, address_in, data_RF    : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+        address_RF                          : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+	Hazard_stall			    : IN std_logic;
+        address_out, op1, op2               : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+        rd                                  : OUT STD_LOGIC_VECTOR(4 DOWNTO 0);
+        func3                               : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+        immediate                           : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+		  
+		  --controls
+		  
+		   D_ALUOp_out		 : out std_logic_vector(1 downto 0);
+			D_ALU_src_out	: out std_logic;
+			D_Branch_out      : out std_logic;
+			D_Jump_out        : out std_logic;
+			D_MemR_out     : out std_logic;
+			D_MemW_out    : out std_logic;
+			D_Mem_to_Reg_out : out std_logic;
+			D_Reg_Write_out  : out std_logic;
+		--forwarding--
+
+	F_add_reg1 : out std_logic_vector(4 downto 0);
+	F_add_reg2 : out std_logic_vector(4 downto 0));
+
+		  
+END COMPONENT;
+
+COMPONENT EX_unit is
+port (
+      		CLK             : in std_logic;
+		RST 		: in std_logic;		
+		flush           : in std_logic;
+		
+		ALUOp_in 		 : in std_logic_vector(1 downto 0);
+		funct3_in	    : in std_logic_vector(2 downto 0);
+		opcode_b5_in    : in std_logic;
+		ALU_src			 : in std_logic;
+		
+		
+		RS1_in, RS2_in  : in std_logic_vector(31 downto 0);
+		imm_in          : in std_logic_vector(31 downto 0);
+		addr_in         : in std_logic_vector(31 downto 0);
+		rd_addr_in: in std_logic_vector(4 downto 0);
+		
+		
+		  Branch_in       : in std_logic;
+		  Jump_in         : in std_logic;
+		  MemR_in         : in std_logic;
+		  MemW_in         : in std_logic;
+		  Mem_to_Reg_in   : in std_logic;
+		  Reg_Write_in    : in std_logic;
+
+			---- forwarding----
+		  operand_WB      : in std_logic_vector(31 downto 0);
+		  operand_MEM	  : in std_logic_vector(31 downto 0);
+		  Forward_A	  : in std_logic_vector (1 downto 0);
+		  Forward_B	  : in std_logic_vector (1 downto 0);
+		  
+		  
+		
+		  ZeroFlag_out    : out std_logic;
+		  AluRes_out        : out std_logic_vector(31 downto 0);       
+		  addr_sum_out	 : out std_logic_vector(31 downto 0);
+		  RS2_out         : out std_logic_vector(31 downto 0);
+		  rd_addr_out: out std_logic_vector(4 downto 0);
+	   
+		
+		---control outs 
+		  Branch_out      : out std_logic;
+		  Jump_out        : out std_logic;
+		  MemR_out        : out std_logic;
+		  MemW_out        : out std_logic;
+		  Mem_to_Reg_out  : out std_logic;
+		  Reg_Write_out   : out std_logic);	
+		
+		
+END COMPONENT;
+
+COMPONENT MEMORY IS
+PORT(   clock, resetn : in std_logic;
+        
+        --address_addsum_mem_in: in std_logic_vector(31 downto 0); -- address to fetch
+        --address_addsum_mem_out: out std_logic_vector(31 downto 0); -- address to fetch
+
+        data_write_mem_in : in std_logic_vector(31 downto 0); -- data memory
+		data_write_mem_out: out std_logic_vector(31 downto 0); -- data memory
+
+		ZeroFlag_mem: in std_logic;
+		Branch_mem      : in std_logic;
+        PCRsc   : OUT std_logic;
+		Jump_mem        : in std_logic;
+
+        --write_data_wb : OUT std_logic_vector (31 downto 0);
+        --mem_read : OUT std_logic;
+
+		MemR_mem        : in std_logic;
+        MemR_out        : OUT std_logic;
+		MemW_mem        : in std_logic;
+        MemW_out        : OUT std_logic;
+        -- pipe signals
+		Mem_to_Reg_mem  : in std_logic;
+        Mem_to_Reg_wb  : out std_logic;
+        Reg_Write_mem   : in std_logic;	
+        Reg_Write_wb   : out std_logic;
+        read_data_mem : IN std_logic_vector(31 downto 0);
+        read_data_wb   : out std_logic_vector(31 downto 0);
+        address_mem: in std_logic_vector(31 downto 0); -- ALURes_mem address memory
+        address_wb : OUT std_logic_vector(31 downto 0);
+        rd_mem : in  std_logic_vector(4 downto 0); --rd to bypass
+        rd_wb : out  std_logic_vector(4 downto 0)
+);
+
+END COMPONENT;
+
+COMPONENT WB IS
+PORT(   memtoreg_in : in std_logic;
+        read_data_in, address_in: in std_logic_vector(31 downto 0);
+        write_data_out : out std_logic_vector(31 downto 0) );
+END COMPONENT;
+
+------------------------Hazard--------------------------------
+
+COMPONENT Hazard_Unit is
+		port(
+		
+		CLK	: IN STD_LOGIC;
+		PC_SRC	: IN STD_LOGIC;
+
+		IF_Rs1 	: in std_logic_vector(4 downto 0);
+		IF_Rs2 	: in std_logic_vector(4 downto 0);
+		ID_Rd 	: in std_logic_vector(4 downto 0);
+		
+		ID_MemR : in std_logic;
+
+		STALL	: out std_logic);
+		
+		
+		
+END COMPONENT;
+
+
+COMPONENT Forwarding_Unit is
+		port(
+		ID_Rs1		: in std_logic_vector(4 downto 0);
+		ID_Rs2 		: in std_logic_vector(4 downto 0);
+		EX_Rd 		: in std_logic_vector(4 downto 0);
+		MEM_Rd 		: in std_logic_vector(4 downto 0);		
+		EX_Reg_Write 	: in std_logic;
+		MEM_Reg_Write 	: in std_logic;
+		Mem_W      	: in STD_LOGIC; 
+		
+		ForwardA 	: out std_logic_vector (0 to 1);
+		ForwardB 	: out std_logic_vector (0 to 1));
+END COMPONENT;
+
+COMPONENT Flush_Unit IS
+PORT(
+	Branch           	: IN STD_LOGIC;
+	EXE_MEM_Flush_pipe	:  OUT STD_LOGIC;
+    	ID_EXE_Flush_pipe	:  OUT STD_LOGIC );
+END COMPONENT;
+
+
+
+
+
+
+
+
+
+------ IF-> ID -------  
+Signal S_instruction_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_address_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+----------------------
+
+------ ID-> EXE -------  
+Signal S_ID_EXE_address_out : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_op1 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_op2 : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_immediate : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_func3_tot : STD_LOGIC_VECTOR(3 DOWNTO 0);
+Signal S_rd : STD_LOGIC_VECTOR(4 DOWNTO 0);
+
+Signal S_ALUOp_out : STD_LOGIC_VECTOR(1 DOWNTO 0);
+Signal S_ALU_src : STD_LOGIC;
+
+Signal S_Branch : STD_LOGIC;
+Signal S_Jump : STD_LOGIC;
+Signal S_MemR : STD_LOGIC;
+Signal S_MemW : STD_LOGIC;
+Signal S_Mem_to_Reg : STD_LOGIC;
+Signal S_Reg_Write : STD_LOGIC;
+
+
+
+
+
+------ EXE-> MEM -------  
+Signal S_ZeroFlag : std_logic;
+Signal S_AluRes : std_logic_vector(31 downto 0);
+Signal S_addr_sum : std_logic_vector(31 downto 0);
+Signal S_2_RS2 : std_logic_vector(31 downto 0);
+Signal S_2_rd : std_logic_vector(4 downto 0);
+
+Signal S_2_Branch : std_logic;
+Signal S_2_Jump : std_logic;
+Signal S_2_MemR : std_logic;
+Signal S_2_MemW : std_logic;
+Signal S_2_Mem_to_Reg : std_logic;
+Signal S_2_Reg_Write : std_logic;
+
+
+
+------ MEM-> WB -------  
+Signal S_3_Mem_to_Reg : std_logic;
+Signal S_read_data_wb : STD_LOGIC_VECTOR(31 DOWNTO 0);
+Signal S_address_wb : STD_LOGIC_VECTOR(31 DOWNTO 0); --ALUres
+Signal S_3_rd : std_logic_vector(4 downto 0);
+
+
+
+
+------ EXE-> IF -------  
+Signal S_mem_address : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+
+
+
+
+------ MEM-> ID -------  
+Signal S_address_RF : STD_LOGIC_VECTOR(4 DOWNTO 0);
+Signal S_regWrite : STD_LOGIC;
+
+
+
+------ WB-> ID -------  
+Signal S_data_RF : STD_LOGIC_VECTOR(31 DOWNTO 0);
+
+
+------ MEM-> IF -------
+Signal S_PCSrc : std_logic;
+
+
+
+------MEM   DM------
+--Signal S_data_write_DM_in : std_logic_vector(31 downto 0); -- data memory Replaced with S_2_RS2
+Signal S_data_write_DM_out : std_logic_vector(31 downto 0); -- data memory
+
+
+
+------FORWARDING---
+Signal S_F_reg1 : std_logic_vector(4 downto 0);
+Signal S_F_reg2 : std_logic_vector(4 downto 0);
+Signal S_F_A : std_logic_vector(1 downto 0);
+Signal S_F_B : std_logic_vector(1 downto 0);
+
+----- FLUSH ---------
+Signal S_EXE_MEM_Flush_pipe : std_logic;
+Signal S_ID_EXE_Flush_pipe : std_logic;
+
+Signal FAKE : std_logic;
+
+
+
+
+Signal S_loadPC : std_logic;
+
+
+BEGIN
+
+
+Fetch_Stage: FETCH PORT MAP(
+				CLK 				=> Clock,
+				RSTn				=> Reset,
+				flush				=> FAKE, ------------------------------FAKE
+				PCSrc				=> S_PCSrc,
+				LoadPC				=> S_loadPC,
+				PC_for_Im		      	=> PC_IM,
+				mem_address			=> S_addr_sum,
+				instruction_in			=> Instruction_IM,
+										
+				instruction_out			=> S_instruction_out,
+				address_out			=> S_address_out );  
+
+
+										
+Decode_Stage : DECODE PORT MAP (
+											
+				clock				=> Clock,
+				resetn				=> Reset,
+				flush				=> S_ID_EXE_Flush_pipe,
+				regWrite			=> S_regWrite,
+											
+				instruction			=> S_instruction_out,
+				address_in			=> S_address_out,
+				data_RF    			=> S_data_RF,      ------ WRITE DATA MAP -----------
+				address_RF			=> S_address_RF,   ------ WRITE REGISTER MAP ------
+				Hazard_stall			=> S_loadPC, --stall
+				address_out			=> S_ID_EXE_address_out,
+				op1				=> S_op1,
+				op2				=> S_op2,
+				rd				=> S_rd,
+				func3				=> S_func3_tot,
+				immediate			=> S_immediate,
+	  
+						--controls
+	  
+				D_ALUOp_out		=> S_ALUOp_out,
+				D_ALU_src_out		=> S_ALU_src,
+				D_Branch_out   		=> S_Branch,
+				D_Jump_out  		=> S_Jump,
+				D_MemR_out		=> S_MemR,
+				D_MemW_out		=> S_MemW,
+				D_Mem_to_Reg_out	=> S_Mem_to_Reg,
+				D_Reg_Write_out		=> S_Reg_Write,
+						--forwarding--
+
+				F_add_reg1 => S_F_reg1,
+				F_add_reg2 => S_F_reg2);
+											
+											
+											
+Execution_Stage : EX_unit PORT MAP( 
+											
+				CLK               => Clock,
+				RST		  => Reset,
+				flush             => S_EXE_MEM_Flush_pipe,
+								
+				ALUOp_in 	  => S_ALUOp_out,
+				funct3_in	  => S_func3_tot(2 downto 0),
+				opcode_b5_in      => S_func3_tot(3),
+				ALU_src		  => S_ALU_src,
+					
+											
+				RS1_in 		  => S_op1,
+				RS2_in  	  => S_op2,
+				imm_in            => S_immediate,
+				addr_in           => S_ID_EXE_address_out,
+				rd_addr_in	  => S_rd,
+											
+											
+				Branch_in         => S_Branch,
+				Jump_in           => S_Jump,
+				MemR_in           => S_MemR,
+			   	MemW_in           => S_MemW,
+				Mem_to_Reg_in     => S_Mem_to_Reg,
+				Reg_Write_in      => S_Reg_Write,
+				
+				---- forwarding----
+		  		operand_WB        => S_data_RF,
+		  		operand_MEM	  => S_AluRes,
+				Forward_A	  => S_F_A,
+		  		Forward_B	  => S_F_B,
+											  
+											  
+										
+				ZeroFlag_out      => S_ZeroFlag,
+				AluRes_out        => S_AluRes,       
+				addr_sum_out	  => S_addr_sum,
+				----------------------------------------------------------------
+				RS2_out           => S_2_RS2,
+				rd_addr_out	  => S_2_rd,										
+					---control outs 
+				Branch_out        => S_2_Branch,
+				Jump_out          => S_2_Jump,
+				MemR_out          => S_2_MemR,
+				sim:/tb/Data_Memory/Data1(31)
+MemW_out          => S_2_MemW,
+				Mem_to_Reg_out    => S_2_Mem_to_Reg,
+				Reg_Write_out     => S_2_Reg_Write  );	
+											
+ALU_Address_DM <= S_AluRes;
+																				
+											
+Memory_Stage : MEMORY PORT MAP(
+
+				clock								=> Clock,
+				resetn 							=> Reset,
+							  
+				--address_addsum_mem_in		=> S_addr_sum, -- address to fetch
+				--address_addsum_mem_out		=> S_mem_address, -- address to fetch
+				data_write_mem_in				=> S_2_RS2, -- Input data memory
+				data_write_mem_out			=> Write_Data_DM, -- data memory
+				ZeroFlag_mem					=> S_ZeroFlag,
+				Branch_mem						=> S_2_Branch,
+				PCRsc								=> S_PCSrc,
+				Jump_mem							=> S_2_Jump,
+				MemR_mem							=> S_2_MemR,
+				MemR_out							=> f_DM_MemRead,
+				MemW_mem							=> S_2_MemW,
+				MemW_out							=> f_DM_MemWrite,
+						  -- pipe signals
+				Mem_to_Reg_mem 				=> S_2_Mem_to_Reg,
+				Mem_to_Reg_wb					=> S_3_Mem_to_Reg,
+				Reg_Write_mem 					=> S_2_Reg_Write,	
+				Reg_Write_wb 					=> S_regWrite,
+				read_data_mem 					=> Read_Data_DM,
+				read_data_wb 					=> S_read_data_wb,
+				address_mem						=> S_AluRes, -- ALURes_mem address memory
+				address_wb						=> S_address_wb,
+				rd_mem 							=> S_2_rd, --rd to bypass
+				rd_wb 							=> S_address_RF  );	-- register file RD
+			
+
+Write_Back : WB PORT MAP(
+				memtoreg_in 		=> S_3_Mem_to_Reg,
+				read_data_in 		=> S_read_data_wb,
+				address_in   		=> S_address_wb,										  
+				write_data_out 		=> S_data_RF ); 	
+
+
+Hazard_unit_portmap : Hazard_Unit PORT MAP (
+
+		CLK 	=> Clock,
+		PC_SRC	=> S_PCSrc,
+
+		IF_Rs1	=>  S_instruction_out(19 downto 15),
+		IF_Rs2	=> S_instruction_out(24 downto 20),
+		ID_Rd	=>  S_rd,
+		
+		ID_MemR	=> S_MemR,
+
+		STALL   => S_loadPC);
+
+Forwarding_Unit_portmap : Forwarding_Unit PORT MAP (
+
+		ID_Rs1		=> S_F_reg1,
+		ID_Rs2 		=> S_F_reg2,
+		EX_Rd 		=> S_2_rd,
+		MEM_Rd 		=> S_address_RF,	
+		EX_Reg_Write 	=> S_2_Reg_Write,
+		MEM_Reg_Write 	=> S_regWrite,
+		Mem_W      	=> S_2_MemW, 
+		
+		ForwardA 	=> S_F_A,
+		ForwardB 	=> S_F_B);
+
+Flush_Unit_portmap : Flush_Unit PORT MAP (
+
+
+		Branch  		=>   S_PCSrc,      
+	
+		EXE_MEM_Flush_pipe	=> S_EXE_MEM_Flush_pipe,
+    		ID_EXE_Flush_pipe	=> S_ID_EXE_Flush_pipe);
+
+
+
+
+
+END Behaviour;

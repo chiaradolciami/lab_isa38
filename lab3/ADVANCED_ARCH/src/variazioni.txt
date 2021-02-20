@@ -1,0 +1,9 @@
+variazioni
+
+ALU: 
+
+sig_op1 <= RS1_in;
+sig_imm <= imm_in; perchè erano scollegati
+
+process alu_src ---- clock (rs_in)
+process jump ---- alures_sig non si prende
